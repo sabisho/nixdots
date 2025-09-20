@@ -1,0 +1,101 @@
+@import "colors-matugen.css";
+* {
+  all: unset; /*this is really important to isolate waybar from gtk*/
+  font-family: "Noto Sans, Symbols Nerd Font";
+  font-size: 18px;
+  font-weight: bold;
+}
+
+window#waybar {
+  background: rgba(0, 0, 0, 0.1);
+  border: 3px solid @foreground;
+  border-radius: 10px;
+}
+
+tooltip {
+  background: rgba(0, 0, 0, 0.1);
+  border: 3px solid @foreground;
+  border-radius: 10px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+#clock.2
+#custom-separator
+#clock
+#tray
+#network
+#backlight
+#pulseaudio
+#battery
+#battery.warning
+#battery.critical
+#workspaces button {
+  color: @foreground;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  transition: all 0.3s ease-in-out;
+}
+
+#workspaces button.active {
+  color: @active;
+  transition: all 0.3s ease-in-out;
+}
+
+#clock.2 {
+  color: @foreground;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 13px;
+}
+
+#custom-separator {
+  color: @foreground;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+#clock {
+  color: @foreground;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+#tray {
+  color: @foreground;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+#network {
+  color: @foreground;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+#backlight {
+  color: @foreground;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+#pulseaudio {
+  color: @foreground;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+#battery {
+  color: @foreground;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-right: 13px;
+}
+
+#battery.warning {
+  color: #ff0000;
+}
+
+#battery.critical {
+  color: #ffff00;
+}

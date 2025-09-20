@@ -1,6 +1,7 @@
 {
   config,
   pkgs,
+  inputs,
   ...
 }: {
   imports = [
@@ -11,30 +12,16 @@
   nix.settings.experimental-features = ["nix-command" "flakes"];
 
   boot = {
-    # Latest Linux Kernel
     kernelPackages = pkgs.linuxPackages_latest;
-    # Bootloader configuration
     loader = {
       systemd-boot.enable = true;
       efi.canTouchEfiVariables = true;
-      # Hide the OS choice for bootloaders.
-      # It's still possible to open the bootloader list by pressing any key
-      # It will just not appear on screen unless a key is pressed
       timeout = 0;
     };
-
-    # Plymouth boot splash
     plymouth = {
       enable = true;
-      theme = "rings";
-      themePackages = with pkgs; [
-        (adi1090x-plymouth-themes.override {
-          selected_themes = ["rings"];
-        })
-      ];
+      theme = "bgrt";
     };
-
-    # Silent boot configuration
     consoleLogLevel = 3;
     initrd.verbose = false;
     kernelParams = [
@@ -46,6 +33,7 @@
     ];
   };
 
+  # Disabling Nvidia GPU on Laptop for better battery life
   boot.extraModprobeConfig = ''
     blacklist nouveau
     options nouveau modeset=0
@@ -187,17 +175,20 @@
     waybar
     libreoffice-fresh
     gimp3
+    newsraft
+    inputs.zen-browser.packages."${system}".default
   ];
+
+  services.xserver.videoDrivers = ["modesetting"];
   hardware.graphics = {
-    # hardware.graphics since NixOS 24.11
     enable = true;
     extraPackages = with pkgs; [
-      intel-media-driver # LIBVA_DRIVER_NAME=iHD
-      vpl-gpu-rt
-      # intel-vaapi-driver # LIBVA_DRIVER_NAME=i965 (older but works better for Firefox/Chromium)
-      # libvdpau-va-gl
+      # For modern Intel CPU's
+      intel-media-driver # Enable Hardware Acceleration
+      vpl-gpu-rt # Enable QSV
     ];
   };
+  environment.sessionVariables = {LIBVA_DRIVER_NAME = "iHD";};
 
   fonts.packages = with pkgs; [
     noto-fonts
@@ -231,6 +222,7 @@
     XDG_RUNTIME_DIR = "/run/user/1000"; # User-id 1000 must match above user. MPD will look inside this directory for the PipeWire socket.
   };
 
+  # Virtualization
   programs.virt-manager.enable = true;
 
   virtualisation.libvirtd.enable = true;
