@@ -7,6 +7,11 @@
   imports = [
     # Include the results of the hardware scan.
     ./hardware-configuration.nix
+    ./modules/gaming.nix
+    # ./modules/git.nix # Use Home Manager for these kinds of stuff
+    ./modules/bluetooth.nix
+    ./modules/nvidia.nix
+    ./modules/hyprland.nix
   ];
 
   nix.settings.experimental-features = ["nix-command" "flakes"];
@@ -31,25 +36,26 @@
       "udev.log_priority=3"
       "rd.systemd.show_status=auto"
     ];
+    blacklistedKernelModules = ["nouveau"];
   };
 
-  # Disabling Nvidia GPU on Laptop for better battery life
-  boot.extraModprobeConfig = ''
-    blacklist nouveau
-    options nouveau modeset=0
-  '';
+  # # Disabling Nvidia GPU on Laptop for better battery life
+  # boot.extraModprobeConfig = ''
+  #   blacklist nouveau
+  #   options nouveau modeset=0
+  # '';
 
-  services.udev.extraRules = ''
-    # Remove NVIDIA USB xHCI Host Controller devices, if present
-    ACTION=="add", SUBSYSTEM=="pci", ATTR{vendor}=="0x10de", ATTR{class}=="0x0c0330", ATTR{power/control}="auto", ATTR{remove}="1"
-    # Remove NVIDIA USB Type-C UCSI devices, if present
-    ACTION=="add", SUBSYSTEM=="pci", ATTR{vendor}=="0x10de", ATTR{class}=="0x0c8000", ATTR{power/control}="auto", ATTR{remove}="1"
-    # Remove NVIDIA Audio devices, if present
-    ACTION=="add", SUBSYSTEM=="pci", ATTR{vendor}=="0x10de", ATTR{class}=="0x040300", ATTR{power/control}="auto", ATTR{remove}="1"
-    # Remove NVIDIA VGA/3D controller devices
-    ACTION=="add", SUBSYSTEM=="pci", ATTR{vendor}=="0x10de", ATTR{class}=="0x03[0-9]*", ATTR{power/control}="auto", ATTR{remove}="1"
-  '';
-  boot.blacklistedKernelModules = ["nouveau" "nvidia" "nvidia_drm" "nvidia_modeset"];
+  # services.udev.extraRules = ''
+  #   # Remove NVIDIA USB xHCI Host Controller devices, if present
+  #   ACTION=="add", SUBSYSTEM=="pci", ATTR{vendor}=="0x10de", ATTR{class}=="0x0c0330", ATTR{power/control}="auto", ATTR{remove}="1"
+  #   # Remove NVIDIA USB Type-C UCSI devices, if present
+  #   ACTION=="add", SUBSYSTEM=="pci", ATTR{vendor}=="0x10de", ATTR{class}=="0x0c8000", ATTR{power/control}="auto", ATTR{remove}="1"
+  #   # Remove NVIDIA Audio devices, if present
+  #   ACTION=="add", SUBSYSTEM=="pci", ATTR{vendor}=="0x10de", ATTR{class}=="0x040300", ATTR{power/control}="auto", ATTR{remove}="1"
+  #   # Remove NVIDIA VGA/3D controller devices
+  #   ACTION=="add", SUBSYSTEM=="pci", ATTR{vendor}=="0x10de", ATTR{class}=="0x03[0-9]*", ATTR{power/control}="auto", ATTR{remove}="1"
+  # '';
+  # boot.blacklistedKernelModules = ["nouveau" "nvidia" "nvidia_drm" "nvidia_modeset"];
 
   networking.hostName = "nixos"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
@@ -176,11 +182,19 @@
     gimp3
     newsraft
     inputs.zen-browser.packages."${system}".default
+    picard
+    ripgrep
+    meld
+    xwayland-satellite
+    gnome-disk-utility
+    rewaita
+    ventoy
   ];
 
-  services.xserver.videoDrivers = ["modesetting"];
+  services.xserver.videoDrivers = ["nvidia"];
   hardware.graphics = {
     enable = true;
+    enable32Bit = true;
     extraPackages = with pkgs; [
       # For modern Intel CPU's
       intel-media-driver # Enable Hardware Acceleration
@@ -190,6 +204,7 @@
   environment.sessionVariables = {LIBVA_DRIVER_NAME = "iHD";};
 
   fonts.packages = with pkgs; [
+    adwaita-fonts
     noto-fonts
     noto-fonts-cjk-sans
     noto-fonts-emoji
@@ -201,6 +216,8 @@
   ];
 
   services.gvfs.enable = true;
+
+  services.gnome.gnome-keyring.enable = true;
   # MPD
   services.mpd = {
     enable = true;
@@ -231,6 +248,12 @@
   virtualisation.podman = {
     enable = true;
     dockerCompat = true;
+  };
+
+  nix.gc = {
+    automatic = true;
+    dates = "weekly";
+    options = "--delete-older-than 3d";
   };
 
   # Some programs need SUID wrappers, can be configured further or are
