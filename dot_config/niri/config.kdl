@@ -70,6 +70,7 @@ animations {
 
 }
 window-rule {
+    open-maximized true
     geometry-corner-radius 10
     clip-to-geometry true
 }
@@ -83,6 +84,7 @@ window-rule {
 }
 window-rule {
     match app-id="org.gnome.Calculator"
+    match app-id="steam"
     match app-id="com.saivert.pwvucontrol"
     match app-id="Alacritty" title="Updater"
     match app-id="Alacritty" title="nmtui"
