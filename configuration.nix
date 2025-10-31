@@ -9,13 +9,13 @@
   imports = [
     ./hardware-configuration.nix
     ./modules/pipewire.nix
+    ./modules/nixgc.nix
     ./modules/gaming.nix
     ./modules/editor.nix
-    # ./modules/git.nix # Use Home Manager for these kinds of stuff
     ./modules/bluetooth.nix
     ./modules/nvidia.nix
-    # ./modules/hyprland.nix
     ./modules/razer.nix
+    ./modules/window-manager.nix
   ];
 
   nix.settings.experimental-features = ["nix-command" "flakes"];
@@ -101,70 +101,35 @@
     };
   };
 
-  programs.niri.enable = true;
-
-  services.displayManager.gdm.enable = true;
-
-  xdg.portal = {
-    enable = true;
-    extraPortals = with pkgs; [
-      xdg-desktop-portal-gtk
-      xdg-desktop-portal-gnome
-    ];
-  };
-
   programs.fish.enable = true;
 
   environment.systemPackages = with pkgs; [
-    git
+    apple-cursor
+    atuin
+    bat
     cava
-    swayimg
-    brightnessctl
-    wget
+    distrobox
+    eza
     fastfetch
     fd
-    zoxide
-    bat
-    atuin
-    starship
-    yazi
-    mpv
-    papers
-    fuzzel
-    ghostty
-    swww
-    waypaper
-    nwg-look
-    kdePackages.qt6ct
-    libsForQt5.qt5ct
-    nautilus
-    gnome-themes-extra
-    papirus-icon-theme
-    polkit_gnome
-    gpu-screen-recorder
-    nixd
-    mako
-    libnotify
-    rmpc
-    mission-center
-    apple-cursor
-    kdlfmt
-    wl-clipboard
-    hyprlock
-    yt-dlp
-    eza
-    distrobox
-    qbittorrent
-    waybar
     gimp3
-    newsraft
-    inputs.zen-browser.packages."${system}".default
-    picard
-    ripgrep
-    meld
-    xwayland-satellite
+    git
     gnome-disk-utility
+    inputs.zen-browser.packages."${system}".default
+    meld
+    mission-center
+    mpv
+    newsraft
+    picard
+    qbittorrent
     rewaita
+    ripgrep
+    rmpc
+    starship
+    wget
+    yazi
+    yt-dlp
+    zoxide
   ];
 
   services.xserver.videoDrivers = ["nvidia"];
@@ -223,12 +188,6 @@
   virtualisation.podman = {
     enable = true;
     dockerCompat = true;
-  };
-
-  nix.gc = {
-    automatic = true;
-    dates = "weekly";
-    options = "--delete-older-than 3d";
   };
 
   networking.firewall.enable = true;
