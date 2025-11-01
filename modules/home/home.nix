@@ -28,10 +28,10 @@
     # Add your packages here
   ];
 
-  home.sessionVariables = {
-    EDITOR = "hx";
-    sudoedit = "hx";
-  };
+  # home.sessionVariables = {
+  #   EDITOR = "hx";
+  #   sudoedit = "hx";
+  # };
 
   # Home Manager can manage your shell configuration
   programs.bash = {
@@ -42,7 +42,9 @@
   imports = [
     ./programs/git.nix
     ./programs/fish.nix
+    ./programs/helix/default.nix
     ./programs/waybar/default.nix
+    ./programs/niri/default.nix
   ];
 
   # Let Home Manager install and manage itself

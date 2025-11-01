@@ -51,12 +51,15 @@
         # (Optional) Add home-manager here later:
         home-manager.nixosModules.home-manager
         {
-          home-manager.useGlobalPkgs = true;
-          home-manager.useUserPackages = true;
-          home-manager.users.${username} = import ./modules/home/home.nix;
-          # Pass extra arguments to home.nix
-          home-manager.extraSpecialArgs = {
-            inherit username hostname;
+          home-manager = {
+            useGlobalPkgs = true;
+            useUserPackages = true;
+            backupFileExtension = "hmbkp";
+            users.${username} = import ./modules/home/home.nix;
+            # Pass extra arguments to home.nix
+            extraSpecialArgs = {
+              inherit username hostname;
+            };
           };
         }
       ];
