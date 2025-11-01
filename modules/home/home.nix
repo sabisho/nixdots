@@ -39,12 +39,14 @@
     enableCompletion = true;
   };
 
+  # Importing whole directory requires it having a default.nix file which imports other files in that directory.
   imports = [
     ./programs/git.nix
     ./programs/fish.nix
-    ./programs/helix/default.nix
-    ./programs/waybar/default.nix
-    ./programs/niri/default.nix
+    ./programs/helix
+    ./programs/waybar
+    ./programs/niri
+    ./programs/fastfetch
   ];
 
   # Let Home Manager install and manage itself
