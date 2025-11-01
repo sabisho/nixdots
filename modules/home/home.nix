@@ -28,20 +28,22 @@
     # Add your packages here
   ];
 
+  home.sessionVariables = {
+    EDITOR = "hx";
+    sudoedit = "hx";
+  };
+
   # Home Manager can manage your shell configuration
   programs.bash = {
     enable = true;
     enableCompletion = true;
   };
 
-  # Git configuration
-  programs.git = {
-    enable = true;
-    settings = {
-      user.name = "helixoid";
-      user.email = "ayushrajmth91@gmail.com";
-    };
-  };
+  imports = [
+    ./programs/git.nix
+    ./programs/fish.nix
+    ./programs/waybar/default.nix
+  ];
 
   # Let Home Manager install and manage itself
   programs.home-manager.enable = true;

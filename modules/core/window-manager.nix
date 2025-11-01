@@ -26,7 +26,6 @@
     polkit_gnome
     swayimg
     swww
-    waybar
     waypaper
     wl-clipboard
     xwayland-satellite
