@@ -11,7 +11,7 @@
     hypridle
     hyprlock
     libnotify
-    mako
+    # mako
     polkit_gnome
     swayimg
     swww

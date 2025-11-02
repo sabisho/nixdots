@@ -28,10 +28,10 @@
     # Add your packages here
   ];
 
-  # home.sessionVariables = {
-  #   EDITOR = "hx";
-  #   sudoedit = "hx";
-  # };
+  home.sessionVariables = {
+    EDITOR = "hx";
+    sudoedit = "hx";
+  };
 
   # Home Manager can manage your shell configuration
   programs.bash = {
@@ -48,6 +48,7 @@
     ./programs/niri
     ./programs/fastfetch
     ./programs/ghostty
+    ./programs/mako
     ./theming
     # inputs.zen-browser.homeModules.beta
   ];
