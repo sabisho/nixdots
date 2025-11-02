@@ -13,7 +13,6 @@
     mpv
     picard
     qbittorrent
-    rewaita
     zed-editor
     libreoffice-fresh
     nautilus

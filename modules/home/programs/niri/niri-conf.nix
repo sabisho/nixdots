@@ -302,9 +302,7 @@
     screenshot-path "~/Pictures/Screenshots/Screenshot From %Y-%m-%d %H-%M-%S.png"
     prefer-no-csd
     environment {
-        QT_QPA_PLATFORM "wayland"
         DISPLAY ":0"
-        QT_QPA_PLATFORMTHEME "qt6ct"
     }
     hotkey-overlay {
         skip-at-startup

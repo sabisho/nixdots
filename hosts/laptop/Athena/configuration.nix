@@ -7,6 +7,7 @@
     ../../../modules/core/editor.nix
     ../../../modules/core/fonts.nix
     ../../../modules/core/gaming.nix
+    ../../../modules/core/greetd.nix
     ../../../modules/core/laptop-power-management.nix
     ../../../modules/core/locale.nix
     ../../../modules/core/mpd.nix
@@ -26,6 +27,7 @@
   nixpkgs.config.allowUnfree = true;
 
   services = {
+    fstrim.enable = true;
     gvfs.enable = true;
     gnome.gnome-keyring.enable = true;
   };

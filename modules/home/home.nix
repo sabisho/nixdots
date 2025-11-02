@@ -47,7 +47,12 @@
     ./programs/waybar
     ./programs/niri
     ./programs/fastfetch
+    ./programs/ghostty
+    ./theming
+    # inputs.zen-browser.homeModules.beta
   ];
+
+  # programs.zen-browser.enable = true;
 
   # Let Home Manager install and manage itself
   programs.home-manager.enable = true;
