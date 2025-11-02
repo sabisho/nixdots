@@ -36,6 +36,7 @@
     ./programs/ghostty
     ./programs/mako
     ./programs/mpv
+    ./programs/newsraft
     ./theming
     # inputs.zen-browser.homeModules.beta
   ];

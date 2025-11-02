@@ -5,7 +5,6 @@
     eza
     yazi
     bat
-    newsraft
     ripgrep
     wget
     yt-dlp
