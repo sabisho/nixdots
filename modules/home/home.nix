@@ -14,20 +14,6 @@
   # introduces backwards incompatible changes.
   home.stateVersion = "25.05"; # Please read the comment before changing.
 
-  # Packages that should be installed to the user profile
-  home.packages = with pkgs; [
-    # Development tools
-    git
-    vim
-
-    # CLI utilities
-    htop
-    tree
-    wget
-
-    # Add your packages here
-  ];
-
   home.sessionVariables = {
     EDITOR = "hx";
     sudoedit = "hx";
@@ -49,6 +35,7 @@
     ./programs/fastfetch
     ./programs/ghostty
     ./programs/mako
+    ./programs/mpv
     ./theming
     # inputs.zen-browser.homeModules.beta
   ];

@@ -10,7 +10,6 @@
     inputs.zen-browser.packages."${system}".default
     meld
     mission-center
-    mpv
     picard
     qbittorrent
     zed-editor
