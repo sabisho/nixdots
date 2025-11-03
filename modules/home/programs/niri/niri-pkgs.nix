@@ -4,7 +4,6 @@
   ...
 }: {
   home.packages = with pkgs; [
-    apple-cursor
     brightnessctl
     fuzzel
     gpu-screen-recorder-gtk

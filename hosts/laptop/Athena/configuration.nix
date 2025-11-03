@@ -16,6 +16,7 @@
     ../../../modules/core/pipewire.nix
     ../../../modules/core/razer.nix
     ../../../modules/core/terminal.nix
+    ../../../modules/core/themes.nix
     ../../../modules/core/user-account.nix
     ../../../modules/core/virtualization.nix
     ../../../modules/core/window-manager.nix
