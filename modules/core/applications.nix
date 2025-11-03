@@ -7,7 +7,7 @@
     distrobox
     gimp3
     gnome-disk-utility
-    inputs.zen-browser.packages."${system}".default
+    inputs.zen-browser.packages."${pkgs.stdenv.hostPlatform.system}".default
     meld
     mission-center
     picard
