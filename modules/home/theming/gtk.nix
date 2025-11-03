@@ -6,7 +6,8 @@
       name = "Papirus-Dark";
     };
     cursorTheme = {
-      name = "Bibata-Modern-Ice";
+      # name = "Bibata-Modern-Ice";
+      name = "Banana";
       size = 24;
     };
     font = {

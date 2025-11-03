@@ -308,7 +308,8 @@
         skip-at-startup
     }
     cursor {
-        xcursor-theme "Bibata-Modern-Ice"
+        // xcursor-theme "Bibata-Modern-Ice"
+        xcursor-theme "Banana"
         xcursor-size 24
         hide-when-typing
         hide-after-inactive-ms 1000
