@@ -10,7 +10,6 @@
     ../../../modules/core/greetd.nix
     ../../../modules/core/laptop-power-management.nix
     ../../../modules/core/locale.nix
-    ../../../modules/core/mpd.nix
     ../../../modules/core/networking.nix
     ../../../modules/core/nixgc.nix
     ../../../modules/core/pipewire.nix

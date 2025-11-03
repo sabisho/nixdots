@@ -36,6 +36,7 @@
     ./programs/ghostty
     ./programs/mako
     ./programs/mpv
+    ./programs/mpd
     ./programs/newsraft
     ./programs/swayimg
     ./theming
