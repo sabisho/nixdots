@@ -35,6 +35,7 @@
     ./programs/mpd
     ./programs/newsraft
     ./programs/swayimg
+    ./programs/rofi
     ./theming
     # inputs.zen-browser.homeModules.beta
   ];
