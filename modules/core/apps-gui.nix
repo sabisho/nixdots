@@ -7,6 +7,7 @@
     distrobox
     gimp3
     gnome-disk-utility
+    brave
     inputs.zen-browser.packages."${pkgs.stdenv.hostPlatform.system}".default
     meld
     mission-center
@@ -18,4 +19,5 @@
     nautilus
     papers
   ];
+  programs.localsend.enable = true;
 }
