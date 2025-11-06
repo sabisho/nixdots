@@ -6,7 +6,6 @@
   home.packages = with pkgs; [
     brightnessctl
     gpu-screen-recorder-gtk
-    rofi
     hypridle
     hyprlock
     libnotify

@@ -106,31 +106,31 @@
             spawn "ghostty"
         }
         Mod+Space {
-            spawn "fuzzel"
+            spawn "~/.config/rofi/scripts/launcher.sh"
         }
         Alt+I {
-            spawn "firefox"
+            spawn "zen"
         }
         Alt+E {
             spawn "nautilus"
         }
         Mod+L {
-            spawn "$NIRICONF/scripts/swaylock.sh"
+            spawn "hyprlock"
+        }
+        Mod+E {
+            spawn "~/.config/rofi/scripts/emoji_picker.sh"
         }
         Mod+C {
-            spawn "sh" "-c" "cliphist list | fuzzel --dmenu --config $NIRICONF/fuzzel/clipboard.ini | cliphist decode | wl-copy"
+            spawn "cliphist list | ~/.config/rofi/scripts/clipboard.sh | cliphist decode | wl-copy"
         }
         Mod+I {
             spawn "$NIRICONF/scripts/change-idle-time.sh"
         }
-        Mod+P {
-            spawn "$NIRICONF/scripts/change-power-profile.sh"
-        }
-        Mod+Ctrl+W {
-            spawn "alacritty" "--title" "Wallpaper Selector" "--config-file" "$NIRICONF/alacritty/float.toml" "-e" "$NIRICONF/scripts/change-wallpaper.sh"
-        }
         Mod+Backspace {
-            spawn "$NIRICONF/scripts/wlogout.sh"
+            spawn "~/.config/rofi/scripts/powermenu.sh"
+        }
+        Alt+W {
+            spawn "waypaper"
         }
         // Backlight and Audio
         XF86MonBrightnessUp allow-when-locked=true {

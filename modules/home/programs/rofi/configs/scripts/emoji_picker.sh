@@ -7,4 +7,4 @@ rofi \
     -show \
     emoji \
     -p "😸" \
-    -theme ~/.config/rofi/configs/emoji-picker.rasi
+    -theme ~/.config/rofi/configs/emoji_picker.rasi
