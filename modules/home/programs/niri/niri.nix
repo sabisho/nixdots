@@ -1,8 +1,4 @@
-{
-  config,
-  pkgs,
-  ...
-}: {
+{pkgs, ...}: {
   home.packages = with pkgs; [
     brightnessctl
     gpu-screen-recorder-gtk
@@ -16,4 +12,7 @@
     wl-clipboard
     xwayland-satellite
   ];
+  xdg.configFile.niri = {
+    source = ./config.kdl;
+  };
 }
