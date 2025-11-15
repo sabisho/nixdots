@@ -1,7 +1,7 @@
 {
   programs.helix = {
     settings = {
-      theme = "gruvbox_dark_hard";
+      theme = "gruvbox-transparent";
 
       editor = {
         line-number = "relative";
@@ -52,6 +52,17 @@
         normal = {
           ret = "goto_word";
         };
+      };
+    };
+
+    themes = {
+      gruvbox-transparent = {
+        inherits = "gruvbox_dark_hard";
+        "ui.background" = {};
+        "ui.popup" = {};
+        "ui.completion" = {};
+        "ui.menu" = {};
+        "ui.help" = {};
       };
     };
   };
