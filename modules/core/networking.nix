@@ -10,4 +10,5 @@
       enable = true;
     };
   };
+  programs.sniffnet.enable = true;
 }
