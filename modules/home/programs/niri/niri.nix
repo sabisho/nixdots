@@ -77,7 +77,7 @@
     spawn-at-startup "niriswitcher"
     spawn-at-startup "xwayland-satellite"
     spawn-at-startup "/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1"
-    // spawn-at-startup "wl-paste" "--watch" "cliphist" "store"
+    spawn-at-startup "cliphist" "wipe"
     layer-rule {
         match namespace="^swww-daemon$"
         place-within-backdrop true
@@ -118,7 +118,7 @@
             spawn "ghostty"
         }
         Mod+Space {
-            spawn "~/.config/rofi/scripts/launcher.sh"
+            spawn "fuzzel"
         }
         Alt+I {
             spawn "zen"
@@ -129,21 +129,12 @@
         Mod+L {
             spawn "hyprlock"
         }
-        Mod+E {
-            spawn "~/.config/rofi/scripts/emoji_picker.sh"
-        }
         Mod+C {
-            spawn "sh" "-c" "cliphist list | ~/.config/rofi/scripts/clipboard.sh | cliphist decode | wl-copy"
-        }
-        Mod+I {
-            spawn "$NIRICONF/scripts/change-idle-time.sh"
+            spawn "~/.config/fuzzel/clipboard.sh"
         }
         Mod+Backspace {
-            spawn "~/.config/rofi/scripts/powermenu.sh"
+            spawn "~/.config/fuzzel/powermenu.sh"
         }
-        // Alt+W {
-        //    spawn "waypaper"
-        // }
         // Backlight and Audio
         XF86MonBrightnessUp allow-when-locked=true {
             spawn "brightnessctl" "set" "+5%"

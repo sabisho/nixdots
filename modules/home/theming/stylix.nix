@@ -15,7 +15,7 @@
       nixos-icons.enable = true;
       waybar.enable = true;
       mpv.enable = true;
-      rofi.enable = true;
+      fuzzel.enable = true;
     };
   };
 }

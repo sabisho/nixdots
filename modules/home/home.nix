@@ -48,10 +48,10 @@
     ./programs/mpd
     ./programs/newsraft
     ./programs/swayimg
-    ./programs/rofi
     ./programs/atuin
     ./programs/zoxide
     ./programs/starship
+    ./programs/fuzzel
     ./theming
   ];
 
