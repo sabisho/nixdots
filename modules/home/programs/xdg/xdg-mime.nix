@@ -1,5 +1,5 @@
 {
-  programs.xdg = {
+  xdg = {
     mimeApps = {
       enable = true;
       defaultApplications = {

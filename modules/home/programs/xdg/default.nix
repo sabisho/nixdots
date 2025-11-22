@@ -1,5 +1,5 @@
 {
-  programs.xdg = {
+  xdg = {
     enable = true;
   };
   imports = [

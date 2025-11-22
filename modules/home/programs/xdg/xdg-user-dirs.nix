@@ -1,5 +1,5 @@
 {
-  programs.xdg = {
+  xdg = {
     userDirs = {
       enable = true;
       createDirectories = true;
