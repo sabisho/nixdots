@@ -14,10 +14,14 @@
         "memory"
         "temperature"
         "battery"
+        "hyprland/window"
         "niri/window"
       ];
 
-      modules-center = ["niri/workspaces"];
+      modules-center = [
+        "hyprland/workspaces"
+        "niri/workspaces"
+      ];
 
       modules-right = [
         "tray"

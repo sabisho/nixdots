@@ -16,6 +16,8 @@
       waybar.enable = true;
       mpv.enable = true;
       fuzzel.enable = true;
+      hyprland.enable = true;
+      cava.enable = true;
     };
   };
 }

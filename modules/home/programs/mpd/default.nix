@@ -5,5 +5,6 @@
   imports = [
     ./config.nix
     ./rmpc.nix
+    ./cava.nix
   ];
 }

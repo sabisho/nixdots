@@ -39,8 +39,20 @@
       format = "{title}";
     };
 
+    "hyprland/window" = {
+      format = "{title}";
+    };
+
     # ===== CENTER MODULES =====
     "niri/workspaces" = {
+      format = "{icon}";
+      format-icons = {
+        active = "";
+        default = "";
+      };
+    };
+
+    "hyprland/workspaces" = {
       format = "{icon}";
       format-icons = {
         active = "";

@@ -3,8 +3,8 @@
     enable = true;
     autoEnable = false;
     image = pkgs.fetchurl {
-      url = "https://w.wallhaven.cc/full/g8/wallhaven-g8k3gq.jpg";
-      sha256 = "0a51hv5d8hxvc9grcly2bgvgxbja662vvpiih1x65wrh54id2hd9";
+      url = "https://w.wallhaven.cc/full/9o/wallhaven-9oozpx.png";
+      sha256 = "1gvjy4z4g0c4qiqky5lcxj62xd4y3zl4q6l4f3bxcv7hyg87zpbs";
     };
     polarity = "dark";
     cursor = {
@@ -28,23 +28,20 @@
     };
     opacity = {
       applications = 1.0; # Applications (e.g., web browsers, if supported)
-      terminal = 0.75; # Terminal emulators (Alacritty, Kitty, Foot, etc.)
-      desktop = 0.75; # Desktop widgets/bars (e.g., Waybar)
-      popups = 0.75; # Popups (e.g., Rofi, Dunst/Mako notifications)
+      terminal = 0.6; # Terminal emulators (Alacritty, Kitty, Foot, etc.)
+      desktop = 0.6; # Desktop widgets/bars (e.g., Waybar)
+      popups = 0.6; # Popups (e.g., Rofi, Dunst/Mako notifications)
     };
     fonts = {
       serif = {
         name = "IBM Plex Serif";
       };
-
       sansSerif = {
         name = "Inter";
       };
-
       monospace = {
         name = "JetBrainsMono Nerd Font";
       };
-
       emoji = {
         name = "Noto Color Emoji";
       };

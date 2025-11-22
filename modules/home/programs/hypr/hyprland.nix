@@ -8,7 +8,6 @@
       "$term" = "ghostty";
       "$browser" = "zen-browser";
       "$scripts" = "~/.config/hypr/scripts";
-      "$rofi-scripts" = "~/.config/rofi/scripts";
 
       # ==================== ENVIRONMENT ====================
       # env = [
@@ -37,8 +36,6 @@
         "/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1"
         "hyprsunset"
         "hypridle"
-        "wl-paste --type text --watch cliphist store"
-        "wl-paste --type image --watch cliphist store"
         "cliphist wipe"
       ];
 
@@ -68,8 +65,6 @@
         gaps_in = 3;
         gaps_out = 5;
         border_size = 2;
-        "col.active_border" = "rgb(458588)"; # Gruvbox blue
-        "col.inactive_border" = "rgb(928374)"; # Gruvbox gray
         allow_tearing = true;
       };
 
@@ -78,8 +73,8 @@
         rounding = 10;
         blur = {
           enabled = true;
-          size = 8;
-          passes = 2;
+          size = 9;
+          passes = 3;
         };
       };
 
@@ -126,10 +121,10 @@
 
         # Window manager essentials
         "$mod, L, exec, hyprlock --immediate"
-        "$mod, E, exec, pkill rofi || $rofi-scripts/emoji-picker.sh"
-        "$mod, Backspace, exec, pkill rofi || $rofi-scripts/powermenu.sh"
-        "$mod, SPACE, exec, pkill rofi || $rofi-scripts/launcher.sh"
-        "$mod, C, exec, pkill rofi || cliphist list | $rofi-scripts/clipboard.sh | cliphist decode | wl-copy"
+        # "$mod, E, exec, ~/.config/fuzzel/"
+        "$mod, Backspace, exec, ~/.config/fuzzel/powermenu.sh"
+        "$mod, SPACE, exec, fuzzel"
+        "$mod, C, exec, ~/.config/fuzzel/clipboard.sh"
         "$mod, Print, exec, $scripts/screenshot.sh s"
         ", Print, exec, $scripts/screenshot.sh p"
 
@@ -215,6 +210,8 @@
         "ignorezero, waybar"
         "blur, waybar"
         "blurpopups, waybar"
+        "ignorezero, launcher"
+        "blur, launcher"
       ];
 
       # ==================== WINDOW RULES ====================
@@ -278,16 +275,6 @@
       binde = , down, resizeactive, 0 10
       bind = , escape, submap, reset
       submap = reset
-
-      # Source theme file (Gruvbox colors)
-      $blue = rgb(458588)
-      $gray = rgb(928374)
-      $red = rgb(cc241d)
-      $green = rgb(98971a)
-      $yellow = rgb(d79921)
-      $purple = rgb(b16286)
-      $aqua = rgb(689d6a)
-      $orange = rgb(d65d0e)
     '';
   };
 }
