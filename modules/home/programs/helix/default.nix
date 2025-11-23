@@ -11,5 +11,7 @@
     alejandra
     nixd
     charm-freeze
+    typst
+    tinymist
   ];
 }
