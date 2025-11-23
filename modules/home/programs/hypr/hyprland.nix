@@ -6,27 +6,15 @@
       # ==================== VARIABLES ====================
       "$mod" = "SUPER";
       "$term" = "ghostty";
-      "$browser" = "zen-browser";
+      "$browser" = "zen-beta";
       "$scripts" = "~/.config/hypr/scripts";
 
       # ==================== ENVIRONMENT ====================
       # env = [
-      #   "XDG_CURRENT_DESKTOP,Hyprland"
-      #   "XDG_SESSION_TYPE,wayland"
-      #   "XDG_SESSION_DESKTOP,Hyprland"
-      #   "ELECTRON_OZONE_PLATFORM_HINT,wayland"
-      #   "QT_QPA_PLATFORM,wayland"
       #   "HYPRCURSOR_THEME,HyprBibataModernClassicSVG"
       #   "HYPRCURSOR_SIZE,20"
       #   "XCURSOR_THEME,Bibata-Modern-Classic"
       #   "XCURSOR_SIZE,20"
-      #   "TERMINAL,$term"
-      #   "EDITOR,helix"
-      #   "VISUAL,helix"
-      #   "QT_QPA_PLATFORMTHEME,qt6ct"
-      #   "QT_WAYLAND_DISABLE_WINDOWDECORATION,1"
-      #   "QT_AUTO_SCREEN_SCALE_FACTOR,1"
-      #   "TRANSMISSION_WEB_HOME,~/.config/transmission-daemon/flood-for-transmission/"
       # ];
 
       # ==================== AUTOSTART ====================
@@ -116,7 +104,7 @@
         "ALT, C, exec, $term -e cava"
         "ALT, M, exec, $term -e rmpc"
         "ALT, N, exec, $term -e newsraft"
-        "ALT, F, exec, thunar"
+        "ALT, E, exec, nautilus"
         "ALT, T, exec, transmission-remote-gtk"
 
         # Window manager essentials
@@ -137,7 +125,7 @@
         ", XF86AudioPrev, exec, playerctl previous"
 
         # Window management
-        "$mod, V, togglefloating"
+        "$mod, T, togglefloating"
         "$mod, P, pseudo"
         "$mod, J, togglesplit"
         "$mod, Q, killactive"
@@ -219,8 +207,8 @@
         # Workspace rules
         "workspace 1, class:(com.mitchellh.ghostty)$"
         "workspace 1, class:(Alacritty)$"
-        "workspace 2, class:(zen)$"
-        "workspace 3, class:(thunar)$"
+        "workspace 2, class:(zen-beta)$"
+        "workspace 3, class:(nautilus)$"
         "workspace 3, title:^(yazi)$"
         "workspace 4, class:(mpv)$"
         "workspace 4, class:(ncmpcpp)$"
@@ -254,7 +242,7 @@
         # Idle inhibit rules
         "idleinhibit focus, class:(mpv)$"
         "idleinhibit fullscreen, class:(brave-browser)$"
-        "idleinhibit fullscreen, class:(zen)$"
+        "idleinhibit fullscreen, class:(zen-beta)$"
         "idleinhibit fullscreen, class:(sioyek)$"
         "idleinhibit fullscreen, class:(Kodi)$"
 
