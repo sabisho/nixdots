@@ -15,6 +15,6 @@
     ./user-account.nix
     # ./virtualization.nix
     ./window-manager.nix
-    ./media-server.nix
+    # ./media-server.nix
   ];
 }
