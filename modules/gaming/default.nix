@@ -6,5 +6,6 @@
     ./minecraft.nix
     ./proton-manager.nix
     ./steam.nix
+    ./mangohud.nix
   ];
 }

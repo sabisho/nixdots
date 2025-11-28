@@ -11,6 +11,7 @@
     wl-clipboard
     xwayland-satellite
   ];
+
   xdg.configFile."niri/config.kdl".text = ''
     // This config is being managed by Home Manager on NixOS!
     input {
@@ -124,7 +125,7 @@
             spawn "zen"
         }
         Alt+E {
-            spawn "nautilus"
+            spawn "thunar"
         }
         Mod+L {
             spawn "hyprlock"

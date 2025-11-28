@@ -17,9 +17,22 @@
     qbittorrent
     zed-editor
     libreoffice-fresh
-    nautilus
     papers
     pavucontrol
+    # Remove these for home manager theming
+    nwg-look
+    kdePackages.qt6ct
+    libsForQt5.qt5ct
   ];
-  programs.localsend.enable = true;
+  programs = {
+    localsend.enable = true;
+    thunar = {
+      enable = true;
+      plugins = with pkgs.xfce; [
+        thunar-archive-plugin
+        thunar-volman
+      ];
+    };
+  };
+  services.tumbler.enable = true;
 }

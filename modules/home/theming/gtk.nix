@@ -3,7 +3,8 @@
     enable = true;
     colorScheme = "dark";
     cursorTheme = {
-      name = "Bibata-Modern-Ice";
+      # name = "Bibata-Modern-Ice";
+      name = "Adwaita";
       size = 24;
     };
     iconTheme = {

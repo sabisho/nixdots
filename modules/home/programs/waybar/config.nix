@@ -10,18 +10,18 @@
         "memory"
         "temperature"
         "battery"
-        # "hyprland/window"
-        "niri/window"
+        "hyprland/window"
+        # "niri/window"
       ];
 
       modules-center = [
-        # "hyprland/workspaces"
-        "niri/workspaces"
+        "hyprland/workspaces"
+        # "niri/workspaces"
       ];
 
       modules-right = [
         "tray"
-        # "idle_inhibitor"
+        "idle_inhibitor"
         "network"
         "bluetooth"
         "pulseaudio"

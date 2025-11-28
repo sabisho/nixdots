@@ -13,7 +13,7 @@
         status_timeout = 1;
       };
       "keys.viewer" = {
-        h = "prev_file";
+        "h" = "prev_file";
         "l" = "next_file";
         "gg" = "first_file";
         "Shift+g" = "last_file";

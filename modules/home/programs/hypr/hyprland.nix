@@ -7,7 +7,7 @@
       "$mod" = "SUPER";
       "$term" = "ghostty";
       "$browser" = "zen-beta";
-      "$scripts" = "~/.config/hypr/scripts";
+      "$scripts" = "~/.config/hypr";
 
       # ==================== ENVIRONMENT ====================
       # env = [
@@ -19,7 +19,7 @@
 
       # ==================== AUTOSTART ====================
       exec-once = [
-        "ashell"
+        "waybar"
         "waypaper --restore"
         "/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1"
         "hyprsunset"
@@ -54,6 +54,9 @@
         gaps_out = 5;
         border_size = 2;
         allow_tearing = true;
+        # Remove these when using stylix
+        "col.active_border" = "rgba(d65d0eff) rgba(fe8019ff) 45deg";
+        "col.inactive_border" = "rgba(504945ff)";
       };
 
       # ==================== DECORATION ====================
@@ -104,7 +107,7 @@
         "ALT, C, exec, $term -e cava"
         "ALT, M, exec, $term -e rmpc"
         "ALT, N, exec, $term -e newsraft"
-        "ALT, E, exec, nautilus"
+        "ALT, E, exec, thunar"
         "ALT, T, exec, transmission-remote-gtk"
 
         # Window manager essentials
@@ -209,6 +212,7 @@
         "workspace 1, class:(Alacritty)$"
         "workspace 2, class:(zen-beta)$"
         "workspace 3, class:(nautilus)$"
+        "workspace 3, class:(thunar)$"
         "workspace 3, title:^(yazi)$"
         "workspace 4, class:(mpv)$"
         "workspace 4, class:(ncmpcpp)$"
@@ -264,5 +268,9 @@
       bind = , escape, submap, reset
       submap = reset
     '';
+  };
+  xdg.configFile.hypr = {
+    source = ./scripts;
+    recursive = true;
   };
 }
