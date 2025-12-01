@@ -6,9 +6,8 @@
       general = {
         lock_cmd = "pidof hyprlock || hyprlock";
         before_sleep_cmd = "loginctl lock-session";
-        after_sleep_cmd = "hyprctl dispatch dpms on";
         # For niri:
-        # after_sleep_cmd = "niri msg action power-off-monitors --off";
+        after_sleep_cmd = "niri msg action power-off-monitors --off";
       };
 
       listener = [
@@ -23,12 +22,10 @@
         }
         {
           timeout = 380;
-          on-timeout = "hyprctl dispatch dpms off";
           # For niri:
-          # on-timeout = "niri msg action power-off-monitors";
-          on-resume = "hyprctl dispatch dpms on";
+          on-timeout = "niri msg action power-off-monitors";
           # For niri:
-          # on-resume = "niri msg action power-off-monitors --off";
+          on-resume = "niri msg action power-off-monitors --off";
         }
       ];
     };

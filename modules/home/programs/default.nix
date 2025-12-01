@@ -9,7 +9,7 @@
     ./ghostty
     ./git
     ./helix
-    ./hypr
+    # ./hypr
     ./mako
     ./mpd
     ./mpv

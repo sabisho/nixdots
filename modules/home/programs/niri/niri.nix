@@ -1,17 +1,4 @@
-{pkgs, ...}: {
-  home.packages = with pkgs; [
-    brightnessctl
-    gpu-screen-recorder-gtk
-    hypridle
-    libnotify
-    mako
-    polkit_gnome
-    swww
-    waypaper
-    wl-clipboard
-    xwayland-satellite
-  ];
-
+{
   xdg.configFile."niri/config.kdl".text = ''
     // This config is being managed by Home Manager on NixOS!
     input {
@@ -73,7 +60,7 @@
         background-color "transparent"
     }
     // startup processes
-    spawn-at-startup "waybar"
+    // spawn-at-startup "waybar"
     spawn-at-startup "swww-daemon"
     spawn-at-startup "niriswitcher"
     spawn-at-startup "xwayland-satellite"
@@ -179,6 +166,9 @@
         }
         Mod+M {
             maximize-column
+        }
+        Mod+Shift+M {
+            maximize-window-to-edges
         }
         Mod+F {
             fullscreen-window

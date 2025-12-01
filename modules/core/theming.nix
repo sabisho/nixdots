@@ -15,6 +15,5 @@
   environment.systemPackages = with pkgs; [
     gnome-themes-extra
     papirus-icon-theme
-    bibata-cursors
   ];
 }
