@@ -28,7 +28,7 @@
   } @ inputs: let
     # === Global Configuration ===
     username = "klynt";
-    stateVersion = "24.05";
+    stateVersion = "25.11";
     system = "x86_64-linux";
 
     # === System Configurations ===
