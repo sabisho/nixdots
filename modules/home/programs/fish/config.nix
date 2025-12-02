@@ -7,14 +7,10 @@
 
     shellAliases = {
       typ = "ttyper";
-      ngc = "sudo nix-collect-garbage -d";
-      nrs = "sudo nixos-rebuild switch --flake";
-      nrb = "sudo nixos-rebuild boot --flake";
-      hmv = "echo $(SHELL)";
+      nhc = "nh clean all --optimise --ask";
+      nhs = "nh os switch --ask";
+      nhb = "nh os boot --ask";
       h = "hx";
-      v = "nvim";
-      dotsup = "chezmoi re-add";
-      dotspull = "chezmoi update";
       mpc = "rmpc";
       prop = "hyprctl clients | grep -i 'class\\|title\\|xwayland'";
       ls = "eza --icons=always";
@@ -23,7 +19,6 @@
       lla = "eza --icons=always -la";
       lt = "eza --icons=always -la --tree";
       ytm = "yt-dlp -x --embed-metadata";
-      wlp = "swww img";
     };
 
     functions = {

@@ -1,6 +1,7 @@
 {pkgs, ...}: {
   environment.systemPackages = with pkgs; [
     fd
+    tealdeer
     dysk
     eza
     yazi

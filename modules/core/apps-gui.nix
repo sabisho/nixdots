@@ -22,6 +22,7 @@
   ];
   programs = {
     localsend.enable = true;
+    # appimage.enable = true;
     thunar = {
       enable = true;
       plugins = with pkgs.xfce; [
