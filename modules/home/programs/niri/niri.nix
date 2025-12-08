@@ -243,40 +243,40 @@
         Mod+Page_Up {
             focus-workspace-up
         }
-        Mod+Ctrl+Page_Down {
+        Mod+Shift+Page_Down {
             move-column-to-workspace-down
         }
-        Mod+Ctrl+Page_Up {
+        Mod+Shift+Page_Up {
             move-column-to-workspace-up
         }
-        Mod+Ctrl+1 {
+        Mod+Shift+1 {
             move-column-to-workspace 1
         }
-        Mod+Ctrl+2 {
+        Mod+Shift+2 {
             move-column-to-workspace 2
         }
-        Mod+Ctrl+3 {
+        Mod+Shift+3 {
             move-column-to-workspace 3
         }
-        Mod+Ctrl+4 {
+        Mod+Shift+4 {
             move-column-to-workspace 4
         }
-        Mod+Ctrl+5 {
+        Mod+Shift+5 {
             move-column-to-workspace 5
         }
-        Mod+Ctrl+6 {
+        Mod+Shift+6 {
             move-column-to-workspace 6
         }
-        Mod+Ctrl+7 {
+        Mod+Shift+7 {
             move-column-to-workspace 7
         }
-        Mod+Ctrl+8 {
+        Mod+Shift+8 {
             move-column-to-workspace 8
         }
-        Mod+Ctrl+9 {
+        Mod+Shift+9 {
             move-column-to-workspace 9
         }
-        Mod+Ctrl+0 {
+        Mod+Shift+0 {
             move-column-to-workspace 10
         }
         Mod+A {

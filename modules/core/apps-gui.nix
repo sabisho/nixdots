@@ -19,6 +19,8 @@
     papers
     pavucontrol
     file-roller
+    readest
+    rnote
   ];
   programs = {
     localsend.enable = true;
