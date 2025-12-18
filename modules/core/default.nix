@@ -5,11 +5,13 @@
     ./bluetooth.nix
     ./boot.nix
     ./editor.nix
+    ./gamemode.nix
     ./greetd.nix
     ./locale.nix
     ./networking.nix
     ./nixos-settings.nix
     ./pipewire.nix
+    ./steam.nix
     # ./stylix.nix
     ./theming.nix
     ./user-account.nix

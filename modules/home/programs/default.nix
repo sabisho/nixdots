@@ -8,6 +8,7 @@
     ./fastfetch
     ./fish
     ./fuzzel
+    ./gaming
     ./ghostty
     ./git
     ./helix
