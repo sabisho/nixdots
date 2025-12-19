@@ -37,6 +37,7 @@
 
     "niri/window" = {
       format = "{title}";
+      max-length = 40;
     };
 
     "hyprland/window" = {
