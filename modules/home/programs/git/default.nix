@@ -1,15 +1,10 @@
 {
-  programs = {
-    git = {
-      enable = true;
-    };
-    lazygit = {
-      enable = true;
-      enableFishIntegration = true;
-    };
+  programs.git = {
+    enable = true;
   };
 
   imports = [
     ./config.nix
+    # ./lazygit.nix
   ];
 }
