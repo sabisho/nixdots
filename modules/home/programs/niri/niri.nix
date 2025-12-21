@@ -60,18 +60,13 @@
         background-color "transparent"
     }
     // startup processes
-    // spawn-at-startup "waybar"
     spawn-at-startup "swww-daemon"
     spawn-at-startup "niriswitcher"
-    spawn-at-startup "xwayland-satellite"
     spawn-at-startup "/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1"
     spawn-at-startup "cliphist" "wipe"
     layer-rule {
         match namespace="^swww-daemon$"
         place-within-backdrop true
-    }
-    animations {
-
     }
     window-rule {
         // open-maximized true
@@ -81,8 +76,10 @@
     window-rule {
         match app-id="firefox"
         match app-id="zen-beta"
-        match app-id="code"
+        match app-id="gimp"
+        match app-id="com.mitchellh.ghostty"
         match app-id="dev.zed.Zed"
+        match app-id="org.qbittorrent.qBittorrent"
         default-column-width {
             proportion 1.0
         }
@@ -90,11 +87,11 @@
     window-rule {
         match app-id="org.gnome.Calculator"
         match app-id="steam"
-        match app-id="com.saivert.pwvucontrol"
-        match app-id="Alacritty" title="Updater"
-        match app-id="Alacritty" title="nmtui"
-        match app-id="Alacritty" title="Wallpaper Selector"
-        match app-id="chrome-ophjlpahpchlmihnnnihgmmeilfjmjjc__index.html-Default"
+        match app-id="org.pulseaudio.pavucontrol"
+        match app-id="waypaper"
+        match app-id="thunar"
+        match app-id="org.gnome.FileRoller"
+        match title="File Operation Progress"
         open-floating true
         shadow {
             on
@@ -106,7 +103,7 @@
             spawn "ghostty"
         }
         Mod+Space {
-            spawn "fuzzel"
+            spawn "sh" "-c" "pkill fuzzel || fuzzel"
         }
         Alt+I {
             spawn "zen"
@@ -115,10 +112,10 @@
             spawn "thunar"
         }
         Mod+C {
-            spawn "~/.config/fuzzel/clipboard.sh"
+            spawn "sh" "-c" "pkill fuzzel || ~/.config/fuzzel/clipboard.sh"
         }
         Mod+Backspace {
-            spawn "~/.config/fuzzel/powermenu.sh"
+            spawn "sh" "-c" "pkill fuzzel || ~/.config/fuzzel/powermenu.sh"
         }
         // Backlight and Audio
         XF86MonBrightnessUp allow-when-locked=true {
@@ -272,9 +269,6 @@
     // misc configuration
     screenshot-path "~/Pictures/Screenshots/Screenshot From %Y-%m-%d %H-%M-%S.png"
     prefer-no-csd
-    environment {
-        DISPLAY ":0"
-    }
     hotkey-overlay {
         skip-at-startup
     }

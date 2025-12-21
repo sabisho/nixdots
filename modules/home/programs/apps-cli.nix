@@ -13,5 +13,6 @@
     figlet
     tukai
     pastel
+    onefetch
   ];
 }
