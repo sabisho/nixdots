@@ -4,6 +4,7 @@
     scripts = with pkgs; [
       mpvScripts.uosc
       mpvScripts.thumbfast
+      mpvScripts.sponsorblock-minimal
     ];
   };
 
