@@ -1,10 +1,14 @@
-{pkgs, ...}: {
+{
+  pkgs,
+  config,
+  ...
+}: {
   hardware.graphics = {
     enable = true;
     enable32Bit = true;
     extraPackages = with pkgs; [
       # For modern Intel CPU's
-      intel-media-driver # Enable Hardware Acceleration
+      intel-media-driver # Enable Hardware Video Acceleration
       vpl-gpu-rt # Enable QSV
     ];
   };
@@ -12,10 +16,11 @@
 
   services.xserver.videoDrivers = ["nvidia"];
   hardware.nvidia = {
+    package = config.boot.kernelPackages.nvidiaPackages.latest;
     modesetting.enable = true;
     powerManagement = {
-      enable = true;
-      finegrained = true;
+      enable = false;
+      finegrained = false;
     };
     open = true;
     nvidiaSettings = true;
