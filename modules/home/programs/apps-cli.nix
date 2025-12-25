@@ -13,5 +13,6 @@
     tukai
     pastel
     onefetch
+    rustlings
   ];
 }
