@@ -7,6 +7,7 @@
 
     shellAliases = {
       typ = "ttyper";
+      tss = "freeze";
       nhc = "nh clean all --optimise --ask";
       nhs = "nh os switch --ask";
       nhb = "nh os boot --ask";
