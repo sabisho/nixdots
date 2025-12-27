@@ -12,9 +12,9 @@
     nixd
     typst
     tinymist
-    rustc
-    rust-analyzer
-    rustfmt
-    rustlings
+    # rustc
+    # rust-analyzer
+    # rustfmt
+    # rustlings
   ];
 }
