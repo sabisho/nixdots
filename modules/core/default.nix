@@ -1,5 +1,6 @@
 {
   imports = [
+    # ./appimages.nix
     ./bluetooth.nix
     ./boot.nix
     ./editor.nix
@@ -7,6 +8,7 @@
     ./gamescope.nix
     ./greetd.nix
     ./locale.nix
+    ./localsend.nix
     ./networking.nix
     ./nixos-settings.nix
     ./pipewire.nix
