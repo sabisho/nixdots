@@ -18,12 +18,18 @@
       url = "github:0xc000022070/zen-browser-flake";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    eilmeldung = {
+      url = "github:christo-auer/eilmeldung";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs = {
     nixpkgs,
     home-manager,
     stylix,
+    eilmeldung,
     ...
   } @ inputs: let
     # === Global Configuration ===
@@ -78,6 +84,9 @@
               users.${username} = import ./modules/home/home.nix;
               extraSpecialArgs = {inherit inputs username stateVersion hostname type;};
             };
+            nixpkgs.overlays = [
+              eilmeldung.overlays.default
+            ];
           }
         ];
       };

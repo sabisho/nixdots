@@ -6,6 +6,7 @@
     ./bash
     ./btop
     ./easyeffects
+    ./eilmeldung
     ./fastfetch
     ./fish
     ./fuzzel

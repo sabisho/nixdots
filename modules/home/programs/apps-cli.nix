@@ -16,5 +16,6 @@
     charm-freeze
     glow
     caligula
+    cmd-wrapped
   ];
 }

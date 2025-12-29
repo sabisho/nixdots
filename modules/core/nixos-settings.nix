@@ -21,6 +21,7 @@
     fstrim.enable = true;
     gvfs.enable = true;
     gnome.gnome-keyring.enable = true;
+    fwupd.enable = true;
   };
 
   system.stateVersion = stateVersion; # Did you read the comment?
