@@ -11,6 +11,7 @@
       sudoedit = "hx";
       VISUAL = "hx";
       TERMINAL = "ghostty";
+      MPD_HOST = "localhost";
       # QT_QPA_PLATFORMTHEME = "qt6ct";
     };
   };

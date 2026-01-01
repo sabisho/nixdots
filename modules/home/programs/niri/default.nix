@@ -7,7 +7,6 @@
   home.packages = with pkgs; [
     sunsetr
     brightnessctl
-    gpu-screen-recorder-gtk
     libnotify
     mako
     polkit_gnome

@@ -14,5 +14,6 @@
     file-roller
     readest
     rnote
+    obs-studio
   ];
 }

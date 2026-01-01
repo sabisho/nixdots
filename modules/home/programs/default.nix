@@ -5,7 +5,7 @@
     ./atuin
     ./bash
     ./btop
-    ./easyeffects
+    # ./easyeffects
     ./eilmeldung
     ./fastfetch
     ./fish
