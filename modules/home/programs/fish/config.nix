@@ -20,8 +20,6 @@
       la = "eza --icons=always -a";
       lla = "eza --icons=always -la";
       lt = "eza --icons=always -la --tree";
-      # yt-dlp URL 2> >(rg -i "error|warning|failed" | tee error.txt)
-      # ytm = "yt-dlp -x --embed-metadata";
       dfp = "cd ~/nixdots && jj desc && jj bookmark set main && jj new && jj git push --branch main; or echo 'Push cancelled'";
       isodd = "caligula burn";
     };
@@ -38,7 +36,7 @@
       '';
 
       ytm = {
-        description = "Run yt-dlp and log filtered errors to error.txt";
+        description = "Youtube Music Downloader with embedded metadata";
         body = ''
           yt-dlp -x --embed-metadata $argv 2>| rg -i "error|warning|failed" | tee error.txt
         '';
