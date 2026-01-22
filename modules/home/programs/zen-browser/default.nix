@@ -4,7 +4,7 @@
   ...
 }: {
   imports = [
-    inputs.zen-browser.homeModules.default # or .twilight for twilight version
+    inputs.zen-browser.homeModules.default
   ];
   programs.zen-browser = {
     enable = true;
@@ -20,9 +20,15 @@
       NoDefaultBookmarks = true;
       OfferToSaveLogins = false;
       HttpsOnlyMode = "force_enabled";
+      EnableTrackingProtection = {
+        Value = true;
+        Locked = true;
+        Cryptomining = true;
+        Fingerprinting = true;
+      };
       DNSOverHTTPS = {
         Enabled = true;
-        ProviderURL = "https://cloudflare-dns.com/dns-query"; # Privacy-focused DNS
+        ProviderURL = "https://cloudflare-dns.com/dns-query";
         Locked = true;
       };
     };
