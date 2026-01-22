@@ -25,6 +25,11 @@
         transform "normal"
         position x=0 y=0
     }
+    gestures {
+        hot-corners {
+            off
+        }
+    }
     layout {
         gaps 10
         center-focused-column "never"

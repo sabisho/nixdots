@@ -12,13 +12,13 @@
     ./networking.nix
     ./nixos-settings.nix
     ./pipewire.nix
-    ./steam.nix
+    # ./steam.nix
     # ./stylix.nix
     ./theming.nix
     ./thunar.nix
     ./user-account.nix
     # ./virtualization.nix
     ./window-manager.nix
-    ./media-server.nix
+    # ./media-server.nix
   ];
 }
