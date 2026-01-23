@@ -55,8 +55,8 @@
         border_size = 2;
         allow_tearing = true;
         # Remove these when using stylix
-        "col.active_border" = "rgba(458588ff) rgba(98971aff) 45deg";
-        "col.inactive_border" = "rgba(928374ff)";
+        # "col.active_border" = "rgba(458588ff) rgba(98971aff) 45deg";
+        # "col.inactive_border" = "rgba(928374ff)";
       };
 
       # ==================== DECORATION ====================

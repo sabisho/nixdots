@@ -2,17 +2,18 @@
   stylix = {
     enable = true;
     autoEnable = false;
-    image = pkgs.fetchurl {
-      url = "https://w.wallhaven.cc/full/13/wallhaven-13lpyg.jpg";
-      sha256 = "0my5vvxx8xf8gws3dvf7z374ihvr90d821yi73z8fvmnk49z54sw";
-    };
+    # image = pkgs.fetchurl {
+    #   url = "https://w.wallhaven.cc/full/13/wallhaven-13lpyg.jpg";
+    #   sha256 = "0my5vvxx8xf8gws3dvf7z374ihvr90d821yi73z8fvmnk49z54sw";
+    # };
+    image = ../../Wallpapers/Working-Indivisual.jpg;
     polarity = "dark";
     cursor = {
       package = pkgs.bibata-cursors;
       name = "Bibata-Modern-Ice";
       size = 24;
     };
-    iconTheme = {
+    icons = {
       enable = true;
       package = pkgs.papirus-icon-theme;
       dark = "Papirus-Dark";
@@ -28,9 +29,9 @@
     };
     opacity = {
       applications = 1.0; # Applications (e.g., web browsers, if supported)
-      terminal = 0.6; # Terminal emulators (Alacritty, Kitty, Foot, etc.)
-      desktop = 0.6; # Desktop widgets/bars (e.g., Waybar)
-      popups = 0.6; # Popups (e.g., Rofi, Dunst/Mako notifications)
+      terminal = 0.8; # Terminal emulators (Alacritty, Kitty, Foot, etc.)
+      desktop = 0.8; # Desktop widgets/bars (e.g., Waybar)
+      popups = 0.8; # Popups (e.g., Rofi, Dunst/Mako notifications)
     };
     fonts = {
       serif = {
@@ -47,7 +48,7 @@
       };
       sizes = {
         applications = 11;
-        desktop = 16;
+        desktop = 14;
         terminal = 16;
         popups = 12;
       };

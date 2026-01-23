@@ -2,7 +2,8 @@
   imports = [
     ./config.nix
     ./waybar-modules.nix
-    ./style.nix
+    # Stylix: Comment out style.nix when using stylix.
+    # ./style.nix
   ];
 
   programs.waybar = {

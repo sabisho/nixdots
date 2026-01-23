@@ -6,13 +6,13 @@
      }
 
      window#waybar {
-     background-color: rgba(40,40,40,0.75);
+      background-color: rgba(40,40,40,0.75);
     }
 
     .modules-left,
     .modules-center,
     .modules-right {
-      color: rgba(235, 219, 178,1);
+     color: rgba(235, 219, 178,1);
     }
 
     #cpu {
