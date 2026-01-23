@@ -3,7 +3,7 @@
     targets = {
       bat.enable = true;
       btop.enable = true;
-      cava.rainbow.enable = true;
+      cava.enable = true;
       fish.enable = true;
       fuzzel.enable = true;
       ghostty.enable = true;
