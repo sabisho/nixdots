@@ -20,6 +20,7 @@
     ./mako
     ./mpd
     ./mpv
+    ./neovim
     ./newsraft
     ./niri
     ./rmpc

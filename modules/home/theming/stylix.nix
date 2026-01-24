@@ -14,6 +14,14 @@
       hyprlock.enable = false;
       mako.enable = true;
       mpv.enable = true;
+      # nixvim = {
+      #   enable = true;
+      #   transparentBackground = {
+      #     main = true;
+      #     numberLine = true;
+      #     signColumn = true;
+      #   };
+      # };
       nixos-icons.enable = true;
       qt.enable = true;
       starship.enable = true;
