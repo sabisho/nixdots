@@ -4,7 +4,7 @@
     vimAlias = true;
     viAlias = true;
 
-    global.mapleader = " ";
+    globals.mapleader = " ";
 
     opts = {
       # Line Numbering Settings

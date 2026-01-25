@@ -12,11 +12,12 @@
     ./fish
     ./fuzzel
     ./gaming
-    ./ghostty
+    # ./ghostty
     ./git
     ./helix
     # ./hypr
     ./jujutsu
+    ./kitty
     ./mako
     ./mpd
     ./mpv

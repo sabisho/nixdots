@@ -12,7 +12,7 @@
     miracode
   ];
 
-  # Stylix: Removes these to use stylix
+  # Stylix: Removes these when using stylix theming.
   environment.systemPackages = with pkgs; [
     gnome-themes-extra
     papirus-icon-theme

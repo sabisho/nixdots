@@ -1,6 +1,5 @@
 {
   xdg.configFile."niri/config.kdl".text = ''
-    // This config is being managed by Home Manager on NixOS!
     input {
         keyboard {
             xkb {
@@ -19,7 +18,6 @@
         focus-follows-mouse
     }
     output "eDP-1" {
-        // Run `niri msg outputs` while inside a niri instance to list all outputs and their modes.
         mode "1920x1080@60"
         scale 1
         transform "normal"
@@ -83,6 +81,7 @@
         match app-id="zen-beta"
         match app-id="gimp"
         match app-id="com.mitchellh.ghostty"
+        match app-id="kitty"
         match app-id="dev.zed.Zed"
         default-column-width {
             proportion 1.0
@@ -108,7 +107,7 @@
     binds {
         // Applications
         Mod+Return {
-            spawn "ghostty"
+            spawn "kitty"
         }
         Mod+Space {
             spawn "sh" "-c" "pkill fuzzel || fuzzel"
@@ -179,10 +178,10 @@
             focus-column-right
         }
         Mod+J {
-            focus-window-down
+            focus-window-or-workspace-down
         }
         Mod+K {
-            focus-window-up
+            focus-window-or-workspace-up
         }
         Mod+Shift+H {
             move-column-left
@@ -217,53 +216,15 @@
         Alt+Tab repeat=false {
             spawn "pkill" "-USR1" "niriswitcher"
         }
-        // Workspaces
-        Mod+D {
-            focus-workspace-down
-        }
-        Mod+U {
-            focus-workspace-up
-        }
-        Mod+Shift+D {
+        Mod+Shift+J {
             move-column-to-workspace-down
         }
-        Mod+Shift+U {
+        Mod+Shift+K {
             move-column-to-workspace-up
-        }
-        Mod+Shift+1 {
-            move-column-to-workspace 1
-        }
-        Mod+Shift+2 {
-            move-column-to-workspace 2
-        }
-        Mod+Shift+3 {
-            move-column-to-workspace 3
-        }
-        Mod+Shift+4 {
-            move-column-to-workspace 4
-        }
-        Mod+Shift+5 {
-            move-column-to-workspace 5
-        }
-        Mod+Shift+6 {
-            move-column-to-workspace 6
-        }
-        Mod+Shift+7 {
-            move-column-to-workspace 7
-        }
-        Mod+Shift+8 {
-            move-column-to-workspace 8
-        }
-        Mod+Shift+9 {
-            move-column-to-workspace 9
-        }
-        Mod+Shift+0 {
-            move-column-to-workspace 10
         }
         Mod+O {
             toggle-overview
         }
-        // Screenshots
         Print {
             screenshot
         }
