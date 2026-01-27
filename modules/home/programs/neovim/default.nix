@@ -1,7 +1,7 @@
 {inputs, ...}: {
   imports = [
     inputs.nixvim.homeModules.nixvim
-        ./core
+    ./core
     ./plugins
   ];
   programs.nixvim = {
