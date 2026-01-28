@@ -1,6 +1,6 @@
 {pkgs, ...}: {
   imports = [
-    ./niri.nix
+    ./config.nix
     ../hypr/hyprlock.nix
     ./hypridle_for_niri.nix
   ];

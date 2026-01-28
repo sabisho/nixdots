@@ -4,15 +4,15 @@
     ./bluetooth.nix
     ./boot.nix
     ./editor.nix
-    # ./gamemode.nix
-    # ./gamescope.nix
+    ./gamemode.nix
+    ./gamescope.nix
     ./greetd.nix
     ./locale.nix
     ./localsend.nix
     ./networking.nix
     ./nixos-settings.nix
     ./pipewire.nix
-    # ./steam.nix
+    ./steam.nix
     # ./stylix.nix
     ./theming.nix
     ./thunar.nix

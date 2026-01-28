@@ -16,6 +16,7 @@
       prop = "hyprctl clients | grep -i 'class\\|title\\|xwayland'";
       ls = "eza --icons=always";
       ff = "fastfetch";
+      ffn = "fastfetch -c none";
       of = "onefetch";
       la = "eza --icons=always -a";
       lla = "eza --icons=always -la";
