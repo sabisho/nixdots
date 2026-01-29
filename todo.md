@@ -5,7 +5,7 @@
 # Neovim(NixVim)
   1. Virtual Text for inline error messages.
   2. Flash or leap for jumping around buffer.
-  3. Mini.nvim integration.
+  3. Blink-nvim (Blink Autopair, Indentation Guides, etc.)integration.
   4. Stylix background opacity fixes.
   5. Add nixos keybind shotcuts to dashboard.
   6. Statusline Customization.

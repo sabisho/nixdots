@@ -1,12 +1,13 @@
 {pkgs, ...}: {
   home.packages = with pkgs; [
+    android-studio
     brave
     file-roller
     gimp3
     gnome-disk-utility
-    libreoffice-fresh
     mission-center
     obs-studio
+    onlyoffice-desktopeditors
     papers
     pavucontrol
     picard

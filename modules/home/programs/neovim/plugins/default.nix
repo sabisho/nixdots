@@ -1,10 +1,9 @@
 {
   imports = [
-    ./blink-cmp.nix
+    ./blink-nvim.nix
     ./colorscheme.nix
     ./formatter.nix
     ./lsp.nix
-    # ./mini.nix
     ./noice.nix
     ./snacks.nix
     ./statusline.nix
