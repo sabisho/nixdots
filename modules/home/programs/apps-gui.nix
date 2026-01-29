@@ -11,6 +11,7 @@
     papers
     pavucontrol
     picard
+    qalculate-gtk
     qbittorrent
     readest
     rnote
