@@ -1,10 +1,11 @@
 {pkgs, ...}: {
   home.packages = with pkgs; [
     android-studio
-    brave
+    # brave
     file-roller
     gimp3
     gnome-disk-utility
+    jflap
     mission-center
     obs-studio
     onlyoffice-desktopeditors

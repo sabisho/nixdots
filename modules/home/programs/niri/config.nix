@@ -248,6 +248,9 @@
         hide-after-inactive-ms 1000
     }
     environment {
+        // Java GUI Apps Fix
+        "_JAVA_AWT_WM_NONREPARENTING" "1"
+        "JAVA_ENABLE_WAYLAND" "1"
     }
     overview {
         workspace-shadow {
