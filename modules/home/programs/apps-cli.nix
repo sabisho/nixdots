@@ -9,6 +9,7 @@
     fd
     figlet
     glow
+    impala
     onefetch
     pastel
     ripgrep

@@ -1,11 +1,10 @@
 {pkgs, ...}: {
   home.packages = with pkgs; [
-    android-studio
     # brave
     file-roller
     gimp3
     gnome-disk-utility
-    jflap
+    # jflap
     mission-center
     obs-studio
     onlyoffice-desktopeditors
@@ -13,10 +12,10 @@
     pavucontrol
     picard
     qalculate-gtk
-    qbittorrent
     readest
     rnote
     songrec
+    transmission_4-qt6
     zed-editor
   ];
 }
