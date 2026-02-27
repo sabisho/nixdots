@@ -5,6 +5,6 @@
 
   imports = [
     ./config.nix
-    # ./lazygit.nix
+    ./lazygit.nix
   ];
 }

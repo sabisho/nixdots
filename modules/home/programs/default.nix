@@ -19,18 +19,18 @@
     # ./hypr
     ./jujutsu
     # ./kitty
-    ./mako
+    # ./mako
     ./mpd
     ./mpv
     # ./neovim
     ./newsraft
     ./niri
-    # ./noctalia
+    ./noctalia
     ./rmpc
     ./ssh
     ./starship
     ./swayimg
-    ./waybar
+    # ./waybar
     ./xdg
     ./zen-browser
     ./zoxide

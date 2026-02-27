@@ -8,6 +8,7 @@
   ];
   programs.zen-browser = {
     enable = true;
+    suppressXdgMigrationWarning = true;
     profiles."${username}".settings = {
       "zen.view.compact.enable-at-startup" = true;
       "zen.view.experimental-no-window-controls" = true;

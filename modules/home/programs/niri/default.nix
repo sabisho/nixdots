@@ -10,8 +10,8 @@
     libnotify
     mako
     polkit_gnome
-    swww
-    waypaper
+    # swww
+    # waypaper
     wl-clipboard
     xwayland-satellite
   ];
