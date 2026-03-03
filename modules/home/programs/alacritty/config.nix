@@ -1,7 +1,7 @@
 {
   programs.alacritty = {
-    theme = "gruvbox_dark";
     settings = {
+      general.import = ["~/.config/alacritty/themes/noctalia.toml"];
       window.opacity = 0.8;
       font = {
         normal = {

@@ -1,5 +1,6 @@
 {
   xdg.configFile."niri/config.kdl".text = ''
+    include "noctalia.kdl"
     input {
         keyboard {
             xkb {
@@ -45,14 +46,6 @@
         }
         default-column-width {
             proportion 0.5
-        }
-        focus-ring {
-            width 2
-            active-color "#d8dadd"
-            inactive-color "#0b0b0c"
-        }
-        border {
-            off
         }
         struts {
             left 0

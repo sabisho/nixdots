@@ -1,7 +1,8 @@
 {lib, ...}: {
   programs.helix = {
     settings = {
-      theme = "gruvbox-transparent";
+      theme = "noctalia-transparent";
+      # theme = "gruvbox-transparent";
       # theme = lib.mkForce "stylix-transparent"; # The lib.mkForce gives the priority to this option over the option set by Stylix.
 
       editor = {
@@ -66,6 +67,15 @@
     themes = {
       stylix-transparent = {
         inherits = "stylix";
+        "ui.background" = {};
+        "ui.popup" = {};
+        "ui.completion" = {};
+        "ui.menu" = {};
+        "ui.help" = {};
+      };
+
+      noctalia-transparent = {
+        inherits = "noctalia";
         "ui.background" = {};
         "ui.popup" = {};
         "ui.completion" = {};
