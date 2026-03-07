@@ -5,7 +5,7 @@
     gimp3
     gnome-disk-utility
     # jflap
-    mission-center
+    # mission-center
     obs-studio
     onlyoffice-desktopeditors
     papers
@@ -13,6 +13,7 @@
     picard
     qalculate-gtk
     readest
+    resources
     rnote
     songrec
     transmission_4-gtk

@@ -1,12 +1,15 @@
 {
-  xdg.configFile."cava/config".text = ''
-    [general]
-    framerate = 60
+  xdg.configFile."cava/config" = {
+    text = ''
+      [general]
+      framerate = 60
 
-    [input]
-    method = pipewire
+      [input]
+      method = pipewire
 
-    [color]
-    theme = 'noctalia'
-  '';
+      [color]
+      theme = 'noctalia'
+    '';
+    force = true;
+  };
 }
