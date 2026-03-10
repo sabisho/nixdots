@@ -24,11 +24,6 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    eilmeldung = {
-      url = "github:christo-auer/eilmeldung";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-
     noctalia = {
       url = "github:noctalia-dev/noctalia-shell";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -39,7 +34,6 @@
     nixpkgs,
     home-manager,
     stylix,
-    eilmeldung,
     ...
   } @ inputs: let
     # === Global Configuration ===
@@ -94,9 +88,6 @@
               users.${username} = import ./modules/home/home.nix;
               extraSpecialArgs = {inherit inputs username stateVersion hostname type;};
             };
-            nixpkgs.overlays = [
-              eilmeldung.overlays.default
-            ];
           }
         ];
       };

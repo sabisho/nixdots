@@ -16,6 +16,15 @@
         };
       }
       {
+        key = "<leader>e";
+        mode = "n";
+        action = "<cmd>lua Snacks.explorer()<CR>";
+        options = {
+          silent = true;
+          desc = "Files";
+        };
+      }
+      {
         key = "<leader>fb";
         mode = "n";
         action = "<cmd>lua Snacks.picker.buffers()<CR>";
@@ -40,6 +49,24 @@
         options = {
           silent = true;
           desc = "Recent";
+        };
+      }
+      {
+        key = "<Tab>";
+        mode = "n";
+        action = ":bprev<CR>";
+        options = {
+          silent = true;
+          desc = "Previous Buffer";
+        };
+      }
+      {
+        key = "<S-Tab>";
+        mode = "n";
+        action = ":bnext<CR>";
+        options = {
+          silent = true;
+          desc = "Next Buffer";
         };
       }
     ];
