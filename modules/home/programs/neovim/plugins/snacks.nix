@@ -29,43 +29,43 @@
 
               keys = [
                 {
-                  icon = " ";
+                  icon = "󰱼";
                   key = "f";
                   desc = "Find File";
                   action = ":lua Snacks.picker.files()";
                 }
                 {
-                  icon = " ";
+                  icon = "󰝒";
                   key = "n";
                   desc = "New File";
                   action = ":ene | startinsert";
                 }
                 {
-                  icon = " ";
+                  icon = "";
                   key = "g";
                   desc = "Find Text";
                   action = ":lua Snacks.picker.grep()";
                 }
                 {
-                  icon = " ";
+                  icon = "󰙰";
                   key = "r";
                   desc = "Recent Files";
                   action = ":lua Snacks.picker.recent()";
                 }
                 {
-                  icon = " ";
+                  icon = "";
                   key = "c";
                   desc = "Config";
                   action = ":lua Snacks.picker.files({ cwd = vim.fn.expand('~/nixdots')})";
                 }
                 {
-                  icon = " ";
+                  icon = "󰦛";
                   key = "s";
                   desc = "Restore Session";
                   section = "session";
                 }
                 {
-                  icon = " ";
+                  icon = "";
                   key = "q";
                   desc = "Quit";
                   action = ":qa";

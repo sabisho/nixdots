@@ -16,6 +16,7 @@
           regex
           rust
           toml
+          typst
           vim
           vimdoc
           xml

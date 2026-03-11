@@ -13,7 +13,7 @@
     ./fish
     # ./fuzzel
     ./gaming
-    # ./ghostty
+    ./ghostty
     ./git
     ./helix
     # ./hypr
@@ -22,7 +22,7 @@
     # ./mako
     ./mpd
     ./mpv
-    # ./neovim
+    ./neovim
     ./newsraft
     ./niri
     ./noctalia

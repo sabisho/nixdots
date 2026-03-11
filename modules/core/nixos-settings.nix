@@ -17,6 +17,8 @@
     };
   };
 
+  zramSwap.enable = true;
+
   services = {
     fstrim.enable = true;
     gvfs.enable = true;
