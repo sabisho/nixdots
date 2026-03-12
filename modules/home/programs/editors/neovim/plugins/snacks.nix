@@ -76,6 +76,9 @@
           explorer = {
             enabled = true;
           };
+          image = {
+            enable = true;
+          };
           indent = {
             enabled = true;
           };
