@@ -1,6 +1,9 @@
 {
   imports = [
     # ./appimages.nix
+    # ./media-server.nix
+    # ./stylix.nix
+    # ./virtualization.nix
     ./bluetooth.nix
     ./boot.nix
     ./editor.nix
@@ -9,16 +12,13 @@
     ./greetd.nix
     ./locale.nix
     ./localsend.nix
-    # ./media-server.nix
     ./networking.nix
     ./nixos-settings.nix
     ./pipewire.nix
     ./steam.nix
-    # ./stylix.nix
     ./theming.nix
     ./thunar.nix
     ./user-account.nix
-    # ./virtualization.nix
     ./window-manager.nix
   ];
 }

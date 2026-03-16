@@ -12,6 +12,7 @@
     };
     extraConfig = ''
       include themes/noctalia.conf
+      pixel_scroll yes
     '';
   };
 }
