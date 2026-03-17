@@ -1,6 +1,6 @@
 {pkgs, ...}: {
   home.packages = with pkgs; [
-    # brave
+    brave
     file-roller
     gimp3
     gnome-disk-utility

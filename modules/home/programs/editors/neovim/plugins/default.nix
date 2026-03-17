@@ -8,6 +8,7 @@
     ./lsp.nix
     ./mini.nix
     ./noice.nix
+    ./oil.nix
     ./snacks.nix
     ./statusline.nix
     ./tiny-inline-diagnostics.nix

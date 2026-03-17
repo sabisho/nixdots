@@ -74,7 +74,7 @@
             };
           };
           explorer = {
-            enabled = true;
+            enabled = false;
           };
           image = {
             enable = true;
@@ -91,6 +91,12 @@
           };
           picker = {
             enabled = true;
+            matcher = {
+              frecency = true;
+              cwd_bonus = true;
+              history_bonus = true;
+              sort_empty = true;
+            };
           };
           quickfile = {
             enabled = true;
