@@ -1,0 +1,19 @@
+// Input Devices' Settings
+input {
+    keyboard {
+        xkb {
+            layout "us"
+            options "caps:escape"
+        }
+        numlock
+    }
+    mouse {
+        accel-profile "flat"
+    }
+    touchpad {
+        tap
+        natural-scroll
+        accel-profile "adaptive"
+    }
+    focus-follows-mouse
+}

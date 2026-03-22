@@ -1,7 +1,9 @@
 {pkgs, ...}: {
-  imports = [
-    ./config.nix
-  ];
+  xdg.configFile.niri = {
+    source = ./configs;
+    recursive = true;
+  };
+
   home.packages = with pkgs; [
     brightnessctl
     libnotify

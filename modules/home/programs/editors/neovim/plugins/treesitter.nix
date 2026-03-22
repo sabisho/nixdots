@@ -8,6 +8,7 @@
           c
           cpp
           json
+          kdl
           lua
           make
           markdown

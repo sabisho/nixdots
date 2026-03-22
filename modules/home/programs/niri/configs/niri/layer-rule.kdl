@@ -1,0 +1,10 @@
+// Layer Rules for the compositor
+layer-rule {
+    match namespace="^swww-daemon$"
+    place-within-backdrop true
+}
+layer-rule {
+    match namespace="^noctalia-wallpaper*"
+    place-within-backdrop true
+}
+

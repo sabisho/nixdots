@@ -1,0 +1,18 @@
+include "./niri/cursor.kdl"
+include "./niri/environment.kdl"
+include "./niri/gestures.kdl"
+include "./niri/input.kdl"
+include "./niri/keymaps.kdl"
+include "./niri/layer-rule.kdl"
+include "./niri/layout.kdl"
+include "./niri/misc.kdl"
+include "./niri/monitors.kdl"
+include "./niri/overview.kdl"
+include "./niri/startup.kdl"
+include "./niri/window-rules.kdl"
+include "./noctalia.kdl"
+debug {
+    // Allows notification actions and window activation from Noctalia.
+    honor-xdg-activation-with-invalid-serial
+}
+

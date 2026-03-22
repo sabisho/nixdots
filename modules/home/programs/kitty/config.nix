@@ -10,8 +10,9 @@
       cursor_trail_decay = "0.1 0.4";
       background_opacity = 0.8;
     };
+    themeFile = "gruvbox-dark-hard";
     extraConfig = ''
-      include themes/noctalia.conf
+      # include themes/noctalia.conf
       pixel_scroll yes
     '';
   };
