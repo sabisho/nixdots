@@ -3,9 +3,9 @@
     hostName = hostname;
     networkmanager = {
       enable = true;
-      dns = "none";
+      dns = "default"; # add none so that network manager doesn't use DHCP dns.
     };
-    nameservers = ["1.1.1.1" "1.0.0.1"];
+    # nameservers = ["1.1.1.1" "1.0.0.1"];
     firewall = {
       enable = true;
     };
