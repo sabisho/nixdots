@@ -44,6 +44,13 @@
           yt-dlp -x --embed-metadata $argv 2>| rg -i "error|warning|failed" | tee error.txt
         '';
       };
+
+      ytv = {
+        description = "Download YouTube video avoiding AV1 codec";
+        body = ''
+          yt-dlp -f "bestvideo[vcodec^=avc]+bestaudio/best" --embed-chapters $argv
+        '';
+      };
     };
   };
 

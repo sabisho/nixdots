@@ -8,7 +8,7 @@
     stateVersion = stateVersion; # Please read the comment before changing.
     sessionVariables = {
       EDITOR = "nvim";
-      sudoedit = "nvim";
+      SUDO_EDITOR = "nvim";
       VISUAL = "nvim";
       TERMINAL = "ghostty";
       MPD_HOST = "localhost";

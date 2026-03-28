@@ -20,5 +20,7 @@
       "rd.systemd.show_status=auto"
     ];
     blacklistedKernelModules = ["nouveau"];
+    # Remove this when this becomes the default.
+    kernelModules = ["ntsync"];
   };
 }

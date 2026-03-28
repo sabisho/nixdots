@@ -3,6 +3,7 @@
     userDirs = {
       enable = true;
       createDirectories = true;
+      setSessionVariables = false;
       download = "$HOME/Downloads";
       documents = "$HOME/Documents";
       music = "$HOME/Music";
