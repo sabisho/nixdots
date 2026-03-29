@@ -5,7 +5,7 @@ binds {
         spawn "kitty"
     }
     Mod+Space {
-        spawn-sh "noctalia-shell ipc call launcher toggle"
+        spawn "noctalia-shell" "ipc" "call" "launcher" "toggle"
     }
     Alt+I {
         spawn "zen"
@@ -14,10 +14,10 @@ binds {
         spawn "thunar"
     }
     Mod+C {
-        spawn-sh "noctalia-shell ipc call launcher clipboard"
+        spawn "noctalia-shell" "ipc" "call" "launcher" "clipboard"
     }
     Mod+Backspace {
-        spawn-sh "noctalia-shell ipc call sessionMenu toggle"
+        spawn "noctalia-shell" "ipc" "call" "sessionMenu" "toggle"
     }
     // Backlight and Audio
     XF86MonBrightnessUp allow-when-locked=true {

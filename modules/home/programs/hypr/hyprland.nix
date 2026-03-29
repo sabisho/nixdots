@@ -5,7 +5,7 @@
     settings = {
       # ==================== VARIABLES ====================
       "$mod" = "SUPER";
-      "$term" = "ghostty";
+      "$term" = "kitty";
       "$browser" = "zen-beta";
       "$scripts" = "~/.config/hypr";
 
@@ -19,12 +19,9 @@
 
       # ==================== AUTOSTART ====================
       exec-once = [
-        # "waybar"
-        "waypaper --restore"
         "/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1"
-        "hyprsunset"
-        "hypridle"
         "cliphist wipe"
+        "noctalia-shell"
       ];
 
       # ==================== MONITOR ====================
@@ -38,6 +35,7 @@
         touchpad = {
           natural_scroll = true;
         };
+        kb_options = "caps:swapescape";
       };
 
       # ==================== GESTURES (Updated for 0.51+) ====================
@@ -50,22 +48,26 @@
 
       # ==================== GENERAL ====================
       general = {
-        gaps_in = 3;
-        gaps_out = 5;
-        border_size = 2;
-        allow_tearing = true;
-        # Remove these when using stylix
-        # "col.active_border" = "rgba(458588ff) rgba(98971aff) 45deg";
-        # "col.inactive_border" = "rgba(928374ff)";
+        gaps_in = 5;
+        gaps_out = 10;
       };
 
       # ==================== DECORATION ====================
       decoration = {
-        rounding = 10;
+        rounding = 20;
+        rounding_power = 2;
+        shadow = {
+          enabled = true;
+          range = 4;
+          render_power = 3;
+          color = "rgba(1a1a1aee)";
+        };
+
         blur = {
           enabled = true;
-          size = 9;
-          passes = 3;
+          size = 3;
+          passes = 2;
+          vibrancy = 0.1696;
         };
       };
 
@@ -130,17 +132,15 @@
         "ALT, T, exec, transmission-remote-gtk"
 
         # Window manager essentials
-        "$mod, L, exec, hyprlock --immediate"
         # "$mod, E, exec, ~/.config/fuzzel/"
-        "$mod, Backspace, exec, ~/.config/fuzzel/powermenu.sh"
-        "$mod, SPACE, exec, fuzzel"
-        "$mod, C, exec, ~/.config/fuzzel/clipboard.sh"
+        "$mod, Backspace, exec, noctalia-shell ipc call sessionMenu toggle"
+        "$mod, SPACE, exec, noctalia-shell ipc call launcher toggle"
+        "$mod, C, exec, noctalia-shell ipc call launcher clipboard"
         "$mod, Print, exec, $scripts/screenshot.sh s"
         ", Print, exec, $scripts/screenshot.sh p"
 
         # Media controls
-        ", XF86AudioMute, exec, wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle && $scripts/volume.sh"
-        ", XF86AudioMicMute, exec, wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle && $scripts/volume.sh"
+        ", XF86AudioMute, exec, noctalia-shell ipc call volume muteOutput"
         ", XF86AudioPlay, exec, playerctl play-pause"
         ", XF86AudioPause, exec, playerctl play-pause"
         ", XF86AudioNext, exec, playerctl next"
@@ -199,14 +199,14 @@
 
       # Repeat binds for volume and brightness
       binde = [
-        ", XF86AudioLowerVolume, exec, wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%- && $scripts/volume.sh"
-        ", XF86AudioRaiseVolume, exec, wpctl set-volume -l 1.5 @DEFAULT_AUDIO_SINK@ 5%+ && $scripts/volume.sh"
+        ", XF86AudioRaiseVolume, exec, noctalia-shell ipc call volume increase"
+        ", XF86AudioLowerVolume, exec, noctalia-shell ipc call volume decrease"
       ];
 
       # Brightness binds
       bindle = [
-        ", XF86MonBrightnessUp, exec, brightnessctl -q s 2%+ && $scripts/brightness.sh"
-        ", XF86MonBrightnessDown, exec, brightnessctl -q s 2%- && $scripts/brightness.sh"
+        ", XF86MonBrightnessUp, exec, noctalia-shell ipc call brightness increase"
+        ", XF86MonBrightnessDown, exec, noctalia-shell ipc call brightness decrease"
       ];
 
       # Mouse binds
@@ -217,64 +217,52 @@
 
       # ==================== LAYER RULES ====================
       layerrule = [
-        "ignorezero, waybar"
-        "blur, waybar"
-        "blurpopups, waybar"
-        "ignorezero, launcher"
-        "blur, launcher"
-        "ignorezero, notifications"
-        "blur, notifications"
+        {
+          name = "noctalia";
+          "match:namespace" = "noctalia-background-.*$";
+          ignore_alpha = 0.5;
+          blur = true;
+          blur_popups = true;
+        }
       ];
 
       # ==================== WINDOW RULES ====================
-      windowrulev2 = [
+      windowrule = [
         # Workspace rules
-        "workspace 1, class:(com.mitchellh.ghostty)$"
-        "workspace 1, class:(Alacritty)$"
-        "workspace 2, class:(zen-beta)$"
-        "workspace 3, class:(nautilus)$"
-        "workspace 3, class:(Thunar)$"
-        "workspace 3, title:^(yazi)$"
-        "workspace 4, class:(mpv)$"
-        "workspace 4, class:(ncmpcpp)$"
-        "workspace 4, class:(cava)$"
-        "workspace 5, class:(org.telegram.desktop)$"
-        "workspace 5, class:(sioyek)$"
-        "workspace 7, class:(steam)$"
-        "workspace 8, class:^(tremc)$"
-        "workspace 8, class:(org.qbittorrent.qBittorrent)$"
+        "match:class (kitty)$, workspace 1"
+        "match:class (Alacritty)$, workspace 1"
+        "match:class (zen-beta)$, workspace 2"
+        "match:class (nautilus)$, workspace 3"
+        "match:class (Thunar)$, workspace 3"
+        "match:title ^(yazi)$, workspace 3"
+        "match:class (mpv)$, workspace 4"
+        "match:class (ncmpcpp)$, workspace 4"
+        "match:class (cava)$, workspace 4"
+        "match:class (org.telegram.desktop)$, workspace 5"
+        "match:class (sioyek)$, workspace 5"
+        "match:class (steam)$, workspace 7"
+        "match:class ^(tremc)$, workspace 8"
+        "match:class (org.qbittorrent.qBittorrent)$, workspace 8"
 
         # Floating rules
-        "float, class:(org.pulseaudio.pavucontrol)$"
-        "float, class:(polkit-gnome-authentication-agent-1)$"
-        "float, title:(Picture-in-Picture)$"
-        "float, title:(Select Document)$"
-        "float, class:(ncmpcpp)$"
-        "float, class:(cava)$"
-        "float, title:(File Operation Progress)$"
-        "float, title:(Preferences)$"
-        "float, title:(Confirm to replace files)$"
-        "float, class:(waypaper)$"
+        "match:class (org.pulseaudio.pavucontrol)$, float on"
+        "match:class (polkit-gnome-authentication-agent-1)$, float on"
+        "match:title (Picture-in-Picture)$, float on"
+        "match:title (Select Document)$, float on"
+        "match:class (ncmpcpp)$, float on"
+        "match:class (cava)$, float on"
+        "match:title (File Operation Progress)$, float on"
+        "match:title (Preferences)$, float on"
+        "match:title (Confirm to replace files)$, float on"
+        "match:class (waypaper)$, float on"
 
         # Size rules
-        "size 600 600, class:(ncmpcpp)$"
-        "size 600 600, class:(cava)$"
+        "match:class (ncmpcpp)$, size 600 600"
+        "match:class (cava)$, size 600 600"
 
         # Position rules
-        "move 15 81, class:(ncmpcpp)$"
-        "move 751 81, class:(cava)$"
-
-        # Idle inhibit rules
-        "idleinhibit focus, class:(mpv)$"
-        "idleinhibit fullscreen, class:(brave-browser)$"
-        "idleinhibit fullscreen, class:(zen-beta)$"
-        "idleinhibit fullscreen, class:(sioyek)$"
-        "idleinhibit fullscreen, class:(Kodi)$"
-
-        # Tearing rules
-        "immediate, class:(cs2)$"
-        "immediate, class:(steam_app_1245620)$"
-        "immediate, class:(Minecraft* 1.20.4)$"
+        "match:class (ncmpcpp)$, move 15 81"
+        "match:class (cava)$, move 751 81"
       ];
     };
 
