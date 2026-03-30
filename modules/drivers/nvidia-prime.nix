@@ -16,7 +16,7 @@
 
   services.xserver.videoDrivers = ["nvidia"];
   hardware.nvidia = {
-    package = config.boot.kernelPackages.nvidiaPackages.beta;
+    package = config.boot.kernelPackages.nvidiaPackages.latest;
     modesetting.enable = true;
     powerManagement = {
       enable = true;

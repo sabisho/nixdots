@@ -6,7 +6,7 @@
 
   services.cliphist.enable = true;
 
-  # configure options
+  # This is configured by noctalia flake.
   programs.noctalia-shell = {
     enable = true;
   };
