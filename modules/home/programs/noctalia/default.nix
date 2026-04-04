@@ -11,8 +11,8 @@
     enable = true;
   };
 
-  xdg.configFile."noctalia" = {
-    source = ./config;
-    recursive = true;
-  };
+  # xdg.configFile."noctalia" = {
+  #   source = ./config;
+  #   recursive = true;
+  # };
 }

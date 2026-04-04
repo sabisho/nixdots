@@ -3,7 +3,7 @@
     "$schema" = "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json";
 
     logo = {
-      source = "~/.config/fastfetch/images/yamato.png";
+      source = "~/nixdots/modules/home/programs/fastfetch/images/yamato.png";
       type = "kitty";
       height = 14;
       padding = {
