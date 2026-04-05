@@ -17,7 +17,7 @@
     # ./ghostty
     ./git
     # ./hypr
-    ./jujutsu
+    # ./jujutsu
     ./kitty
     # ./mako
     ./mpd
