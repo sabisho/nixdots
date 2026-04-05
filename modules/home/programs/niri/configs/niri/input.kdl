@@ -13,7 +13,7 @@ input {
     touchpad {
         tap
         natural-scroll
-        accel-profile "adaptive"
+        accel-profile "flat"
     }
     focus-follows-mouse
 }
