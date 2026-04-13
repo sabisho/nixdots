@@ -7,6 +7,7 @@
           bash
           c
           cpp
+          ini
           json
           kdl
           lua
@@ -22,6 +23,7 @@
           vimdoc
           xml
           yaml
+          zig
         ];
       };
     };

@@ -29,7 +29,8 @@
       "left": [
         {
           "colorizeDistroLogo": false,
-          "colorizeSystemIcon": "secondary",
+          "colorizeSystemIcon": "none",
+          "colorizeSystemText": "none",
           "customIconPath": "",
           "enableColorization": true,
           "icon": "noctalia",
@@ -37,7 +38,7 @@
           "useDistroLogo": true
         },
         {
-          "clockColor": "secondary",
+          "clockColor": "none",
           "customFont": "",
           "formatHorizontal": "HH:mm ddd, MMM dd",
           "formatVertical": "HH mm - dd MM",
@@ -72,7 +73,7 @@
       "right": [
         {
           "blacklist": [],
-          "chevronColor": "secondary",
+          "chevronColor": "none",
           "colorizeIcons": true,
           "drawerEnabled": true,
           "hidePassive": false,
@@ -82,7 +83,7 @@
         {
           "hideWhenZero": true,
           "hideWhenZeroUnread": false,
-          "iconColor": "secondary",
+          "iconColor": "none",
           "id": "NotificationHistory",
           "showUnreadBadge": true,
           "unreadBadgeColor": "primary"
@@ -90,13 +91,13 @@
         {
           "applyToAllMonitors": false,
           "displayMode": "onhover",
-          "iconColor": "secondary",
+          "iconColor": "none",
           "id": "Brightness",
           "textColor": "primary"
         },
         {
           "displayMode": "onhover",
-          "iconColor": "secondary",
+          "iconColor": "none",
           "id": "Volume",
           "middleClickCommand": "pwvucontrol || pavucontrol",
           "textColor": "primary"
@@ -202,7 +203,7 @@
     "settingsPanelSideBarCardStyle": false
   },
   "location": {
-    "name": "",
+    "name": "New Delhi",
     "weatherEnabled": true,
     "weatherShowEffects": true,
     "weatherTaliaMascotAlways": false,
@@ -281,7 +282,7 @@
     "favorites": []
   },
   "appLauncher": {
-    "enableClipboardHistory": false,
+    "enableClipboardHistory": true,
     "autoPasteClipboard": false,
     "enableClipPreview": true,
     "clipboardWrapText": true,
@@ -570,7 +571,7 @@
     "schedulingMode": "off",
     "manualSunrise": "06:30",
     "manualSunset": "18:30",
-    "generationMethod": "rainbow",
+    "generationMethod": "tonal-spot",
     "monitorForColors": "",
     "syncGsettings": true
   },
