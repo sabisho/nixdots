@@ -14,6 +14,7 @@
 
   # Stylix: Removes these when using stylix theming.
   environment.systemPackages = with pkgs; [
+    apple-cursor
     bibata-cursors
     gnome-themes-extra
     papirus-icon-theme
