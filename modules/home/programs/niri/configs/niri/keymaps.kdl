@@ -8,7 +8,7 @@ binds {
         spawn "noctalia-shell" "ipc" "call" "launcher" "toggle"
     }
     Alt+I {
-        spawn "zen"
+        spawn "zen-beta"
     }
     Alt+E {
         spawn "nautilus"

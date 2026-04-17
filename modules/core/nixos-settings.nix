@@ -26,9 +26,9 @@
 
   services = {
     fstrim.enable = true;
-    gvfs.enable = true;
-    gnome.gnome-keyring.enable = true;
     fwupd.enable = true;
+    gnome.gnome-keyring.enable = true;
+    gvfs.enable = true;
   };
 
   system.stateVersion = stateVersion; # Did you read the comment?

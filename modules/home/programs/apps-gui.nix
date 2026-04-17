@@ -16,6 +16,7 @@
     rnote
     songrec
     transmission_4-gtk
+    thunderbird
     zathura
     zed-editor
   ];
