@@ -10,6 +10,6 @@
     polkit_gnome
     wl-clipboard
     wlsunset
-    xwayland-satellite
+    # xwayland-satellite
   ];
 }

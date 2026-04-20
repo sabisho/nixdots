@@ -2,7 +2,7 @@
   imports = [
     ./blink-nvim.nix
     ./colorscheme.nix
-    ./fff.nix
+    # ./fff.nix
     ./formatter.nix
     ./gitsigns.nix
     # ./helper-plugins.nix

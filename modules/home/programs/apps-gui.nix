@@ -4,7 +4,6 @@
     file-roller
     gimp3
     gnome-disk-utility
-    # jflap
     mission-center
     obs-studio
     onlyoffice-desktopeditors
@@ -12,12 +11,11 @@
     pavucontrol
     picard
     qalculate-gtk
-    readest
     rnote
     songrec
     transmission_4-gtk
     thunderbird
-    zathura
+    yacreader
     zed-editor
   ];
 }

@@ -2,7 +2,7 @@
   programs.fish = {
     # Disable the default greeting
     interactiveShellInit = ''
-      set fish_greeting ""
+      set fish_greeting "NixOS, BTW!"
       fish_vi_key_bindings
     '';
 

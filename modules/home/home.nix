@@ -12,13 +12,14 @@
       VISUAL = "nvim";
       TERMINAL = "ghostty";
       MPD_HOST = "localhost";
+      QT_QPA_PLATFORMTHEME = "qt6ct";
     };
   };
 
   # Importing whole directory requires it having a default.nix file which imports other files in that directory.
   imports = [
     ./programs
-    ./theming
+    # ./theming
   ];
 
   # Let Home Manager install and manage itself
