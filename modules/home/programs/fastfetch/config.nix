@@ -30,53 +30,53 @@
       {
         type = "os";
         key = " ";
-        keyColor = "34";
+        keyColor = "magenta";
       }
       {
         type = "command";
         key = "󰔠 ";
-        keyColor = "34";
+        keyColor = "magenta";
         text = "birth_install=$(stat -c %W /); current=$(date +%s); time_progression=$((current - birth_install)); days_difference=$((time_progression / 86400)); echo $days_difference days";
       }
       {
         type = "kernel";
         key = " ";
-        keyColor = "34";
+        keyColor = "magenta";
       }
       {
         type = "packages";
         key = " ";
-        keyColor = "34";
+        keyColor = "magenta";
       }
       {
         type = "shell";
         key = " ";
-        keyColor = "34";
+        keyColor = "magenta";
       }
       {
         type = "terminal";
         key = " ";
-        keyColor = "34";
+        keyColor = "magenta";
       }
       {
         type = "wm";
         key = " ";
-        keyColor = "34";
+        keyColor = "magenta";
       }
       {
         type = "uptime";
         key = " ";
-        keyColor = "34";
+        keyColor = "magenta";
       }
       {
         type = "media";
         key = " ";
-        keyColor = "34";
+        keyColor = "magenta";
       }
       {
         type = "player";
         key = "󰑈 ";
-        keyColor = "34";
+        keyColor = "magenta";
       }
       {
         type = "colors";

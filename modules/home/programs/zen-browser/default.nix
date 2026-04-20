@@ -9,9 +9,10 @@
   programs.zen-browser = {
     enable = true;
     profiles."${username}".settings = {
+      "toolkit.legacyUserProfileCustomizations.stylesheets" = true;
+      "zen.theme.content-element-separation" = 0;
       "zen.view.compact.enable-at-startup" = true;
       "zen.view.experimental-no-window-controls" = true;
-      "zen.theme.content-element-separation" = 0;
     };
     policies = {
       DisableAppUpdate = true;
