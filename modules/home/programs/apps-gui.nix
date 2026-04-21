@@ -11,9 +11,9 @@
     pavucontrol
     picard
     qalculate-gtk
+    qbittorrent
     rnote
     songrec
-    transmission_4-gtk
     thunderbird
     yacreader
     zed-editor

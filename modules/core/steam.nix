@@ -2,7 +2,7 @@
   programs.steam = {
     enable = true;
     extraPackages = with pkgs; [
-      bibata-cursors
+      adwaita-icon-theme
     ];
   };
 }

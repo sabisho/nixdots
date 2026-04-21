@@ -15,7 +15,7 @@
   # Stylix: Removes these when using stylix theming.
   environment.systemPackages = with pkgs; [
     adw-gtk3
-    gnome-themes-extra
+    adwaita-icon-theme
     nwg-look
     papirus-icon-theme
     qt6Packages.qt6ct
