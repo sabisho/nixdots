@@ -10,6 +10,7 @@
     papers
     pavucontrol
     picard
+    protonplus
     qalculate-gtk
     qbittorrent
     rnote
