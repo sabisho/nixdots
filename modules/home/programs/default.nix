@@ -21,7 +21,7 @@
     ./kitty
     # ./mako
     ./mpd
-    ./mpv
+    # ./mpv
     ./newsraft
     ./niri
     ./noctalia
