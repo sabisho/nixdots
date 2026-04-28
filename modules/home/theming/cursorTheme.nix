@@ -1,8 +1,8 @@
 {pkgs, ...}: {
   home.pointerCursor = {
-    package = pkgs.gnome-themes-extra;
+    package = pkgs.apple-cursor;
     # name = "Bibata-Modern-Ice";
-    name = "Adwaita";
+    name = "macOS";
     size = 24;
     gtk.enable = true;
     hyprcursor.enable = true;
