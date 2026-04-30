@@ -126,8 +126,8 @@
   },
   "general": {
     "avatarImage": "/home/sabisho/nixdots/modules/home/programs/noctalia/config/Rusty-Friend.png",
-    "dimmerOpacity": 0.2,
-    "showScreenCorners": false,
+    "dimmerOpacity": 0,
+    "showScreenCorners": true,
     "forceBlackScreenCorners": false,
     "scaleRatio": 1,
     "radiusRatio": 1,
@@ -143,7 +143,7 @@
     "showHibernateOnLockScreen": false,
     "enableLockScreenMediaControls": false,
     "enableShadows": false,
-    "enableBlurBehind": false,
+    "enableBlurBehind": true,
     "shadowDirection": "bottom_right",
     "shadowOffsetX": 2,
     "shadowOffsetY": 3,
@@ -159,7 +159,7 @@
     "clockFormat": "hh\\nmm",
     "passwordChars": true,
     "lockScreenMonitors": [],
-    "lockScreenBlur": 0,
+    "lockScreenBlur": 0.3,
     "lockScreenTint": 0,
     "keybinds": {
       "keyUp": [
@@ -196,8 +196,8 @@
     "tooltipsEnabled": true,
     "scrollbarAlwaysVisible": true,
     "boxBorderEnabled": true,
-    "panelBackgroundOpacity": 0.93,
-    "translucentWidgets": false,
+    "panelBackgroundOpacity": 0.7000000000000001,
+    "translucentWidgets": true,
     "panelsAttachedToBar": true,
     "settingsPanelMode": "attached",
     "settingsPanelSideBarCardStyle": false
@@ -236,7 +236,7 @@
   },
   "wallpaper": {
     "enabled": true,
-    "overviewEnabled": false,
+    "overviewEnabled": true,
     "directory": "/home/sabisho/nixdots/Wallpapers",
     "monitorDirectories": [],
     "enableMultiMonitorDirectories": false,
@@ -265,8 +265,8 @@
     "panelPosition": "follow_bar",
     "hideWallpaperFilenames": false,
     "useOriginalImages": false,
-    "overviewBlur": 0.4,
-    "overviewTint": 0.6,
+    "overviewBlur": 0.75,
+    "overviewTint": 0.25,
     "useWallhaven": false,
     "wallhavenQuery": "",
     "wallhavenSorting": "relevance",
@@ -438,7 +438,7 @@
   },
   "sessionMenu": {
     "enableCountdown": true,
-    "countdownDuration": 10000,
+    "countdownDuration": 5000,
     "position": "center",
     "showHeader": true,
     "showKeybinds": true,
@@ -510,7 +510,7 @@
     "monitors": [],
     "location": "top_right",
     "overlayLayer": true,
-    "backgroundOpacity": 1,
+    "backgroundOpacity": 0.7000000000000001,
     "respectExpireTimeout": false,
     "lowUrgencyDuration": 3,
     "normalUrgencyDuration": 8,
@@ -539,7 +539,7 @@
     "location": "bottom",
     "autoHideMs": 2000,
     "overlayLayer": true,
-    "backgroundOpacity": 0.5,
+    "backgroundOpacity": 0.7,
     "enabledTypes": [
       0,
       1,
@@ -560,7 +560,7 @@
   },
   "brightness": {
     "brightnessStep": 5,
-    "enforceMinimum": true,
+    "enforceMinimum": false,
     "enableDdcSupport": false,
     "backlightDeviceMappings": []
   },
