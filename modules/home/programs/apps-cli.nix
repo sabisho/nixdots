@@ -18,6 +18,6 @@
     wget
     wiremix
     yazi
-    # yt-dlp
+    yt-dlp
   ];
 }

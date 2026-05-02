@@ -16,7 +16,6 @@
   environment.systemPackages = with pkgs; [
     adw-gtk3
     apple-cursor
-    bibata-cursors
     nwg-look
     papirus-icon-theme
     qt6Packages.qt6ct
