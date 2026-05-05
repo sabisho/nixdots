@@ -1,8 +1,10 @@
 {
   programs.mpv = {
     config = {
-      hwdec = "auto";
       vo = "gpu-next";
+      gpu-api = "vulkan";
+      # vulkan-device = "Intel(R) UHD Graphics (CML GT2)"; # To See Device Name: vulkaninfo | grep deviceName
+      hwdec = "vulkan";
       profile = "gpu-hq";
       fs = "yes";
       sub-auto = "fuzzy";

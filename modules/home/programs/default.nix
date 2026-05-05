@@ -1,6 +1,6 @@
 {
   imports = [
-    # ./alacritty
+    ./alacritty
     ./apps-cli.nix
     ./apps-gui.nix
     ./atuin
