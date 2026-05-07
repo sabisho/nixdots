@@ -9,7 +9,6 @@
     onlyoffice-desktopeditors
     papers
     pavucontrol
-    picard
     protonplus
     qalculate-gtk
     qbittorrent

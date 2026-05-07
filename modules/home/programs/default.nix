@@ -25,6 +25,7 @@
     ./newsraft
     ./niri
     ./noctalia
+    ./picard
     ./rmpc
     ./ssh
     ./starship

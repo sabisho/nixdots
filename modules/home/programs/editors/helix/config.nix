@@ -5,7 +5,7 @@
       # theme = lib.mkForce "stylix-transparent"; # The lib.mkForce gives the priority to this option over the option set by Stylix.
 
       editor = {
-        rainbow-brackets = true;
+        # rainbow-brackets = true;
         line-number = "relative";
         mouse = false;
         color-modes = true;
