@@ -7,7 +7,7 @@
     ./bash
     ./btop
     ./cava
-    ./easyeffects
+    # ./easyeffects
     ./editors
     # ./eilmeldung
     ./fastfetch
