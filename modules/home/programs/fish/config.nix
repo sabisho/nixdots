@@ -7,24 +7,26 @@
     '';
 
     shellAliases = {
-      typ = "ttyper";
-      tss = "freeze";
-      nhc = "nh clean all --optimise --ask";
-      nhs = "nh os switch --ask";
-      nhb = "nh os boot --ask";
-      h = "hx";
-      v = "nvim";
-      mpc = "rmpc";
-      prop = "hyprctl clients | grep -i 'class\\|title\\|xwayland'";
-      ls = "eza --icons=always";
+      dfp = "cd ~/nixdots && jj desc && jj bookmark set main && jj new && jj git push --branch main; or echo 'Push cancelled'";
       ff = "fastfetch";
       ffn = "fastfetch -c none";
-      of = "onefetch";
+      h = "hx";
+      isodd = "caligula burn";
       la = "eza --icons=always -a";
       lla = "eza --icons=always -la";
+      ls = "eza --icons=always";
       lt = "eza --icons=always -la --tree";
-      dfp = "cd ~/nixdots && jj desc && jj bookmark set main && jj new && jj git push --branch main; or echo 'Push cancelled'";
-      isodd = "caligula burn";
+      mpc = "rmpc";
+      nhb = "nh os boot --ask";
+      nhc = "nh clean all --optimise --ask";
+      nhs = "nh os switch --ask";
+      of = "onefetch";
+      rss = "newsraft";
+      tss = "freeze";
+      typ = "ttyper";
+      v = "nvim";
+      vi = "nvim";
+      vim = "nvim";
     };
 
     functions = {

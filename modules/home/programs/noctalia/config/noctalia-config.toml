@@ -1,0 +1,82 @@
+[backdrop]
+enabled = true
+
+[bar.default]
+center = [ "workspaces" ]
+end = [ "tray", "notifications", "network", "volume", "brightness", "battery" ]
+margin_ends = 10.0
+start = [ "clock", "date", "clipboard", "media" ]
+widget_spacing = 20
+
+[desktop_widgets]
+enabled = false
+
+[idle]
+behavior_order = [ "lock", "screen-off", "suspend" ]
+
+    [idle.behavior.lock]
+    action = "lock"
+    enabled = true
+    timeout = 600
+
+    [idle.behavior.screen-off]
+    action = "screen_off"
+    enabled = true
+    timeout = 660
+
+    [idle.behavior.suspend]
+    action = "suspend"
+    enabled = true
+    lock_before_suspend = true
+    timeout = 900
+
+[nightlight]
+enabled = true
+
+[notification]
+background_opacity = 0.4999999888241291
+layer = "overlay"
+
+[osd]
+background_opacity = 0.4999999888241291
+position = "bottom_center"
+
+[shell]
+font_family = "Inter"
+niri_overview_type_to_launch_enabled = true
+password_style = "random"
+telemetry_enabled = false
+
+    [shell.panel]
+    transparency_mode = "glass"
+
+[theme]
+source = "wallpaper"
+
+    [theme.templates]
+    builtin_ids = [ "alacritty", "btop", "gtk3", "gtk4", "kitty", "niri", "qt", "starship" ]
+    community_ids = [ "yazi" ]
+
+[wallpaper]
+directory = "/home/sabisho/nixdots/Wallpapers"
+
+    [wallpaper.default]
+    path = "/home/sabisho/nixdots/Wallpapers/Japan.jpg"
+
+    [wallpaper.last]
+    path = "/home/sabisho/nixdots/Wallpapers/Japan.jpg"
+
+[weather]
+address = "Delhi,India"
+auto_locate = true
+refresh_minutes = 60
+
+[widget.battery]
+display_mode = "graphic"
+
+[widget.bongocat]
+script = "scripts/bongocat.lua"
+type = "scripted"
+
+[widget.workspaces]
+display = "none"
