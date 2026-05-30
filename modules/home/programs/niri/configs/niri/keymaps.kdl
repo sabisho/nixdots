@@ -7,6 +7,9 @@ binds {
     Mod+Space {
         spawn-sh "noctalia msg panel-toggle launcher"
     }
+    Mod+B {
+      spawn-sh "noctalia msg bar-toggle"
+    }
     Alt+I {
         spawn "zen-beta"
     }
