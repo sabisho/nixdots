@@ -3,9 +3,9 @@ enabled = true
 
 [bar.default]
 center = [ "workspaces" ]
-end = [ "tray", "notifications", "network", "volume", "brightness", "battery" ]
+end = [ "tray", "notifications", "clipboard", "network", "volume", "brightness", "battery" ]
 margin_ends = 10.0
-start = [ "clock", "date", "clipboard", "media" ]
+start = [ "clock", "date", "wallpaper", "media" ]
 widget_spacing = 20
 
 [desktop_widgets]
@@ -36,9 +36,12 @@ enabled = true
 [notification]
 background_opacity = 0.4999999888241291
 layer = "overlay"
+offset_x = 10.0
+offset_y = 10.0
 
 [osd]
 background_opacity = 0.4999999888241291
+offset_y = 10.0
 position = "bottom_center"
 
 [shell]
@@ -49,6 +52,9 @@ telemetry_enabled = false
 
     [shell.panel]
     transparency_mode = "glass"
+
+[system.monitor]
+enabled = false
 
 [theme]
 source = "wallpaper"
@@ -61,10 +67,13 @@ source = "wallpaper"
 directory = "/home/sabisho/nixdots/Wallpapers"
 
     [wallpaper.default]
-    path = "/home/sabisho/nixdots/Wallpapers/Japan.jpg"
+    path = "/home/sabisho/nixdots/Wallpapers/Space-Juice.png"
 
     [wallpaper.last]
-    path = "/home/sabisho/nixdots/Wallpapers/Japan.jpg"
+    path = "/home/sabisho/nixdots/Wallpapers/Space-Juice.png"
+
+    [wallpaper.monitors.eDP-1]
+    path = "/home/sabisho/nixdots/Wallpapers/Space-Juice.png"
 
 [weather]
 address = "Delhi,India"

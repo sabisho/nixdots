@@ -38,6 +38,9 @@
         # Archives
         "application/zip" = "org.gnome.FileRoller.desktop";
         "application/x-tar" = "org.gnome.FileRoller.desktop";
+
+        # Default Opening in files.
+        "inode/directory" = "org.gnome.Nautilus.desktop";
       };
     };
   };
