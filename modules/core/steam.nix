@@ -3,7 +3,7 @@
     enable = true;
     protontricks.enable = true;
     extraPackages = with pkgs; [
-      apple-cursor
+      adwaita-icon-theme
     ];
   };
 }

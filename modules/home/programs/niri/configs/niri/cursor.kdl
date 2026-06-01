@@ -1,7 +1,7 @@
 // Cursor Settings
 cursor {
     // xcursor-theme "Bibata-Modern-Ice"
-    xcursor-theme "macOS"
+    xcursor-theme "Adwaita"
     xcursor-size 24
     hide-when-typing
     hide-after-inactive-ms 1000

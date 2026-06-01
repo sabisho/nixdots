@@ -1,8 +1,8 @@
 {pkgs, ...}: {
   fonts.packages = with pkgs; [
+    adwaita-fonts
     corefonts
     ibm-plex
-    inter
     liberation_ttf
     miracode
     nerd-fonts.jetbrains-mono
@@ -15,10 +15,10 @@
   # Stylix: Removes these when using stylix theming.
   environment.systemPackages = with pkgs; [
     adw-gtk3
-    apple-cursor
+    adwaita-icon-theme
+    libsForQt5.qt5ct
     nwg-look
     papirus-icon-theme
     qt6Packages.qt6ct
-    libsForQt5.qt5ct
   ];
 }

@@ -1,6 +1,7 @@
 {pkgs, ...}: {
   home.packages = with pkgs; [
     brave
+    drawy
     file-roller
     gimp3
     gnome-disk-utility
@@ -13,7 +14,6 @@
     protonplus
     qalculate-gtk
     qbittorrent
-    rnote
     songrec
     thunderbird
     yacreader
