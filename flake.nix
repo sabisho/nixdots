@@ -9,11 +9,6 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    stylix = {
-      url = "github:nix-community/stylix";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-
     nixvim = {
       url = "github:nix-community/nixvim";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -28,14 +23,11 @@
       url = "github:noctalia-dev/noctalia-shell/v5";
       # inputs.nixpkgs.follows = "nixpkgs";
     };
-
-    nvf.url = "github:notashelf/nvf";
   };
 
   outputs = {
     nixpkgs,
     home-manager,
-    stylix,
     ...
   } @ inputs: let
     # === Global Configuration ===
@@ -73,7 +65,6 @@
         };
 
         modules = [
-          stylix.nixosModules.stylix
           # System configuration
           ./hosts/${type}/${hostname}/configuration.nix
 
