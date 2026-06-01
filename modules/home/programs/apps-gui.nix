@@ -6,9 +6,10 @@
     gnome-disk-utility
     mission-center
     obs-studio
-    onlyoffice-desktopeditors
+    # onlyoffice-desktopeditors
+    collabora-desktop
     papers
-    pavucontrol
+    pwvucontrol
     protonplus
     qalculate-gtk
     qbittorrent

@@ -1,10 +1,14 @@
 [backdrop]
 enabled = true
+tint_intensity = 0.24999999441206455
 
 [bar.default]
+background_opacity = 0.5
 center = [ "workspaces" ]
-end = [ "tray", "notifications", "clipboard", "network", "volume", "brightness", "battery" ]
+contact_shadow = true
+end = [ "tray", "notifications", "caffeine", "clipboard", "network", "volume", "brightness", "battery" ]
 margin_ends = 10.0
+radius = 20
 start = [ "clock", "date", "wallpaper", "media" ]
 widget_spacing = 20
 
@@ -45,9 +49,12 @@ offset_y = 10.0
 position = "bottom_center"
 
 [shell]
-font_family = "Inter"
+avatar_path = "/home/sabisho/nixdots/modules/home/programs/noctalia/config/Rusty-Friend.png"
+font_family = "Inter Display"
 niri_overview_type_to_launch_enabled = true
 password_style = "random"
+polkit_agent = true
+screen_time_enabled = true
 telemetry_enabled = false
 
     [shell.panel]
@@ -57,23 +64,29 @@ telemetry_enabled = false
 enabled = false
 
 [theme]
+mode = "auto"
 source = "wallpaper"
+wallpaper_scheme = "m3-content"
 
     [theme.templates]
     builtin_ids = [ "alacritty", "btop", "gtk3", "gtk4", "kitty", "niri", "qt", "starship" ]
-    community_ids = [ "yazi" ]
+    community_ids = [ "zen-browser", "yazi" ]
 
 [wallpaper]
 directory = "/home/sabisho/nixdots/Wallpapers"
 
     [wallpaper.default]
-    path = "/home/sabisho/nixdots/Wallpapers/Space-Juice.png"
+    path = "/home/sabisho/nixdots/Wallpapers/Japan.jpg"
 
     [wallpaper.last]
-    path = "/home/sabisho/nixdots/Wallpapers/Space-Juice.png"
+    path = "/home/sabisho/nixdots/Wallpapers/Japan.jpg"
 
     [wallpaper.monitors.eDP-1]
-    path = "/home/sabisho/nixdots/Wallpapers/Space-Juice.png"
+    path = "/home/sabisho/nixdots/Wallpapers/Japan.jpg"
+
+    [[wallpaper.favorite]]
+    path = "/home/sabisho/nixdots/Wallpapers/Japan.jpg"
+    theme_mode = "auto"
 
 [weather]
 address = "Delhi,India"
