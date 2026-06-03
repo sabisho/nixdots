@@ -33,6 +33,10 @@
     fwupd.enable = true;
     gnome.gnome-keyring.enable = true;
     gvfs.enable = true;
+    btrfs.autoScrub = {
+      enable = true;
+      interval = "weekly";
+    };
   };
 
   system.stateVersion = stateVersion; # Did you read the comment?
