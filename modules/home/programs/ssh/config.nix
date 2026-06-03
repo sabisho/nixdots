@@ -3,7 +3,12 @@
     enableDefaultConfig = false;
     settings = {
       "*".addKeysToAgent = "yes";
-      "github.com".identityFile = "~/.ssh/id_ed25519";
+      "github.com" = {
+        identityFile = "~/.ssh/id_ed25519";
+        hostname = "ssh.github.com";
+        port = 443;
+        user = "git";
+      };
     };
   };
 }
