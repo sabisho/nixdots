@@ -3,7 +3,7 @@ enabled = true
 tint_intensity = 0.24999999441206455
 
 [bar.default]
-background_opacity = 0.5
+background_opacity = 0.25
 center = [ "workspaces" ]
 contact_shadow = true
 end = [ "tray", "notifications", "caffeine", "clipboard", "network", "volume", "brightness", "battery" ]
@@ -14,6 +14,15 @@ widget_spacing = 20
 
 [desktop_widgets]
 enabled = false
+schema_version = 1
+widget_order = []
+
+    [desktop_widgets.grid]
+    cell_size = 16
+    major_interval = 4
+    visible = true
+
+    [desktop_widgets.widget]
 
 [idle]
 behavior_order = [ "lock", "screen-off", "suspend" ]
@@ -34,23 +43,28 @@ behavior_order = [ "lock", "screen-off", "suspend" ]
     lock_before_suspend = true
     timeout = 900
 
+[location]
+auto_locate = true
+
 [nightlight]
 enabled = true
 
 [notification]
-background_opacity = 0.4999999888241291
+background_opacity = 0.25
 layer = "overlay"
 offset_x = 10.0
 offset_y = 10.0
 
 [osd]
-background_opacity = 0.4999999888241291
+background_opacity = 0.24999999441206455
+lock_keys = false
 offset_y = 10.0
 position = "bottom_center"
 
 [shell]
+app_icon_color = "secondary"
 avatar_path = "/home/sabisho/nixdots/modules/home/programs/noctalia/config/Rusty-Friend.png"
-font_family = "Inter Display"
+font_family = "Adwaita Sans"
 niri_overview_type_to_launch_enabled = true
 password_style = "random"
 polkit_agent = true
@@ -60,33 +74,39 @@ telemetry_enabled = false
     [shell.panel]
     transparency_mode = "glass"
 
+    [shell.screenshot]
+    directory = "/home/sabisho/Pictures/Screenshots"
+
 [system.monitor]
 enabled = false
 
 [theme]
 mode = "auto"
 source = "wallpaper"
-wallpaper_scheme = "m3-content"
+wallpaper_scheme = "Ayu"
 
     [theme.templates]
-    builtin_ids = [ "alacritty", "btop", "gtk3", "gtk4", "kitty", "niri", "qt", "starship" ]
+    builtin_ids = [ "alacritty", "btop", "gtk3", "gtk4", "kcolorscheme", "kitty", "niri", "qt", "starship" ]
     community_ids = [ "zen-browser", "yazi" ]
 
 [wallpaper]
 directory = "/home/sabisho/nixdots/Wallpapers"
+transition_on_startup = true
 
     [wallpaper.default]
-    path = "/home/sabisho/nixdots/Wallpapers/Japan.jpg"
+    path = "/home/sabisho/nixdots/Wallpapers/Green-Room.jpg"
 
     [wallpaper.last]
-    path = "/home/sabisho/nixdots/Wallpapers/Japan.jpg"
+    path = "/home/sabisho/nixdots/Wallpapers/Green-Room.jpg"
 
     [wallpaper.monitors.eDP-1]
-    path = "/home/sabisho/nixdots/Wallpapers/Japan.jpg"
+    path = "/home/sabisho/nixdots/Wallpapers/Green-Room.jpg"
 
     [[wallpaper.favorite]]
-    path = "/home/sabisho/nixdots/Wallpapers/Japan.jpg"
+    palette_source = "wallpaper"
+    path = "/home/sabisho/nixdots/Wallpapers/Mandalorian.jpg"
     theme_mode = "auto"
+    wallpaper_scheme = "m3-content"
 
 [weather]
 address = "Delhi,India"
@@ -99,6 +119,9 @@ display_mode = "graphic"
 [widget.bongocat]
 script = "scripts/bongocat.lua"
 type = "scripted"
+
+[widget.tray]
+drawer = true
 
 [widget.workspaces]
 display = "none"
