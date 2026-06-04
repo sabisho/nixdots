@@ -7,29 +7,51 @@
     '';
 
     shellAliases = {
-      dfp = "cd ~/nixdots && jj desc && jj bookmark set main && jj new && jj git push --branch main; or echo 'Push cancelled'";
       ff = "fastfetch";
       ffn = "fastfetch -c none";
       h = "hx";
-      isodd = "caligula burn";
       la = "eza --icons=always -a";
       lla = "eza --icons=always -la";
       ls = "eza --icons=always";
       lt = "eza --icons=always -la --tree";
       mpc = "rmpc";
-      nhb = "nh os boot --ask";
-      nhc = "nh clean all --optimise --ask";
-      nhs = "nh os switch --ask";
-      of = "onefetch";
       rss = "newsraft";
-      tss = "freeze";
-      typ = "ttyper";
       v = "nvim";
       vi = "nvim";
       vim = "nvim";
     };
 
+    shellAbbrs = {
+      dfp = "cd ~/nixdots && jj desc && jj bookmark set main && jj new && jj git push --branch main; or echo 'Push cancelled'";
+      fu = "nix flake update";
+      isodd = "caligula burn";
+      lg = "lazygit";
+      nd = "nix develop";
+      nhb = "nh os boot --ask";
+      nhc = "nh clean all --optimise --ask";
+      nhs = "nh os switch --ask";
+      of = "onefetch";
+      tss = "freeze";
+      typ = "ttyper";
+    };
+
     functions = {
+      core-conf = {
+        description = "Open Neovim in NixOS' core configs.";
+        body = ''
+          cd ~/nixdots/modules/core; or return
+          nvim .
+        '';
+      };
+
+      pro-conf = {
+        description = "Open Neovim in Home Manager' programs configs.";
+        body = ''
+          cd ~/nixdots/modules/home/programs; or return
+          nvim .
+        '';
+      };
+
       # Yazi integration function
       y = ''
         set tmp (mktemp -t "yazi-cwd.XXXXXX")

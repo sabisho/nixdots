@@ -12,7 +12,7 @@ layer-rule {
   place-within-backdrop true
 }
 layer-rule {
-  match namespace="^noctalia-(bar-[^\"]+|notification|dock|panel)$"
+  match namespace="^noctalia-(bar-[^\"]+|notification|dock|panel|osd)$"
   background-effect {
     xray false
     //blur false
