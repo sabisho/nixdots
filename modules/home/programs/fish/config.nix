@@ -30,6 +30,7 @@
       nhb = "nh os boot --ask";
       nhc = "nh clean all --optimise --ask";
       nhs = "nh os switch --ask";
+      nixup = "nh os boot --update --ask";
       of = "onefetch";
       tss = "freeze";
       typ = "ttyper";
