@@ -10,7 +10,6 @@
     ./noice.nix
     ./oil.nix
     ./snacks.nix
-    ./statusline.nix
     ./tiny-inline-diagnostics.nix
     ./treesitter.nix
     ./which-key.nix
