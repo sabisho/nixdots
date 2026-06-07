@@ -1,31 +1,34 @@
 {
-  description = "Rust development environment";
+  description = "Rust dev shell";
 
   inputs = {
-    nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
-    flake-utils.url = "github:numtide/flake-utils";
+    nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
+    rust-overlay = {
+      url = "github:oxalica/rust-overlay";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs = {
     nixpkgs,
-    flake-utils,
+    rust-overlay,
     ...
-  }:
-    flake-utils.lib.eachDefaultSystem (
-      system: let
-        pkgs = nixpkgs.legacyPackages.${system};
-      in {
-        devShells.default = pkgs.mkShell {
-          buildInputs = with pkgs; [
-            rustc
-            cargo
-            rustfmt
-            clippy
-            rust-analyzer
-          ];
-
-          RUST_SRC_PATH = "${pkgs.rust.packages.stable.rustPlatform.rustLibSrc}";
-        };
-      }
-    );
+  }: let
+    system = "x86_64-linux";
+    pkgs = import nixpkgs {
+      inherit system;
+      overlays = [rust-overlay.overlays.default];
+    };
+    rust = pkgs.rust-bin.stable.latest.default.override {
+      extensions = ["rust-src" "rust-analyzer"];
+    };
+  in {
+    devShells.${system}.default = pkgs.mkShell {
+      buildInputs = [
+        rust
+        pkgs.pkg-config
+        pkgs.openssl
+      ];
+    };
+  };
 }
