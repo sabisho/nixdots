@@ -7,7 +7,7 @@
     gimp3
     gnome-disk-utility
     mission-center
-    motrix-next
+    # motrix-next
     obs-studio
     # onlyoffice-desktopeditors
     papers

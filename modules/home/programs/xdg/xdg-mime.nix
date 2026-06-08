@@ -41,6 +41,10 @@
 
         # Default Opening in files.
         "inode/directory" = "org.gnome.Nautilus.desktop";
+
+        # Torrent Clients
+        "application/x-bittorrent" = "qbittorrent.desktop";
+        "x-scheme-handler/magnet" = "qbittorrent.desktop";
       };
     };
   };
