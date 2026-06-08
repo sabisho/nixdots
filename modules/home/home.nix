@@ -10,7 +10,7 @@
       EDITOR = "nvim";
       SUDO_EDITOR = "nvim";
       VISUAL = "nvim";
-      TERMINAL = "ghostty";
+      TERMINAL = "kitty";
       MPD_HOST = "localhost";
       QT_QPA_PLATFORMTHEME = "qt6ct";
     };
