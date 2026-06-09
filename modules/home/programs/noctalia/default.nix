@@ -12,7 +12,7 @@
   };
 
   # xdg.configFile."noctalia" = {
-  #   source = ./config;
+  #   source = ./configs;
   #   recursive = true;
   # };
 }

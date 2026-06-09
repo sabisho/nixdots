@@ -3,7 +3,7 @@ enabled = true
 tint_intensity = 0.24999999441206455
 
 [bar.default]
-background_opacity = 0.25
+background_opacity = 0.5
 center = [ "workspaces" ]
 contact_shadow = true
 end = [ "tray", "notifications", "caffeine", "clipboard", "network", "volume", "brightness", "battery" ]
@@ -23,6 +23,9 @@ widget_order = []
     visible = true
 
     [desktop_widgets.widget]
+
+[dock]
+background_opacity = 0.5
 
 [idle]
 behavior_order = [ "lock", "screen-off", "suspend" ]
@@ -46,24 +49,71 @@ behavior_order = [ "lock", "screen-off", "suspend" ]
 [location]
 auto_locate = true
 
+[lockscreen_widgets]
+enabled = true
+schema_version = 1
+widget_order = [ "lockscreen-login-box@eDP-1", "lockscreen-widget-0000000000000001", "lockscreen-widget-0000000000000002" ]
+
+    [lockscreen_widgets.grid]
+    cell_size = 16
+    major_interval = 4
+    visible = true
+
+    [lockscreen_widgets.widget."lockscreen-login-box@eDP-1"]
+    box_height = 0.0
+    box_width = 0.0
+    cx = 960.0
+    cy = 997.0
+    output = "eDP-1"
+    rotation = 0.0
+    type = "login_box"
+
+    [lockscreen_widgets.widget.lockscreen-widget-0000000000000001]
+    box_height = 512.0
+    box_width = 1024.0
+    cx = 1008.0
+    cy = 256.0
+    output = "eDP-1"
+    rotation = 0.0
+    type = "clock"
+
+        [lockscreen_widgets.widget.lockscreen-widget-0000000000000001.settings]
+        background = false
+        clock_style = "digital"
+        color = "on_surface"
+
+    [lockscreen_widgets.widget.lockscreen-widget-0000000000000002]
+    box_height = 96.0
+    box_width = 352.0
+    cx = 960.0
+    cy = 588.0
+    output = "eDP-1"
+    rotation = 0.0
+    type = "weather"
+
+        [lockscreen_widgets.widget.lockscreen-widget-0000000000000002.settings]
+        background = false
+        color = "on_surface"
+
 [nightlight]
 enabled = true
 
 [notification]
-background_opacity = 0.25
+background_opacity = 0.4999999888241291
 layer = "overlay"
 offset_x = 10.0
 offset_y = 10.0
 
 [osd]
-background_opacity = 0.24999999441206455
+background_opacity = 0.4999999888241291
 lock_keys = false
 offset_y = 10.0
 position = "bottom_center"
 
 [shell]
 app_icon_color = "secondary"
-avatar_path = "/home/sabisho/nixdots/modules/home/programs/noctalia/config/Rusty-Friend.png"
+avatar_path = "/home/sabisho/nixdots/modules/home/programs/noctalia/configs/Rusty-Friend.png"
+corner_radius_scale = 2.0
 font_family = "Adwaita Sans"
 niri_overview_type_to_launch_enabled = true
 password_style = "random"
@@ -72,6 +122,7 @@ screen_time_enabled = true
 telemetry_enabled = false
 
     [shell.panel]
+    launcher_categories = false
     transparency_mode = "glass"
 
     [shell.screenshot]
@@ -81,32 +132,30 @@ telemetry_enabled = false
 enabled = false
 
 [theme]
-mode = "auto"
+mode = "dark"
 source = "wallpaper"
-wallpaper_scheme = "Ayu"
+wallpaper_scheme = "m3-content"
 
     [theme.templates]
     builtin_ids = [ "alacritty", "btop", "gtk3", "gtk4", "kcolorscheme", "kitty", "niri", "qt", "starship" ]
     community_ids = [ "zen-browser", "yazi" ]
 
 [wallpaper]
-directory = "/home/sabisho/nixdots/Wallpapers"
+directory = "/home/sabisho/Pictures/Wallpapers"
 transition_on_startup = true
 
     [wallpaper.default]
-    path = "/home/sabisho/nixdots/Wallpapers/Green-Room.jpg"
+    path = "/home/sabisho/Pictures/Wallpapers/Neon Genesis Evangaleon.png"
 
     [wallpaper.last]
-    path = "/home/sabisho/nixdots/Wallpapers/Green-Room.jpg"
+    path = "/home/sabisho/Pictures/Wallpapers/Neon Genesis Evangaleon.png"
 
     [wallpaper.monitors.eDP-1]
-    path = "/home/sabisho/nixdots/Wallpapers/Green-Room.jpg"
+    path = "/home/sabisho/Pictures/Wallpapers/Neon Genesis Evangaleon.png"
 
     [[wallpaper.favorite]]
-    palette_source = "wallpaper"
-    path = "/home/sabisho/nixdots/Wallpapers/Mandalorian.jpg"
+    path = "/home/sabisho/nixdots/Wallpapers/Japan.jpg"
     theme_mode = "auto"
-    wallpaper_scheme = "m3-content"
 
 [weather]
 address = "Delhi,India"
@@ -119,6 +168,9 @@ display_mode = "graphic"
 [widget.bongocat]
 script = "scripts/bongocat.lua"
 type = "scripted"
+
+[widget.clock]
+format = "{:%I:%M %p}"
 
 [widget.tray]
 drawer = true
