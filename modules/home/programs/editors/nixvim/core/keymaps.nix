@@ -5,6 +5,10 @@
         key = "<leader>q";
         mode = "n";
         action = ":q!<CR>";
+        options = {
+          silent = true;
+          desc = "Quit without saving";
+        };
       }
       {
         key = "<leader>f";
