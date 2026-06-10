@@ -45,10 +45,10 @@
       {
         key = "<leader>r";
         mode = "n";
-        action = "<cmd>lua Snacks.picker.recent()<CR>";
+        action = "<cmd>lua vim.lsp.buf.rename()<CR>";
         options = {
           silent = true;
-          desc = "Find Recent Files";
+          desc = "LSP Rename (Symbol)";
         };
       }
       {
