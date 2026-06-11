@@ -3,7 +3,7 @@
     settings = {
       general.import = ["~/.config/alacritty/themes/noctalia.toml"];
       window = {
-        opacity = 0.8;
+        opacity = 0.5;
         blur = true;
       };
       font = {
