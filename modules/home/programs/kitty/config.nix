@@ -1,7 +1,7 @@
 {
   programs.kitty = {
     font = {
-      name = "JetBrainsMono Nerd Font";
+      name = "Maple Mono NF";
       size = 16;
     };
     settings = {

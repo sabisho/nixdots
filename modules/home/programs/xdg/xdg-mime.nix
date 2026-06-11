@@ -40,7 +40,8 @@
         "application/x-tar" = "org.gnome.FileRoller.desktop";
 
         # Default Opening in files.
-        "inode/directory" = "org.gnome.Nautilus.desktop";
+        # "inode/directory" = "org.gnome.Nautilus.desktop";
+        "inode/directory" = "thunar.desktop";
 
         # Torrent Clients
         "application/x-bittorrent" = "qbittorrent.desktop";

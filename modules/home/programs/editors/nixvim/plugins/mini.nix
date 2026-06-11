@@ -3,6 +3,7 @@
     plugins = {
       mini-ai.enable = true;
       mini-icons.enable = true;
+      mini-notify.enable = true;
       mini-pairs.enable = true;
       mini-statusline.enable = true;
       mini-surround.enable = true;

@@ -42,7 +42,7 @@
         };
 
         file-picker = {
-          hidden = true; # Show hidden files by defualt, can be cpu intensive on nixos as there are many hidden files.
+          hidden = false; # Show hidden files by defualt, can be cpu intensive on nixos as there are many hidden files.
         };
 
         inline-diagnostics = {

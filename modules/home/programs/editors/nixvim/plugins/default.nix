@@ -7,7 +7,6 @@
     # ./helper-plugins.nix
     ./lsp.nix
     ./mini.nix
-    ./noice.nix
     ./oil.nix
     ./snacks.nix
     ./tiny-inline-diagnostics.nix

@@ -12,13 +12,13 @@
     ./greetd.nix
     ./locale.nix
     ./localsend.nix
-    ./nautilus.nix
+    # ./nautilus.nix
     ./networking.nix
     ./nixos-settings.nix
     ./pipewire.nix
     ./steam.nix
     ./theming.nix
-    # ./thunar.nix
+    ./thunar.nix
     ./user-account.nix
     ./window-manager.nix
   ];

@@ -14,7 +14,7 @@ binds {
         spawn "zen-beta"
     }
     Alt+E {
-        spawn "nautilus"
+        spawn "thunar"
     }
     Mod+C {
         spawn-sh "noctalia msg panel-toggle clipboard"
