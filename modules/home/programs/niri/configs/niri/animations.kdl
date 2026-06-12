@@ -1,0 +1,65 @@
+animations {
+    // Slightly slower than default — gives everything that "liquid" Apple feel
+    slowdown 1.2
+
+    // Window open — Apple's standard "appear" curve: instant start, long gentle tail
+    // This is very close to iOS UIView.animate with .curveEaseOut
+    window-open {
+        duration-ms 400
+        curve "cubic-bezier" 0.0 0.0 0.2 1.0
+    }
+
+    // Window close — faster than open (Apple always closes faster than it opens)
+    // Ease-in: starts slow, accelerates out — feels like it's being pulled away
+    window-close {
+        duration-ms 280
+        curve "cubic-bezier" 0.4 0.0 1.0 1.0
+    }
+
+    // Workspace switching — iOS-style page turn: springy with very slight bounce
+    workspace-switch {
+        spring damping-ratio=0.82 stiffness=680 epsilon=0.0001
+    }
+
+    // Column/window scrolling — the most "Apple" feel of all: 
+    // low stiffness = slow graceful deceleration, like iOS scroll momentum
+    horizontal-view-movement {
+        spring damping-ratio=0.86 stiffness=580 epsilon=0.0001
+    }
+
+    // Windows sliding into position when layout changes
+    window-movement {
+        spring damping-ratio=0.86 stiffness=580 epsilon=0.0001
+    }
+
+    // Resize — slightly stiffer so it doesn't feel laggy when expanding columns
+    window-resize {
+        spring damping-ratio=0.88 stiffness=650 epsilon=0.0001
+    }
+
+    // Overview (super key) — should feel grand and spacious, not rushed
+    overview-open-close {
+        spring damping-ratio=0.84 stiffness=600 epsilon=0.0001
+    }
+
+    // Recent windows switcher
+    recent-windows-close {
+        spring damping-ratio=0.86 stiffness=620 epsilon=0.0001
+    }
+
+    // Config reload notification — poppy little bounce like iOS toasts
+    config-notification-open-close {
+        spring damping-ratio=0.68 stiffness=800 epsilon=0.001
+    }
+
+    // Exit dialog — deliberate, not bouncy
+    exit-confirmation-open-close {
+        spring damping-ratio=0.9 stiffness=500 epsilon=0.01
+    }
+
+    // Screenshot UI
+    screenshot-ui-open {
+        duration-ms 320
+        curve "cubic-bezier" 0.0 0.0 0.2 1.0
+    }
+}
