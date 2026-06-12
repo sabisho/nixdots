@@ -10,15 +10,17 @@
           desc = "Quit without saving";
         };
       }
+      # fff: find files in current repo
       {
         key = "<leader>f";
         mode = "n";
-        action = "<cmd>lua Snacks.picker.files()<CR>";
+        action = "<cmd>lua require('fff').find_files()<CR>";
         options = {
           silent = true;
           desc = "Find Files";
         };
       }
+      # No fff equivalent — fff is files-only, no explorer
       {
         key = "<leader>e";
         mode = "n";
@@ -28,6 +30,7 @@
           desc = "File Explorer";
         };
       }
+      # No fff equivalent — fff has no buffer picker
       {
         key = "<leader>b";
         mode = "n";
@@ -37,10 +40,11 @@
           desc = "Find Buffers";
         };
       }
+      # fff: live grep
       {
         key = "<leader>/";
         mode = "n";
-        action = "<cmd>lua Snacks.picker.grep()<CR>";
+        action = "<cmd>lua require('fff').live_grep()<CR>";
         options = {
           silent = true;
           desc = "Grep";
@@ -73,10 +77,11 @@
           desc = "Next Buffer";
         };
       }
+      # fff: find files scoped to ~/nixdots
       {
         key = "<leader>c";
         mode = "n";
-        action = "<cmd>lua Snacks.picker.files({ cwd = vim.fn.expand('~/nixdots')})<CR>";
+        action = "<cmd>lua require('fff').find_files_in_dir(vim.fn.expand('~/nixdots'))<CR>";
         options = {
           silent = true;
           desc = "Open NixOS Configs";
