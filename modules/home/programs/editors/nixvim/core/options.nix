@@ -23,6 +23,7 @@
       hlsearch = true;
 
       # QOL Settings
+      winborder = "rounded";
       showmode = false;
       clipboard = "unnamedplus";
       timeoutlen = 300;
@@ -56,5 +57,8 @@
         };
       };
     };
+    # extraConfigLua = ''
+    #   vim.opt.winborder = "rounded"
+    # '';
   };
 }

@@ -16,11 +16,6 @@
           sources = {
             default = ["lsp" "path" "snippets" "buffer" "cmdline"];
           };
-          completion = {
-            menu = {
-              border = "rounded";
-            };
-          };
         };
       };
     };

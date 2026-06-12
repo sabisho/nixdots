@@ -32,7 +32,7 @@
                   icon = "󰱼";
                   key = "f";
                   desc = "Find File";
-                  action = ":lua Snacks.picker.files()";
+                  action = "<cmd>lua require('fff').find_files()<CR>";
                 }
                 {
                   icon = "󰝒";
@@ -44,7 +44,7 @@
                   icon = "";
                   key = "g";
                   desc = "Find Text";
-                  action = ":lua Snacks.picker.grep()";
+                  action = "<cmd>lua require('fff').live_grep()<CR>";
                 }
                 {
                   icon = "󰙰";
@@ -56,7 +56,7 @@
                   icon = "";
                   key = "c";
                   desc = "Config";
-                  action = ":lua Snacks.picker.files({ cwd = vim.fn.expand('~/nixdots')})";
+                  action = "<cmd>lua require('fff').find_files_in_dir(vim.fn.expand('~/nixdots'))<CR>";
                 }
                 {
                   icon = "󰦛";
@@ -111,11 +111,6 @@
           };
           words = {
             enabled = true;
-          };
-          styles = {
-            notification = {
-              # wo.wrap = true;  # Uncomment to wrap notifications
-            };
           };
         };
       };
