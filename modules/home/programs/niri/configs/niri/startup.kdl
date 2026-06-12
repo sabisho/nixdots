@@ -1,2 +1,2 @@
-// Services Started by the compositor
+// Services started by the compositor.
 spawn-at-startup "noctalia"
