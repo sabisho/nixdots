@@ -10,7 +10,6 @@
     ./mini.nix
     ./oil.nix
     ./snacks.nix
-    ./tiny-inline-diagnostics.nix
     ./treesitter.nix
     ./which-key.nix
   ];

@@ -47,18 +47,28 @@
     };
 
     # Diagnostics Icons in the gutter.
-    diagnostic.settings = {
-      signs = {
-        text = {
-          "__rawKey__vim.diagnostic.severity.ERROR" = "";
-          "__rawKey__vim.diagnostic.severity.WARN" = "";
-          "__rawKey__vim.diagnostic.severity.HINT" = "󰌵";
-          "__rawKey__vim.diagnostic.severity.INFO" = "";
+    diagnostic = {
+      settings = {
+        signs = {
+          text = {
+            "__rawKey__vim.diagnostic.severity.ERROR" = "";
+            "__rawKey__vim.diagnostic.severity.WARN" = "";
+            "__rawKey__vim.diagnostic.severity.HINT" = "󰌵";
+            "__rawKey__vim.diagnostic.severity.INFO" = "";
+          };
         };
       };
     };
-    # extraConfigLua = ''
-    #   vim.opt.winborder = "rounded"
-    # '';
+    extraConfigLua = ''
+      vim.diagnostic.config({
+        virtual_lines = {
+          current_line = true,
+          format = function(diagnostic)
+            return diagnostic.message
+          end,
+        },
+        virtual_text = false,
+      })
+    '';
   };
 }
