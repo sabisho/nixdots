@@ -6,8 +6,8 @@
         enable = true;
         servers = {
           nixd.enable = true;
-          # rust_analyzer.enable = true;
-          ty.enable = true;
+          rust_analyzer.enable = true;
+          pyrefly.enable = true;
         };
       };
     };
