@@ -51,12 +51,12 @@
         };
       }
       {
-        key = "<leader>r";
+        key = "<leader>g";
         mode = "n";
-        action = "<cmd>lua vim.lsp.buf.rename()<CR>";
+        action = "<cmd>lua Snacks.lazygit.open()<CR>";
         options = {
           silent = true;
-          desc = "LSP Rename (Symbol)";
+          desc = "Open Lazygit";
         };
       }
       {
