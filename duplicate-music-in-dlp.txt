@@ -1,25 +1,24 @@
  # Numbered Names
-1. 2002 - Anne Marie {DLP 8 & 9}
-2. 2step - Ed Sheeran, Arman Malik {DLP 3 & 8}
-3. 3D Kanojo Girl 2nd Season {DLP 7 & 10}
+1. 2002 - Anne Marie                          {DLP 8 & 9}
+2. 2step - Ed Sheeran, Arman Malik            {DLP 3 & 8}
+3. 3D Kanojo Girl 2nd Season                  {DLP 7 & 10}
 
  # A
-1. Ajnabi Hawaayein - Shreya Ghosal {DLP 2 & 7}
-2. APT. - Rose & Bruno - {DLP 4 & 15}
-3. Again - YUI - {DLP 3 & 8}
-4. Ahiran Bhumihar - Vishu Singh {DLP 3 & 8}
-5. Ainsi bas la vida - Indila {DLP 2 & 7}
-6. All 4 Nothing - Lauv {7 & 10}
-7. Angel - Shaggy {DLP 3, 7 & 10}
-8. Angel of the Morning - Juice Newton {DLP 3 & 8}
-9. Animals - Maroon 5 {DLP 7 & 10}
-10. Answer - Jap. Artist {DLP 2 & 7}
+1. Ajnabi Hawaayein - Shreya Ghosal           {DLP 2 & 7}
+2. APT. - Rose & Bruno -                      {DLP 4 & 15}
+3. Again - YUI -                              {DLP 3 & 8}
+4. Ahiran Bhumihar - Vishu Singh              {DLP 3 & 8}
+5. Ainsi bas la vida - Indila                 {DLP 2 & 7}
+6. All 4 Nothing - Lauv                       {DLP 7 & 10}
+7. Angel - Shaggy                             {DLP 3, 7 & 10}
+8. Angel of the Morning - Juice Newton        {DLP 3 & 8}
+9. Animals - Maroon 5                         {DLP 7 & 10}
+10. Answer - Jap. Artist                      {DLP 2 & 7}
 
  # B
-Bloody Stream - Coda, Jap. Artists {DLP 3 & 8}
-Blue Eyes - Yo Yo Honey Singh {DLP 3 & 8}
-Backlight - Ado - {DLP 8 & 9}
-Bad Dream - Stellar {DLP 3 & 8}
-Bad Romance - Lady Gaga {DLP 7, 10 & 13}
-Ban ja rani - Guru Randhawa {DLP 2 & 7}
-
+0. Bloody Stream - Coda, Jap. Artists         {DLP 3 & 8}
+0. Blue Eyes - Yo Yo Honey Singh              {DLP 3 & 8}
+0. Backlight - Ado                            {DLP 8 & 9}
+0. Bad Dream - Stellar                        {DLP 3 & 8}
+0. Bad Romance - Lady Gaga                    {DLP 7, 10 & 13}
+0. Ban ja rani - Guru Randhawa                {DLP 2 & 7}

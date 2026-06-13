@@ -1,7 +1,6 @@
 {pkgs, ...}: {
   home.packages = with pkgs; [
     brave
-    collabora-desktop
     drawy
     file-roller
     gimp3
@@ -9,7 +8,7 @@
     mission-center
     # motrix-next
     obs-studio
-    # onlyoffice-desktopeditors
+    onlyoffice-desktopeditors
     papers
     protonplus
     pwvucontrol
