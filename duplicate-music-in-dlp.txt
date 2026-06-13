@@ -16,9 +16,9 @@
 10. Answer - Jap. Artist                      {DLP 2 & 7}
 
  # B
-0. Bloody Stream - Coda, Jap. Artists         {DLP 3 & 8}
-0. Blue Eyes - Yo Yo Honey Singh              {DLP 3 & 8}
-0. Backlight - Ado                            {DLP 8 & 9}
-0. Bad Dream - Stellar                        {DLP 3 & 8}
-0. Bad Romance - Lady Gaga                    {DLP 7, 10 & 13}
-0. Ban ja rani - Guru Randhawa                {DLP 2 & 7}
+1. Bloody Stream - Coda, Jap. Artists         {DLP 3 & 8}
+2. Blue Eyes - Yo Yo Honey Singh              {DLP 3 & 8}
+3. Backlight - Ado                            {DLP 8 & 9}
+4. Bad Dream - Stellar                        {DLP 3 & 8}
+5. Bad Romance - Lady Gaga                    {DLP 7, 10 & 13}
+6. Ban ja rani - Guru Randhawa                {DLP 2 & 7}

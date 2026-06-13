@@ -10,7 +10,7 @@
       EDITOR = "hx";
       SUDO_EDITOR = "hx";
       VISUAL = "hx";
-      TERMINAL = "alacritty";
+      TERMINAL = "kitty";
       MPD_HOST = "localhost";
       QT_QPA_PLATFORMTHEME = "qt6ct";
     };

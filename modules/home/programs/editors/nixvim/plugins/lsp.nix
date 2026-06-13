@@ -7,15 +7,14 @@
         servers = {
           nixd = {
             enable = true;
-            package = null;
           };
           rust_analyzer = {
             enable = true;
-            package = null;
+            installCargo = true;
+            installRustc = true;
           };
           pyrefly = {
             enable = true;
-            package = null;
           };
         };
       };
