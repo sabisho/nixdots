@@ -2,7 +2,7 @@
 binds {
     // Applications
     Mod+Return {
-        spawn "kitty"
+        spawn "alacritty"
     }
     Mod+Space {
         spawn-sh "noctalia msg panel-toggle launcher"

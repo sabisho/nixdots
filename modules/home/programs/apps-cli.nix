@@ -13,6 +13,7 @@
     onefetch
     pastel
     ripgrep
+    rustup
     tealdeer
     tukai
     wget

@@ -5,9 +5,18 @@
       lsp = {
         enable = true;
         servers = {
-          nixd.enable = true;
-          rust_analyzer.enable = true;
-          pyrefly.enable = true;
+          nixd = {
+            enable = true;
+            package = null;
+          };
+          rust_analyzer = {
+            enable = true;
+            package = null;
+          };
+          pyrefly = {
+            enable = true;
+            package = null;
+          };
         };
       };
     };

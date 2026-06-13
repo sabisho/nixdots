@@ -7,10 +7,10 @@
     username = username;
     stateVersion = stateVersion; # Please read the comment before changing.
     sessionVariables = {
-      EDITOR = "nvim";
-      SUDO_EDITOR = "nvim";
-      VISUAL = "nvim";
-      TERMINAL = "kitty";
+      EDITOR = "hx";
+      SUDO_EDITOR = "hx";
+      VISUAL = "hx";
+      TERMINAL = "alacritty";
       MPD_HOST = "localhost";
       QT_QPA_PLATFORMTHEME = "qt6ct";
     };

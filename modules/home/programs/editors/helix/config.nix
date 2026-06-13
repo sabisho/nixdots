@@ -1,8 +1,7 @@
-{lib, ...}: {
+{
   programs.helix = {
     settings = {
       theme = "gruvbox-transparent";
-      # theme = lib.mkForce "stylix-transparent"; # The lib.mkForce gives the priority to this option over the option set by Stylix.
 
       editor = {
         rainbow-brackets = true;
@@ -41,8 +40,9 @@
           };
         };
 
+        # Show hidden files by defualt, can be cpu intensive on nixos as there are many hidden files.
         # file-picker = {
-        #   hidden = true; # Show hidden files by defualt, can be cpu intensive on nixos as there are many hidden files.
+        #   hidden = true;
         # };
 
         inline-diagnostics = {
@@ -58,7 +58,7 @@
         normal = {
           ret = "goto_word";
           space = {
-            n = ":open ~/nixdots/";
+            n = ":open ~/nixdots";
           };
         };
       };

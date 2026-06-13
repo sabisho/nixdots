@@ -8,19 +8,19 @@
       };
       font = {
         normal = {
-          family = "JetBrainsMono Nerd Font";
+          family = "Maple Mono NF";
           style = "Regular";
         };
         bold = {
-          family = "JetBrainsMono Nerd Font";
+          family = "Maple Mono NF";
           style = "Bold";
         };
         italic = {
-          family = "JetBrainsMono Nerd Font";
+          family = "Maple Mono NF";
           style = "Italic";
         };
         bold_italic = {
-          family = "JetBrainsMono Nerd Font";
+          family = "Maple Mono NF";
           style = "Bold Italic";
         };
         size = 16.0;
