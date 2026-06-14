@@ -47,7 +47,7 @@
         };
       }
       {
-        key = "<leader>g";
+        key = "<leader>lg";
         mode = "n";
         action = "<cmd>lua Snacks.lazygit.open()<CR>";
         options = {
