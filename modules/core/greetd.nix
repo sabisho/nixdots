@@ -1,14 +1,27 @@
-{pkgs, ...}: {
-  services.greetd = {
+{
+  inputs,
+  pkgs,
+  ...
+}: {
+  imports = [
+    inputs.noctalia-greeter.nixosModules.default
+  ];
+
+  programs.noctalia-greeter = {
     enable = true;
+    package = inputs.noctalia-greeter.packages.${pkgs.stdenv.hostPlatform.system}.default;
+
+    greeter-args = "--session niri";
+
     settings = {
-      default_session = {
-        user = "greeter";
-        # Start Niri with a TUI login manager
-        command = "${pkgs.tuigreet}/bin/tuigreet --time --remember --cmd niri-session";
-        # Start Hyprland with a TUI login manager
-        # command = "${pkgs.tuigreet}/bin/tuigreet --time --remember --cmd start-hyprland";
+      cursor = {
+        theme = "Adwaita";
+        size = 24;
+        package = pkgs.adwaita-icon-theme;
       };
     };
   };
+
+  # polkit is required for the Noctalia v5 → greeter sync to work
+  security.polkit.enable = true;
 }

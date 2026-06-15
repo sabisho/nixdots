@@ -20,9 +20,15 @@
 
     noctalia = {
       url = "github:noctalia-dev/noctalia";
-      # inputs.nixpkgs.follows = "nixpkgs";
     };
-    helix.url = "github:helix-editor/helix";
+
+    noctalia-greeter = {
+      url = "github:noctalia-dev/noctalia-greeter";
+    };
+
+    helix = {
+      url = "github:helix-editor/helix";
+    };
   };
 
   outputs = {

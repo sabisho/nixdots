@@ -148,13 +148,13 @@ directory = "/home/sabisho/Pictures/Wallpapers"
 transition_on_startup = true
 
     [wallpaper.default]
-    path = "/home/sabisho/Pictures/Wallpapers/ign-waifu.png"
+    path = "/home/sabisho/Pictures/Wallpapers/Reze-Arc.jpg"
 
     [wallpaper.last]
-    path = "/home/sabisho/Pictures/Wallpapers/ign-waifu.png"
+    path = "/home/sabisho/Pictures/Wallpapers/Reze-Arc.jpg"
 
     [wallpaper.monitors.eDP-1]
-    path = "/home/sabisho/Pictures/Wallpapers/ign-waifu.png"
+    path = "/home/sabisho/Pictures/Wallpapers/Reze-Arc.jpg"
 
     [[wallpaper.favorite]]
     path = "/home/sabisho/nixdots/Wallpapers/Japan.jpg"

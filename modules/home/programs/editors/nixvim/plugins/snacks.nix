@@ -80,7 +80,7 @@
             enable = true;
           };
           indent = {
-            enabled = true;
+            enabled = false;
           };
           input = {
             enabled = true;

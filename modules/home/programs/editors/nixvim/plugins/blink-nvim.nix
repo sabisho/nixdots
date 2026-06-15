@@ -1,6 +1,7 @@
 {
   programs.nixvim = {
     plugins = {
+      blink-indent.enable = true;
       blink-pairs.enable = true;
       friendly-snippets.enable = true;
       blink-cmp = {
