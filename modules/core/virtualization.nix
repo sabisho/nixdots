@@ -5,9 +5,9 @@
     libvirtd = {
       enable = true;
     };
-    # podman = {
-    #   enable = true;
-    #   dockerCompat = true;
-    # };
+    podman = {
+      enable = true;
+      dockerCompat = true;
+    };
   };
 }

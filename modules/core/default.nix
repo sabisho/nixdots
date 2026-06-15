@@ -3,7 +3,6 @@
     # ./appimages.nix
     # ./media-server.nix
     # ./stylix.nix
-    # ./virtualization.nix
     ./bluetooth.nix
     ./boot.nix
     ./editor.nix
@@ -20,6 +19,7 @@
     ./theming.nix
     ./thunar.nix
     ./user-account.nix
+    ./virtualization.nix
     ./window-manager.nix
   ];
 }

@@ -10,6 +10,7 @@
             c = ["clang_format"];
             # kdl = ["kdlfmt"];
             nix = ["alejandra"];
+            lua = ["stylua"];
             rust = ["rustfmt"];
           };
         };
