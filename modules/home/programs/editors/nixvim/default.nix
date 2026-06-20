@@ -18,5 +18,6 @@
     enable = true;
     viAlias = true;
     vimAlias = true;
+    nixpkgs.hostPlatform = pkgs.stdenv.hostPlatform.system;
   };
 }
