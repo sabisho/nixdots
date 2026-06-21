@@ -64,9 +64,11 @@
           space = {
             n = ":open ~/nixdots";
           };
-          # Sort in ascending order
           "[" = {
+            # Sort in ascending order
             s = "@mim<A-s><A-,>(<A-,>:sort<ret>,;mm";
+            # Add line numbering in the beggining of the line by hightlighting a block of text.
+            n = "@<A-s>I<C-r>#.<space><esc>";
           };
           # Sort in descending order
           "]" = {

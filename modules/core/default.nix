@@ -1,17 +1,17 @@
 {
   imports = [
     # ./appimages.nix
-    # ./media-server.nix
+    # ./gamescope.nix
+    # ./nautilus.nix
     # ./stylix.nix
     ./bluetooth.nix
     ./boot.nix
     ./editor.nix
     ./gamemode.nix
-    # ./gamescope.nix
     ./greetd.nix
     ./locale.nix
     ./localsend.nix
-    # ./nautilus.nix
+    ./media-server.nix
     ./networking.nix
     ./nixos-settings.nix
     ./pipewire.nix
