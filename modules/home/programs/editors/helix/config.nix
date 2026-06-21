@@ -17,6 +17,10 @@
           render = true;
         };
 
+        soft-wrap = {
+          enable = true;
+        };
+
         lsp = {
           display-inlay-hints = true;
         };
