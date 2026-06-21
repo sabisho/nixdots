@@ -7,7 +7,6 @@
       mini-pairs.enable = true;
       mini-statusline.enable = true;
       mini-surround.enable = true;
-      mini-tabline.enable = true;
     };
   };
 }

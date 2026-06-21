@@ -1,11 +1,12 @@
 {
   imports = [
+    # ./helper-plugins.nix
     ./blink-nvim.nix
+    ./bufferline.nix
     ./colorscheme.nix
     ./fff.nix
     ./formatter.nix
     ./gitsigns.nix
-    # ./helper-plugins.nix
     ./lsp.nix
     ./mini.nix
     ./oil.nix
