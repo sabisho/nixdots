@@ -60,6 +60,11 @@
           space = {
             n = ":open ~/nixdots";
           };
+          # This keymap sorts the objects inside any maching pair.
+          "]" = {
+            s = "@mim<A-s><A-,>(<A-,>:sort<ret>,;mm";
+            S = "@mim<A-s><A-,>(<A-,>:sort -r<ret>,;mm";
+          };
         };
       };
     };
