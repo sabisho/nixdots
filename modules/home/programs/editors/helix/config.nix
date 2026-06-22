@@ -65,12 +65,13 @@
             n = ":open ~/nixdots";
           };
           "[" = {
-            # Sort in ascending order
+            # Sort in ascending order.
+            # We can also use the | or pipe command of helix to pipe the selction to sort command of the coreutils, but this method add unecessary blank lines around the selection.
             s = "@mim<A-s><A-,>(<A-,>:sort -i<ret>,;mm";
             # Add line numbering in the beggining of the line by hightlighting a block of text.
             n = "@<A-s>I<C-r>#.<space><esc>";
           };
-          # Sort in descending order
+          # Sort in descending order.
           "]" = {
             s = "@mim<A-s><A-,>(<A-,>:sort -i -r<ret>,;mm";
           };
