@@ -10,10 +10,7 @@ binds {
     Mod+B {
       spawn-sh "noctalia msg bar-toggle"
     }
-    Alt+I {
-        spawn "zen-beta"
-    }
-    Alt+E {
+    Mod+E {
         spawn "thunar"
     }
     Mod+C {
