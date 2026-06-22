@@ -24,6 +24,7 @@ window-rule {
 }
 window-rule {
     match app-id="org.gnome.Calculator"
+    match app-id="swayimg"
     match app-id="steam"
     match app-id="org.pulseaudio.pavucontrol"
     match app-id="waypaper"

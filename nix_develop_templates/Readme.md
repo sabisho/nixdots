@@ -1,2 +1,5 @@
-1. Always git add -A any flake directory.
-2. nix develop
+1. create a project directory.
+2. devenv init
+3. edit the deven.nix file, you can add all the dependancies in that file.
+4. It support hot reloading with ctrl+alt+r.
+5. It puts us into a devshell with all the options available.

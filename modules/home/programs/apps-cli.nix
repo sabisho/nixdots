@@ -4,6 +4,7 @@
     caligula
     charm-freeze
     cmd-wrapped
+    devenv
     dysk
     eza
     fd
