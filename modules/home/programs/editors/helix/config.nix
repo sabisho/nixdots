@@ -66,13 +66,13 @@
           };
           "[" = {
             # Sort in ascending order
-            s = "@mim<A-s><A-,>(<A-,>:sort<ret>,;mm";
+            s = "@mim<A-s><A-,>(<A-,>:sort -i<ret>,;mm";
             # Add line numbering in the beggining of the line by hightlighting a block of text.
             n = "@<A-s>I<C-r>#.<space><esc>";
           };
           # Sort in descending order
           "]" = {
-            s = "@mim<A-s><A-,>(<A-,>:sort -r<ret>,;mm";
+            s = "@mim<A-s><A-,>(<A-,>:sort -i -r<ret>,;mm";
           };
         };
       };
