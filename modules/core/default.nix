@@ -11,7 +11,7 @@
     ./greetd.nix
     ./locale.nix
     ./localsend.nix
-    ./media-server.nix
+    # ./media-server.nix
     ./networking.nix
     ./nixos-settings.nix
     ./pipewire.nix
