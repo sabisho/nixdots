@@ -6,7 +6,7 @@
       editor = {
         rainbow-brackets = true;
         line-number = "relative";
-        mouse = false;
+        mouse = true;
         color-modes = true;
         bufferline = "multiple";
         popup-border = "all";
@@ -45,9 +45,9 @@
         };
 
         # Show hidden files by defualt, can be cpu intensive on nixos as there are many hidden files.
-        # file-picker = {
-        #   hidden = true;
-        # };
+        file-picker = {
+          hidden = true;
+        };
 
         inline-diagnostics = {
           cursor-line = "warning";
