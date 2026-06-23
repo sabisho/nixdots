@@ -7,6 +7,7 @@
     gnome-disk-utility
     mission-center
     # motrix-next
+    # komelia
     obs-studio
     onlyoffice-desktopeditors
     papers

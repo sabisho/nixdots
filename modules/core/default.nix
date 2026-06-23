@@ -9,7 +9,6 @@
     ./editor.nix
     ./gamemode.nix
     ./greetd.nix
-    ./komga.nix
     ./locale.nix
     ./localsend.nix
     ./media-server.nix
