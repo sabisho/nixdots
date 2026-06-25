@@ -11,15 +11,15 @@
       openFirewall = true;
       # webinterface at: localhost:8096
     };
-    komga = {
-      enable = true;
-      settings.server.port = 8080;
-      openFirewall = true;
-      # webinterface at: localhost:8080
-    };
+    # komga = {
+    #   enable = true;
+    #   settings.server.port = 8080;
+    #   openFirewall = true;
+    #   # webinterface at: localhost:8080
+    # };
   };
 
-  users.users.komga.extraGroups = [username];
+  # users.users.komga.extraGroups = [username];
 
   environment.systemPackages = with pkgs; [
     mkvtoolnix

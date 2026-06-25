@@ -2,11 +2,11 @@
   home.packages = with pkgs; [
     alejandra
     nixd
-    typst
-    tinymist
+    # typst
+    # tinymist
     # rustc
     # rust-analyzer
     # rustfmt
-    rustlings
+    # rustlings
   ];
 }
