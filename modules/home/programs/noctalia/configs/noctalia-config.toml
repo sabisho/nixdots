@@ -124,6 +124,9 @@ polkit_agent = true
 screen_time_enabled = true
 telemetry_enabled = false
 
+    [shell.greeter_sync]
+    auto_sync = true
+
     [shell.launcher]
     categories = false
 
@@ -148,17 +151,17 @@ wallpaper_scheme = "m3-content"
     community_ids = [ "zen-browser", "yazi" ]
 
 [wallpaper]
-directory = "/home/sabisho/Pictures/Wallpapers"
+directory = "/home/sabisho/nixdots/Wallpapers"
 transition_on_startup = true
 
     [wallpaper.default]
-    path = "/home/sabisho/Pictures/Wallpapers/Specs_Woman.jpg"
+    path = "/home/sabisho/nixdots/Wallpapers/Specs_Woman.jpg"
 
     [wallpaper.last]
-    path = "/home/sabisho/Pictures/Wallpapers/Specs_Woman.jpg"
+    path = "/home/sabisho/nixdots/Wallpapers/Specs_Woman.jpg"
 
     [wallpaper.monitors.eDP-1]
-    path = "/home/sabisho/Pictures/Wallpapers/Specs_Woman.jpg"
+    path = "/home/sabisho/nixdots/Wallpapers/Specs_Woman.jpg"
 
     [[wallpaper.favorite]]
     path = "/home/sabisho/nixdots/Wallpapers/Japan.jpg"
