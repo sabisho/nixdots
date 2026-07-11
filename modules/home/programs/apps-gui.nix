@@ -15,7 +15,7 @@
     pwvucontrol
     qalculate-gtk
     qbittorrent
-    shipwright
+    # shipwright
     songrec
     thunderbird
     yacreader
