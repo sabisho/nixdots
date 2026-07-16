@@ -2,8 +2,10 @@
   imports = [
     # ./appimages.nix
     # ./gamescope.nix
+    # ./media-server.nix
     # ./nautilus.nix
     # ./stylix.nix
+    # ./virtualization.nix
     ./bluetooth.nix
     ./boot.nix
     ./editor.nix
@@ -11,7 +13,6 @@
     ./greetd.nix
     ./locale.nix
     ./localsend.nix
-    ./media-server.nix
     ./networking.nix
     ./nixos-settings.nix
     ./pipewire.nix
@@ -19,7 +20,6 @@
     ./theming.nix
     ./thunar.nix
     ./user-account.nix
-    ./virtualization.nix
     ./window-manager.nix
   ];
 }

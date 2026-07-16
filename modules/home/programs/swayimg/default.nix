@@ -2,7 +2,7 @@
   programs.swayimg = {
     enable = true;
   };
-  imports = [
-    ./config.nix
-  ];
+  # imports = [
+  #   ./config.nix
+  # ];
 }

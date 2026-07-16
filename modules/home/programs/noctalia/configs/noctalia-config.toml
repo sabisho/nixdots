@@ -7,7 +7,7 @@ background_opacity = 0.5
 center = [ "workspaces" ]
 contact_shadow = true
 end = [ "tray", "notifications", "caffeine", "clipboard", "network", "volume", "brightness", "battery" ]
-margin_ends = 10.0
+margin_ends = 5
 radius = 20
 start = [ "clock", "date", "wallpaper", "media" ]
 widget_spacing = 20
@@ -138,6 +138,9 @@ telemetry_enabled = false
     [shell.screenshot]
     directory = "/home/sabisho/Pictures/Screenshots"
 
+    [shell.shadow]
+    alpha = 0.4999999888241291
+
 [system.monitor]
 enabled = false
 
@@ -152,6 +155,7 @@ wallpaper_scheme = "m3-content"
 
 [wallpaper]
 directory = "/home/sabisho/nixdots/Wallpapers"
+edge_smoothness = 0.4999999888241291
 transition_on_startup = true
 
     [wallpaper.default]
@@ -164,8 +168,10 @@ transition_on_startup = true
     path = "/home/sabisho/nixdots/Wallpapers/Specs_Woman.jpg"
 
     [[wallpaper.favorite]]
-    path = "/home/sabisho/nixdots/Wallpapers/Japan.jpg"
-    theme_mode = "auto"
+    palette_source = "wallpaper"
+    path = "/home/sabisho/nixdots/Wallpapers/Specs_Woman.jpg"
+    theme_mode = "dark"
+    wallpaper_scheme = "m3-content"
 
 [weather]
 address = "Delhi,India"
