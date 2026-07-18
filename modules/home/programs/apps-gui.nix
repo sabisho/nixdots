@@ -19,6 +19,5 @@
     songrec
     thunderbird
     yacreader
-    zed-editor
   ];
 }
