@@ -3,7 +3,7 @@
     # ./appimages.nix
     # ./gamescope.nix
     # ./media-server.nix
-    # ./nautilus.nix
+    ./nautilus.nix
     # ./stylix.nix
     # ./virtualization.nix
     ./bluetooth.nix
@@ -18,7 +18,7 @@
     ./pipewire.nix
     ./steam.nix
     ./theming.nix
-    ./thunar.nix
+    # ./thunar.nix
     ./user-account.nix
     ./window-manager.nix
   ];

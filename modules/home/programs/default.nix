@@ -1,5 +1,12 @@
 {
   imports = [
+    # ./easyeffects
+    # ./eilmeldung
+    # ./fuzzel
+    # ./ghostty
+    # ./jujutsu
+    # ./mako
+    # ./waybar
     ./alacritty
     ./apps-cli.nix
     ./apps-gui.nix
@@ -7,19 +14,12 @@
     ./bash
     ./btop
     ./cava
-    # ./easyeffects
     ./editors
-    # ./eilmeldung
     ./fastfetch
     ./fish
-    # ./fuzzel
     ./gaming
-    # ./ghostty
     ./git
-    # ./hypr
-    # ./jujutsu
     ./kitty
-    # ./mako
     ./mpd
     ./mpv
     ./newsraft
@@ -30,7 +30,6 @@
     ./ssh
     ./starship
     ./swayimg
-    # ./waybar
     ./xdg
     ./zen-browser
     ./zoxide
