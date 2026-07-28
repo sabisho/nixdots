@@ -12,6 +12,9 @@ radius = 20
 start = [ "clock", "date", "wallpaper", "media" ]
 widget_spacing = 20
 
+[control_center]
+show_shortcut_labels = false
+
 [desktop_widgets]
 enabled = false
 schema_version = 1

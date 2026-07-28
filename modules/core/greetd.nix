@@ -11,7 +11,6 @@
     enable = true;
     package = inputs.noctalia-greeter.packages.${pkgs.stdenv.hostPlatform.system}.default;
     greeter-args = "--session niri";
-    # greeter-args = "--session Hyprland";
     settings = {
       cursor = {
         theme = "Adwaita";
