@@ -12,7 +12,7 @@
       VISUAL = "hx";
       TERMINAL = "kitty";
       MPD_HOST = "localhost";
-      QT_QPA_PLATFORMTHEME = "qt6ct";
+      # QT_QPA_PLATFORMTHEME = "qt6ct";
     };
   };
 

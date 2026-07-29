@@ -14,7 +14,6 @@
     protonplus
     pwvucontrol
     qalculate-gtk
-    qbittorrent
     # shipwright
     songrec
     thunderbird

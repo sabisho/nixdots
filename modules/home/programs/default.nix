@@ -26,6 +26,7 @@
     ./niri
     ./noctalia
     ./picard
+    ./qbittorrent
     ./rmpc
     ./ssh
     ./starship
