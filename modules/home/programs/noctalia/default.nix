@@ -1,4 +1,8 @@
-{inputs, ...}: {
+{
+  config,
+  inputs,
+  ...
+}: {
   # NOTE: Add flake input for noctalia from github to access these features.
   imports = [
     inputs.noctalia.homeModules.default
@@ -12,6 +16,6 @@
   };
 
   xdg.configFile."noctalia/noctalia-config.toml" = {
-    source = ./configs/noctalia-config.toml;
+    source = config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/nixdots/modules/home/programs/noctalia/configs/noctalia-config.toml";
   };
 }
