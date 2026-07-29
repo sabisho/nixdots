@@ -18,9 +18,6 @@
   environment.systemPackages = with pkgs; [
     adw-gtk3
     adwaita-icon-theme
-    # libsForQt5.qt5ct
-    nwg-look
     papirus-icon-theme
-    # qt6Packages.qt6ct
   ];
 }
