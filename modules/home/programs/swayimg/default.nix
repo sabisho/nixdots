@@ -2,7 +2,8 @@
   programs.swayimg = {
     enable = true;
   };
-  # imports = [
-  #   ./config.nix
-  # ];
+
+  xdg.configFile."swayimg/init.lua".text = ''
+    swayimg.imagelist.adjacent = false
+  '';
 }
