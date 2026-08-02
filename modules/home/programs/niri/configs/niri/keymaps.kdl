@@ -108,9 +108,6 @@ binds {
     Mod+Period {
         expel-window-from-column
     }
-    Alt+Tab repeat=false {
-        spawn-sh "pkill -USR1 niriswitcher"
-    }
     Mod+Shift+J {
         move-column-to-workspace-down
     }

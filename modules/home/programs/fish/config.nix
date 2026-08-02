@@ -4,6 +4,7 @@
     interactiveShellInit = ''
       set fish_greeting "NixOS, BTW!"
       fish_vi_key_bindings
+      devenv hook fish | source
     '';
 
     shellAliases = {

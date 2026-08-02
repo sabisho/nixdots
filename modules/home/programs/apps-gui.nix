@@ -1,6 +1,6 @@
 {pkgs, ...}: {
   home.packages = with pkgs; [
-    brave
+    brave-origin
     drawy
     file-roller
     gimp3
