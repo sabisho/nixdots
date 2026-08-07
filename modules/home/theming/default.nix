@@ -2,7 +2,7 @@
   imports = [
     # ./stylix.nix
     # Stylix: Remove these for stylix theming.
-    # ./cursorTheme.nix
+    ./cursorTheme.nix
     ./gtk.nix
     ./qt.nix
   ];
