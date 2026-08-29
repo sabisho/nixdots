@@ -7,9 +7,9 @@
     username = username;
     stateVersion = stateVersion; # Please read the comment before changing.
     sessionVariables = {
-      EDITOR = "hx";
-      SUDO_EDITOR = "hx";
-      VISUAL = "hx";
+     # EDITOR = "hx";
+     # SUDO_EDITOR = "hx";
+     # VISUAL = "hx";
       TERMINAL = "kitty";
       MPD_HOST = "localhost";
       # QT_QPA_PLATFORMTHEME = "qt6ct";

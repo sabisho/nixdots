@@ -19,6 +19,24 @@ show_shortcut_labels = false
 [dock]
 background_opacity = 0.4999999888241291
 
+[idle]
+behavior_order = [ "lock", "screen-off", "lock-and-suspend" ]
+
+    [idle.behavior.lock]
+    action = "lock"
+    enabled = true
+    timeout = 600.0
+
+    [idle.behavior.lock-and-suspend]
+    action = "lock_and_suspend"
+    enabled = true
+    timeout = 900.0
+
+    [idle.behavior.screen-off]
+    action = "screen_off"
+    enabled = true
+    timeout = 660.0
+
 [location]
 auto_locate = true
 
@@ -38,6 +56,8 @@ widget_order = [ "lockscreen-login-box@eDP-1" ]
     cx = 960.0
     cy = 898.0
     output = "eDP-1"
+    placement_height = 1080.0
+    placement_width = 1920.0
     rotation = 0.0
     type = "login_box"
 
@@ -68,6 +88,7 @@ background_opacity = 0.4999999888241291
 position = "bottom_center"
 
 [shell]
+avatar_path = "/home/sabisho/nixdots/modules/home/programs/noctalia/configs/Rusty-Friend.png"
 corner_radius_scale = 2.0
 font_family = "Adwaita Sans"
 niri_overview_type_to_launch_enabled = true
@@ -85,12 +106,15 @@ screen_time_enabled = true
     [shell.panel]
     transparency_mode = "glass"
 
+    [shell.shadow]
+    alpha = 0.4999999888241291
+
 [theme]
 source = "wallpaper"
 
     [theme.templates]
     builtin_ids = [ "btop", "cava", "gtk3", "gtk4", "kitty", "niri", "qt", "starship" ]
-    community_ids = [ "zen-browser", "heroiclauncher", "lazygit", "yazi" ]
+    community_ids = [ "zen-browser", "heroiclauncher", "fastfetch", "bat", "lazygit", "yazi" ]
 
 [wallpaper]
 directory = "/home/sabisho/nixdots/Wallpapers"
@@ -104,6 +128,11 @@ transition_on_startup = true
 
     [wallpaper.monitors.eDP-1]
     path = "/home/sabisho/nixdots/Wallpapers/Specs_Woman.jpg"
+
+[widget.media]
+hide_album_art = true
+hide_when_no_media = true
+show_progress = true
 
 [widget.tray]
 drawer = true

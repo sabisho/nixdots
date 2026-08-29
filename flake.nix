@@ -9,9 +9,9 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    # nixvim = {
-    #   url = "github:nix-community/nixvim";
-    # };
+    nixvim = {
+       url = "github:nix-community/nixvim";
+     };
 
     zen-browser = {
       url = "github:0xc000022070/zen-browser-flake";
@@ -26,9 +26,9 @@
       url = "github:noctalia-dev/noctalia-greeter";
     };
 
-    helix = {
-      url = "github:helix-editor/helix";
-    };
+   # helix = {
+     # url = "github:helix-editor/helix";
+    #};
   };
 
   outputs = {
