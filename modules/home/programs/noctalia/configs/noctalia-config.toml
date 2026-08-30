@@ -41,9 +41,9 @@ behavior_order = [ "lock", "screen-off", "lock-and-suspend" ]
 auto_locate = true
 
 [lockscreen_widgets]
-enabled = false
+enabled = true
 schema_version = 2
-widget_order = [ "lockscreen-login-box@eDP-1" ]
+widget_order = [ "lockscreen-login-box@eDP-1", "lockscreen-widget-0000000000000001" ]
 
     [lockscreen_widgets.grid]
     cell_size = 16
@@ -76,6 +76,20 @@ widget_order = [ "lockscreen-login-box@eDP-1" ]
         show_session_buttons = true
         show_unlock_hint = true
         show_weather = true
+
+    [lockscreen_widgets.widget.lockscreen-widget-0000000000000001]
+    box_height = 528.0
+    box_width = 1904.0
+    cx = 960.0
+    cy = 268.0
+    output = "eDP-1"
+    placement_height = 1080.0
+    placement_width = 1920.0
+    rotation = 0.0
+    type = "clock"
+
+        [lockscreen_widgets.widget.lockscreen-widget-0000000000000001.settings]
+        background = false
 
 [nightlight]
 enabled = true
@@ -121,13 +135,16 @@ directory = "/home/sabisho/nixdots/Wallpapers"
 transition_on_startup = true
 
     [wallpaper.default]
-    path = "/home/sabisho/nixdots/Wallpapers/Specs_Woman.jpg"
+    path = "/home/sabisho/nixdots/Wallpapers/Gun-Lady.png"
 
     [wallpaper.last]
-    path = "/home/sabisho/nixdots/Wallpapers/Specs_Woman.jpg"
+    path = "/home/sabisho/nixdots/Wallpapers/Gun-Lady.png"
 
     [wallpaper.monitors.eDP-1]
-    path = "/home/sabisho/nixdots/Wallpapers/Specs_Woman.jpg"
+    path = "/home/sabisho/nixdots/Wallpapers/Gun-Lady.png"
+
+[widget.battery]
+display_mode = "graphic"
 
 [widget.media]
 hide_album_art = true
