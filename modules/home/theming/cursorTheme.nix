@@ -1,5 +1,6 @@
 {pkgs, ...}: {
   home.pointerCursor = {
+    enable = true;
     # name = "Bibata-Modern-Ice";
     name = "Adwaita";
     package = pkgs.adwaita-icon-theme;

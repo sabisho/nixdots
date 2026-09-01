@@ -8,8 +8,6 @@
     '';
 
     shellAliases = {
-      ff = "fastfetch";
-      ffn = "fastfetch -c none";
       h = "hx";
       la = "eza --icons=always -a";
       lla = "eza --icons=always -la";
@@ -24,6 +22,8 @@
 
     shellAbbrs = {
       dfp = "cd ~/nixdots && jj desc && jj bookmark set main && jj new && jj git push --branch main; or echo 'Push cancelled'";
+      ff = "fastfetch";
+      ffn = "fastfetch -c none";
       fu = "nix flake update";
       isodd = "caligula burn";
       lg = "lazygit";

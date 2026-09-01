@@ -14,6 +14,7 @@
     onefetch
     pastel
     ripgrep
+    rqbit
     tealdeer
     tukai
     wget
