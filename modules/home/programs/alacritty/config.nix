@@ -8,19 +8,19 @@
       };
       font = {
         normal = {
-          family = "Maple Mono NF";
+          family = "Iosevka Nerd Font";
           style = "Regular";
         };
         bold = {
-          family = "Maple Mono NF";
+          family = "Iosevka Nerd Font";
           style = "Bold";
         };
         italic = {
-          family = "Maple Mono NF";
+          family = "Iosevka Nerd Font";
           style = "Italic";
         };
         bold_italic = {
-          family = "Maple Mono NF";
+          family = "Iosevka Nerd Font";
           style = "Bold Italic";
         };
         size = 16.0;

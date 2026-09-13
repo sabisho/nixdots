@@ -2,12 +2,12 @@
   fonts.packages = with pkgs; [
     adwaita-fonts
     corefonts
-    ibm-plex
+    # ibm-plex
     liberation_ttf
-    maple-mono.NF
-    miracode
+    # maple-mono.NF
+    # miracode
     nerd-fonts.iosevka
-    nerd-fonts.jetbrains-mono
+    # nerd-fonts.jetbrains-mono
     noto-fonts
     noto-fonts-cjk-sans
     noto-fonts-color-emoji

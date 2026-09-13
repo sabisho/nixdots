@@ -1,7 +1,8 @@
 {
   programs.kitty = {
     font = {
-      name = "Maple Mono NF";
+      # name = "Maple Mono NF";
+      name = "Iosevka Nerd Font";
       size = 16;
     };
     settings = {
