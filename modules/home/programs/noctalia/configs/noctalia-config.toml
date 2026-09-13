@@ -93,6 +93,9 @@ widget_order = [ "lockscreen-login-box@eDP-1", "lockscreen-widget-00000000000000
 
 [nightlight]
 enabled = true
+force = true
+temperature_day = 4000
+temperature_night = 3000
 
 [notification]
 background_opacity = 0.4999999888241291
@@ -128,20 +131,20 @@ source = "wallpaper"
 
     [theme.templates]
     builtin_ids = [ "btop", "cava", "gtk3", "gtk4", "kitty", "niri", "qt", "starship" ]
-    community_ids = [ "zen-browser", "heroiclauncher", "fastfetch", "bat", "lazygit", "yazi" ]
+    community_ids = [ "brave-origin", "zen-browser", "zed", "heroiclauncher", "fastfetch", "bat", "lazygit", "yazi" ]
 
 [wallpaper]
 directory = "/home/sabisho/nixdots/Wallpapers"
 transition_on_startup = true
 
     [wallpaper.default]
-    path = "/home/sabisho/nixdots/Wallpapers/Gun-Lady.png"
+    path = "/home/sabisho/nixdots/Wallpapers/Japan.jpg"
 
     [wallpaper.last]
-    path = "/home/sabisho/nixdots/Wallpapers/Gun-Lady.png"
+    path = "/home/sabisho/nixdots/Wallpapers/Japan.jpg"
 
     [wallpaper.monitors.eDP-1]
-    path = "/home/sabisho/nixdots/Wallpapers/Gun-Lady.png"
+    path = "/home/sabisho/nixdots/Wallpapers/Japan.jpg"
 
 [widget.battery]
 display_mode = "graphic"
