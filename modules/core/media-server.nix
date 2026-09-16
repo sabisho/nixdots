@@ -13,8 +13,10 @@
     };
     # komga = {
     #   enable = true;
-    #   settings.server.port = 8080;
+    #   user = username;
+    #   group = "users";
     #   openFirewall = true;
+    #   settings.server.port = 8080;
     #   # webinterface at: localhost:8080
     # };
   };
