@@ -24,7 +24,8 @@
 
   # users.users.komga.extraGroups = [username];
 
-  # environment.systemPackages = with pkgs; [
-  #   mkvtoolnix
-  # ];
+  environment.systemPackages = with pkgs; [
+    # mkvtoolnix
+    jellyfin-mpv-shim
+  ];
 }
