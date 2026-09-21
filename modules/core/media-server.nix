@@ -10,6 +10,7 @@
       group = "users";
       openFirewall = true;
       # webinterface at: localhost:8096
+      # Always put episodes inside a seasons directory for anime or anything which contains both TV and Movies.
     };
     # komga = {
     #   enable = true;

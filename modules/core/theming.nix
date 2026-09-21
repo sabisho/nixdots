@@ -32,5 +32,6 @@
     adw-gtk3
     adwaita-icon-theme
     papirus-icon-theme
+    papirus-folders
   ];
 }
