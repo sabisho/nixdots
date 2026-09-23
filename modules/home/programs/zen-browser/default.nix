@@ -12,6 +12,7 @@
     profiles."${username}" = {
       settings = {
         "media.hardware-video-decoding-vulkan.direct-export.enabled" = true;
+        "media.hardware-video-decoding-vulkan.enabled" = true;
         "media.hardware-video-decoding-vulkan.force-enabled" = true;
         "toolkit.legacyUserProfileCustomizations.stylesheets" = true;
         "zen.theme.content-element-separation" = 0;
