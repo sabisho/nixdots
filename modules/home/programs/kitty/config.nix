@@ -11,6 +11,7 @@
       cursor_trail_decay = "0.01 0.5";
       background_opacity = 0.5;
       background_blur = 1;
+      custom_shaders = "cursor-trail-blaze";
     };
     # themeFile = "gruvbox-dark-hard";
     extraConfig = ''
