@@ -11,6 +11,7 @@
     figlet
     glow
     impala
+    kanban # Terminal based project management software with TUI.
     onefetch
     pastel
     ripgrep
