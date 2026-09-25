@@ -118,7 +118,8 @@ binds {
         toggle-overview
     }
     Print {
-        screenshot
+        // screenshot
+        spawn-sh "noctalia msg screenshot-annotate"
     }
     Ctrl+Print {
         screenshot-window
