@@ -49,7 +49,7 @@
   };
 
   # This settings is only required when dual booting NixOS and Windows 11
-  time.hardwareClockInLocalTime = true;
+  # time.hardwareClockInLocalTime = true;
 
   system.stateVersion = stateVersion; # Did you read the comment?
 }
