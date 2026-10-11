@@ -2,7 +2,7 @@
   programs.git = {
     settings = {
       user = {
-        name = "helixoid";
+        name = "sabisho";
         email = "ayushrajmth91@gmail.com";
       };
     };

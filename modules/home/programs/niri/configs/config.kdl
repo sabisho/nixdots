@@ -1,4 +1,4 @@
-include "./niri/animations/niri-butter"
+include "./niri/animations/niri-spontanious"
 include "./niri/cursor.kdl"
 include "./niri/environment.kdl"
 include "./niri/gestures.kdl"
