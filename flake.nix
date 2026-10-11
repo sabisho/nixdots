@@ -17,6 +17,11 @@
       url = "github:0xc000022070/zen-browser-flake";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    yomu = {
+      url = "github:sabisho/yomu"; # or github:you/yomu once pushed
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs = {

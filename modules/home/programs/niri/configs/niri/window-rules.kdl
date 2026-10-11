@@ -17,6 +17,13 @@ window-rule {
       }
 }
 window-rule {
+    match app-id="yomu"
+    open-maximized true
+    background-effect {
+        blur true
+      }
+}
+window-rule {
     match app-id="dev.noctalia.Noctalia.Settings"
     open-floating true
     default-column-width { fixed 1080; }

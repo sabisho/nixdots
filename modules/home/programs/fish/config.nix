@@ -4,9 +4,9 @@
     interactiveShellInit = ''
       set fish_greeting "NixOS, BTW!"
       fish_vi_key_bindings
+      devenv hook fish | source
     '';
 
-    # devenv hook fish | source
     shellAliases = {
       h = "hx";
       la = "eza --icons=always -a";
@@ -21,6 +21,7 @@
     };
 
     shellAbbrs = {
+      crr = "cargo run --release";
       dfp = "cd ~/nixdots && jj desc && jj bookmark set main && jj new && jj git push --branch main; or echo 'Push cancelled'";
       ff = "fastfetch";
       ffn = "fastfetch -c none";
