@@ -1,6 +1,7 @@
 {pkgs, ...}: {
   home.packages = with pkgs; [
     bat
+    codex
     caligula
     charm-freeze
     cmd-wrapped
