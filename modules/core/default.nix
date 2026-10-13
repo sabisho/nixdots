@@ -1,6 +1,6 @@
 {
   imports = [
-    # ./appimages.nix
+    ./appimages.nix
     # ./gamescope.nix
     # ./stylix.nix
     # ./thunar.nix
