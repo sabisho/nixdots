@@ -132,6 +132,9 @@ source = "wallpaper"
     [theme.templates]
     builtin_ids = [ "btop", "cava", "gtk3", "gtk4", "kitty", "niri", "qt", "starship" ]
     community_ids = [ "brave-origin", "zen-browser", "zed", "heroiclauncher", "fastfetch", "bat", "lazygit", "yazi" ]
+    [theme.templates.user.yomu]
+    input_path = "$XDG_CONFIG_HOME/noctalia/templates/yomu-theme.toml.template"
+    output_path = "$XDG_CONFIG_HOME/yomu/themes.toml"
 
 [wallpaper]
 directory = "/home/sabisho/nixdots/Wallpapers"

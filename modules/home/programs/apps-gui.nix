@@ -1,6 +1,6 @@
 {pkgs, ...}: {
   home.packages = with pkgs; [
-    antigravity-ide
+    # antigravity-ide
     brave-origin
     drawy
     file-roller

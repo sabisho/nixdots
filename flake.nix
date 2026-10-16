@@ -18,6 +18,11 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    antigravity-nix = {
+      url = "github:jacopone/antigravity-nix";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
     yomu = {
       url = "github:sabisho/yomu"; # or github:you/yomu once pushed
       inputs.nixpkgs.follows = "nixpkgs";

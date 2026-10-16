@@ -8,6 +8,7 @@
     # ./mako
     # ./waybar
     # ./alacritty
+    ./antigravity
     ./apps-cli.nix
     ./apps-gui.nix
     ./atuin
