@@ -6,15 +6,32 @@ order = [ "Main" ]
 
     [bar.Main]
     background_opacity = 0.4999999888241291
+    capsule_thickness = 0.89999998360872269
     center = [ "workspaces" ]
-    end = [ "tray", "notifications", "caffeine", "clipboard", "network", "volume", "brightness", "battery" ]
+    end = [
+        "tray",
+        "widget",
+        "bar",
+        "notifications",
+        "caffeine",
+        "clipboard",
+        "network",
+        "volume",
+        "brightness",
+        "battery"
+    ]
     margin_ends = 10
     radius = 20
-    start = [ "clock", "date", "wallpaper", "media" ]
+    start = [ "clock", "date", "wallpaper", "wallhaven", "media", "tracker" ]
     widget_spacing = 20
+
+[calendar]
 
 [control_center]
 show_shortcut_labels = false
+
+    [control_center.calendar]
+    show_events_card = false
 
 [dock]
 background_opacity = 0.4999999888241291
@@ -38,7 +55,8 @@ behavior_order = [ "lock", "screen-off", "lock-and-suspend" ]
     timeout = 660.0
 
 [location]
-auto_locate = true
+address = "New Delhi, Delhi, India"
+auto_locate = false
 
 [lockscreen_widgets]
 enabled = true
@@ -94,8 +112,8 @@ widget_order = [ "lockscreen-login-box@eDP-1", "lockscreen-widget-00000000000000
 [nightlight]
 enabled = true
 force = true
-temperature_day = 4000
-temperature_night = 3000
+temperature_day = 5100
+temperature_night = 5000
 
 [notification]
 background_opacity = 0.4999999888241291
@@ -104,7 +122,18 @@ background_opacity = 0.4999999888241291
 background_opacity = 0.4999999888241291
 position = "bottom_center"
 
+    [osd.kinds]
+    nightlight = false
+
+[plugin_settings."noctalia/wallhaven"]
+api_key = "RcDtTQdNQa6cSSbB0BkHzv93RcQyYy7E"
+download_dir = "/home/sabisho/Pictures/Wallpapers"
+
+[plugins]
+enabled = [ "noctalia/wallhaven", "yuuto/calculator", "thepunkoff/pomodoro" ]
+
 [shell]
+app_icon_color = "on_surface"
 avatar_path = "/home/sabisho/nixdots/modules/home/programs/noctalia/configs/Rusty-Friend.png"
 corner_radius_scale = 2.0
 font_family = "Adwaita Sans"
@@ -131,23 +160,27 @@ source = "wallpaper"
 
     [theme.templates]
     builtin_ids = [ "btop", "cava", "gtk3", "gtk4", "kitty", "niri", "qt", "starship" ]
-    community_ids = [ "brave-origin", "zen-browser", "zed", "heroiclauncher", "fastfetch", "bat", "lazygit", "yazi" ]
-    [theme.templates.user.yomu]
-    input_path = "$XDG_CONFIG_HOME/noctalia/templates/yomu-theme.toml.template"
-    output_path = "$XDG_CONFIG_HOME/yomu/themes.toml"
+    community_ids = [ "brave", "brave-origin", "zen-browser", "zed", "heroiclauncher", "fastfetch", "bat", "lazygit", "yazi" ]
+
+        [theme.templates.user.yomu]
+        input_path = "$XDG_CONFIG_HOME/noctalia/templates/yomu-theme.toml.template"
+        output_path = "$XDG_CONFIG_HOME/yomu/themes.toml"
 
 [wallpaper]
 directory = "/home/sabisho/nixdots/Wallpapers"
 transition_on_startup = true
 
     [wallpaper.default]
-    path = "/home/sabisho/nixdots/Wallpapers/Japan.jpg"
+    path = "/home/sabisho/nixdots/Wallpapers/Green-Sky.jpg"
 
     [wallpaper.last]
-    path = "/home/sabisho/nixdots/Wallpapers/Japan.jpg"
+    path = "/home/sabisho/nixdots/Wallpapers/Green-Sky.jpg"
 
     [wallpaper.monitors.eDP-1]
-    path = "/home/sabisho/nixdots/Wallpapers/Japan.jpg"
+    path = "/home/sabisho/nixdots/Wallpapers/Green-Sky.jpg"
+
+[widget.bar]
+type = "yuuto/calculator:bar"
 
 [widget.battery]
 display_mode = "graphic"
@@ -157,8 +190,22 @@ hide_album_art = true
 hide_when_no_media = true
 show_progress = true
 
+[widget.tracker]
+type = "cleboost/anilist:tracker"
+
 [widget.tray]
 drawer = true
 
+[widget.wallhaven]
+type = "noctalia/wallhaven:wallhaven"
+
+[widget.widget]
+type = "thepunkoff/pomodoro:widget"
+widget-glyph-break = "zzz"
+widget-glyph-main = "hourglass-empty"
+widget-glyph-work = "focus-2"
+
 [widget.workspaces]
+active_pill_size = 2.5
+anchor = true
 show_labels = false
