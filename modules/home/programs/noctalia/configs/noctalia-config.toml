@@ -159,7 +159,7 @@ screen_time_enabled = true
 source = "wallpaper"
 
     [theme.templates]
-    builtin_ids = [ "btop", "cava", "gtk3", "gtk4", "kitty", "niri", "qt", "starship" ]
+    builtin_ids = [ "btop", "cava", "gtk3", "gtk4", "kitty", "niri", "qt", "starship", "umbriel" ]
     community_ids = [ "brave", "brave-origin", "zen-browser", "zed", "heroiclauncher", "fastfetch", "bat", "lazygit", "yazi" ]
 
         [theme.templates.user.yomu]

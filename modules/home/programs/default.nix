@@ -32,6 +32,7 @@
     ./ssh
     ./starship
     ./swayimg
+    ./umbriel
     ./xdg
     ./zen-browser
     ./zoxide

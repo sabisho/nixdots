@@ -13,6 +13,10 @@
       url = "github:nix-community/nixvim";
     };
 
+    umbriel = {
+      url = "github:noctalia-dev/umbriel/cachix";
+    };
+
     zen-browser = {
       url = "github:0xc000022070/zen-browser-flake";
       inputs.nixpkgs.follows = "nixpkgs";
