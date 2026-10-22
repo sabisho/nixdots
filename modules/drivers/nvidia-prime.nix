@@ -24,7 +24,7 @@
     };
     open = true;
     nvidiaSettings = true;
-    dynamicBoost.enable = true;
+    dynamicBoost.enable = false;
     prime = {
       offload = {
         enable = true;

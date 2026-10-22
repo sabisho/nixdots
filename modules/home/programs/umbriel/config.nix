@@ -1,11 +1,11 @@
-{ ... }: {
+{...}: {
   programs.umbriel.settings = {
     include.optional.files = [
       "noctalia.toml"
     ];
 
     general = {
-      autostart = [ "noctalia" ];
+      autostart = ["noctalia"];
       mod_key = "Super";
       show_cheatsheet = false;
       xwayland = true;
@@ -16,13 +16,13 @@
       mode = "1920x1080@60";
       scale = 1.0;
       transform = "normal";
-      position = [ 0 0 ];
+      position = [0 0];
     };
 
     layout = {
       gap = 10;
       mode = "scrolling";
-      extent_presets = [ 0.333 0.5 0.667 ];
+      extent_presets = [0.333 0.5 0.667];
       scrolling = {
         default_extent_fraction = 0.5;
         center_underfull_strip = true;
@@ -74,33 +74,85 @@
     keybinds = {
       # Applications and session
       "Mod" = "spawn:noctalia msg panel-toggle launcher";
-      "Mod+Return" = { action = "spawn:kitty"; repeat = false; };
+      "Mod+Return" = {
+        action = "spawn:kitty";
+        repeat = false;
+      };
       "Mod+B" = "spawn:noctalia msg bar-toggle";
-      "Mod+E" = "spawn:nautilus";
+      "Mod+E" = "spawn:thunar";
       "Mod+C" = "spawn:noctalia msg panel-toggle clipboard";
       "Mod+Backspace" = "spawn:noctalia msg panel-toggle session";
 
       "Mod+Escape" = "session-quit";
-      "Mod+Shift+Escape" = { action = "shortcuts-inhibit-toggle"; allow_when_inhibited = true; repeat = false; };
+      "Mod+Shift+Escape" = {
+        action = "shortcuts-inhibit-toggle";
+        allow_when_inhibited = true;
+        repeat = false;
+      };
 
       # Backlight and Audio
-      "XF86MonBrightnessUp" = { action = "spawn:noctalia msg brightness-up"; allow_when_locked = true; };
-      "XF86MonBrightnessDown" = { action = "spawn:noctalia msg brightness-down"; allow_when_locked = true; };
-      "XF86AudioRaiseVolume" = { action = "spawn:noctalia msg volume-up"; allow_when_locked = true; };
-      "XF86AudioLowerVolume" = { action = "spawn:noctalia msg volume-down"; allow_when_locked = true; };
-      "XF86AudioMute" = { action = "spawn:noctalia msg volume-mute"; allow_when_locked = true; repeat = false; };
-      "XF86AudioPlay" = { action = "spawn:playerctl play-pause"; allow_when_locked = true; repeat = false; };
-      "XF86AudioPause" = { action = "spawn:playerctl pause"; allow_when_locked = true; repeat = false; };
-      "XF86AudioNext" = { action = "spawn:playerctl next"; allow_when_locked = true; };
-      "XF86AudioPrev" = { action = "spawn:playerctl previous"; allow_when_locked = true; };
+      "XF86MonBrightnessUp" = {
+        action = "spawn:noctalia msg brightness-up";
+        allow_when_locked = true;
+      };
+      "XF86MonBrightnessDown" = {
+        action = "spawn:noctalia msg brightness-down";
+        allow_when_locked = true;
+      };
+      "XF86AudioRaiseVolume" = {
+        action = "spawn:noctalia msg volume-up";
+        allow_when_locked = true;
+      };
+      "XF86AudioLowerVolume" = {
+        action = "spawn:noctalia msg volume-down";
+        allow_when_locked = true;
+      };
+      "XF86AudioMute" = {
+        action = "spawn:noctalia msg volume-mute";
+        allow_when_locked = true;
+        repeat = false;
+      };
+      "XF86AudioPlay" = {
+        action = "spawn:playerctl play-pause";
+        allow_when_locked = true;
+        repeat = false;
+      };
+      "XF86AudioPause" = {
+        action = "spawn:playerctl pause";
+        allow_when_locked = true;
+        repeat = false;
+      };
+      "XF86AudioNext" = {
+        action = "spawn:playerctl next";
+        allow_when_locked = true;
+      };
+      "XF86AudioPrev" = {
+        action = "spawn:playerctl previous";
+        allow_when_locked = true;
+      };
 
       # Windows and Columns
-      "Mod+Q" = { action = "window-close"; repeat = false; };
+      "Mod+Q" = {
+        action = "window-close";
+        repeat = false;
+      };
       "Mod+W" = "window-cycle-primary-extent";
-      "Mod+T" = { action = "window-toggle-floating"; repeat = false; };
-      "Mod+M" = { action = "window-toggle-maximize"; repeat = false; };
-      "Mod+Ctrl+M" = { action = "window-toggle-maximize-to-edges"; repeat = false; };
-      "Mod+F" = { action = "window-toggle-fullscreen"; repeat = false; };
+      "Mod+T" = {
+        action = "window-toggle-floating";
+        repeat = false;
+      };
+      "Mod+M" = {
+        action = "window-toggle-maximize";
+        repeat = false;
+      };
+      "Mod+Ctrl+M" = {
+        action = "window-toggle-maximize-to-edges";
+        repeat = false;
+      };
+      "Mod+F" = {
+        action = "window-toggle-fullscreen";
+        repeat = false;
+      };
 
       # Focus
       "Mod+H" = "window-focus-left";
@@ -139,7 +191,10 @@
       "Mod+Shift+Up" = "column-move-to-workspace-previous";
 
       # Overview
-      "Mod+O" = { action = "overview-toggle"; repeat = false; };
+      "Mod+O" = {
+        action = "overview-toggle";
+        repeat = false;
+      };
 
       # Workspaces 1-9
       "Mod+1" = "workspace-switch:1";
@@ -164,8 +219,14 @@
 
       # Scratchpad
       "Mod+Space" = "scratchpad-toggle";
-      "Mod+Shift+Space" = { action = "window-move-to-scratchpad"; repeat = false; };
-      "Mod+Ctrl+Space" = { action = "window-restore-from-scratchpad"; repeat = false; };
+      "Mod+Shift+Space" = {
+        action = "window-move-to-scratchpad";
+        repeat = false;
+      };
+      "Mod+Ctrl+Space" = {
+        action = "window-restore-from-scratchpad";
+        repeat = false;
+      };
       "Mod+Tab" = "scratchpad-focus-next";
 
       # Screenshots
@@ -179,17 +240,12 @@
         blur = true;
       }
       {
-        match.app_id = [
-          "^zen-beta$"
-          "^gimp$"
-          "^dev\\.zed\\.Zed$"
-        ];
+        match.is_alone = true;
         default_maximize = true;
       }
       {
-        match.app_id = "^Alacritty$";
+        match.app_id = "^zen-beta$";
         default_maximize = true;
-        blur = true;
       }
       {
         match.app_id = [

@@ -11,9 +11,9 @@
     enable = true;
     profiles."${username}" = {
       settings = {
-        "media.hardware-video-decoding-vulkan.direct-export.enabled" = true;
-        "media.hardware-video-decoding-vulkan.enabled" = true;
-        "media.hardware-video-decoding-vulkan.force-enabled" = true;
+        # "media.hardware-video-decoding-vulkan.direct-export.enabled" = true;
+        # "media.hardware-video-decoding-vulkan.enabled" = true;
+        # "media.hardware-video-decoding-vulkan.force-enabled" = true;
         "toolkit.legacyUserProfileCustomizations.stylesheets" = true;
         "zen.theme.content-element-separation" = 0;
         "zen.view.compact.enable-at-startup" = true;
