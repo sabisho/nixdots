@@ -35,7 +35,7 @@
       theme = "bgrt";
     };
     consoleLogLevel = 3;
-    initrd.verbose = false;
+    # initrd.verbose = false;
     kernelParams = [
       "quiet"
       "splash"

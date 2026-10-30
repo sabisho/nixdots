@@ -10,7 +10,7 @@
     # motrix-next
     # komelia
     obs-studio
-    onlyoffice-desktopeditors
+    # onlyoffice-desktopeditors
     papers
     protonplus
     pwvucontrol
@@ -18,6 +18,5 @@
     # shipwright
     songrec
     thunderbird
-    yacreader
   ];
 }

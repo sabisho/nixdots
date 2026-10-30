@@ -4,6 +4,10 @@
       "noctalia.toml"
     ];
 
+    workspaces = {
+      empty_above = true;
+    };
+
     general = {
       autostart = ["noctalia"];
       mod_key = "Super";
@@ -36,15 +40,19 @@
       corner_radius = 20;
       blur = {
         enabled = true;
-        radius = 5;
+        radius = 6;
         passes = 3;
       };
       shadow = {
         enabled = true;
-        softness = 50;
+        softness = 24;
         offset_x = 0;
-        offset_y = 8;
+        offset_y = 0;
       };
+    };
+
+    colors = {
+      shadow = "#00000080";
     };
 
     input = {
@@ -73,15 +81,15 @@
 
     keybinds = {
       # Applications and session
-      "Mod" = "spawn:noctalia msg panel-toggle launcher";
+      "Mod" = "spawn noctalia msg panel-toggle launcher";
       "Mod+Return" = {
-        action = "spawn:kitty";
+        action = "spawn kitty";
         repeat = false;
       };
-      "Mod+B" = "spawn:noctalia msg bar-toggle";
-      "Mod+E" = "spawn:thunar";
-      "Mod+C" = "spawn:noctalia msg panel-toggle clipboard";
-      "Mod+Backspace" = "spawn:noctalia msg panel-toggle session";
+      "Mod+B" = "spawn noctalia msg bar-toggle";
+      "Mod+E" = "spawn thunar";
+      "Mod+C" = "spawn noctalia msg panel-toggle clipboard";
+      "Mod+Backspace" = "spawn noctalia msg panel-toggle session";
 
       "Mod+Escape" = "session-quit";
       "Mod+Shift+Escape" = {
@@ -92,42 +100,42 @@
 
       # Backlight and Audio
       "XF86MonBrightnessUp" = {
-        action = "spawn:noctalia msg brightness-up";
+        action = "spawn noctalia msg brightness-up";
         allow_when_locked = true;
       };
       "XF86MonBrightnessDown" = {
-        action = "spawn:noctalia msg brightness-down";
+        action = "spawn noctalia msg brightness-down";
         allow_when_locked = true;
       };
       "XF86AudioRaiseVolume" = {
-        action = "spawn:noctalia msg volume-up";
+        action = "spawn noctalia msg volume-up";
         allow_when_locked = true;
       };
       "XF86AudioLowerVolume" = {
-        action = "spawn:noctalia msg volume-down";
+        action = "spawn noctalia msg volume-down";
         allow_when_locked = true;
       };
       "XF86AudioMute" = {
-        action = "spawn:noctalia msg volume-mute";
+        action = "spawn noctalia msg volume-mute";
         allow_when_locked = true;
         repeat = false;
       };
       "XF86AudioPlay" = {
-        action = "spawn:playerctl play-pause";
+        action = "spawn playerctl play-pause";
         allow_when_locked = true;
         repeat = false;
       };
       "XF86AudioPause" = {
-        action = "spawn:playerctl pause";
+        action = "spawn playerctl pause";
         allow_when_locked = true;
         repeat = false;
       };
       "XF86AudioNext" = {
-        action = "spawn:playerctl next";
+        action = "spawn playerctl next";
         allow_when_locked = true;
       };
       "XF86AudioPrev" = {
-        action = "spawn:playerctl previous";
+        action = "spawn playerctl previous";
         allow_when_locked = true;
       };
 
@@ -171,10 +179,10 @@
       "Mod+Shift+Right" = "column-move-right";
 
       # Resize column and window
-      "Mod+Ctrl+H" = "window-modify-primary-extent:-0.1";
-      "Mod+Ctrl+L" = "window-modify-primary-extent:+0.1";
-      "Mod+Ctrl+K" = "window-modify-secondary-extent:+0.1";
-      "Mod+Ctrl+J" = "window-modify-secondary-extent:-0.1";
+      "Mod+Ctrl+H" = "window-modify-primary-extent -0.1";
+      "Mod+Ctrl+L" = "window-modify-primary-extent +0.1";
+      "Mod+Ctrl+K" = "window-modify-secondary-extent +0.1";
+      "Mod+Ctrl+J" = "window-modify-secondary-extent -0.1";
 
       # Consume and expel
       "Mod+BracketLeft" = "window-consume-or-expel-left";
@@ -197,25 +205,25 @@
       };
 
       # Workspaces 1-9
-      "Mod+1" = "workspace-switch:1";
-      "Mod+2" = "workspace-switch:2";
-      "Mod+3" = "workspace-switch:3";
-      "Mod+4" = "workspace-switch:4";
-      "Mod+5" = "workspace-switch:5";
-      "Mod+6" = "workspace-switch:6";
-      "Mod+7" = "workspace-switch:7";
-      "Mod+8" = "workspace-switch:8";
-      "Mod+9" = "workspace-switch:9";
+      "Mod+1" = "workspace-switch 1";
+      "Mod+2" = "workspace-switch 2";
+      "Mod+3" = "workspace-switch 3";
+      "Mod+4" = "workspace-switch 4";
+      "Mod+5" = "workspace-switch 5";
+      "Mod+6" = "workspace-switch 6";
+      "Mod+7" = "workspace-switch 7";
+      "Mod+8" = "workspace-switch 8";
+      "Mod+9" = "workspace-switch 9";
 
-      "Mod+Shift+1" = "window-move-to-workspace:1";
-      "Mod+Shift+2" = "window-move-to-workspace:2";
-      "Mod+Shift+3" = "window-move-to-workspace:3";
-      "Mod+Shift+4" = "window-move-to-workspace:4";
-      "Mod+Shift+5" = "window-move-to-workspace:5";
-      "Mod+Shift+6" = "window-move-to-workspace:6";
-      "Mod+Shift+7" = "window-move-to-workspace:7";
-      "Mod+Shift+8" = "window-move-to-workspace:8";
-      "Mod+Shift+9" = "window-move-to-workspace:9";
+      "Mod+Shift+1" = "window-move-to-workspace 1";
+      "Mod+Shift+2" = "window-move-to-workspace 2";
+      "Mod+Shift+3" = "window-move-to-workspace 3";
+      "Mod+Shift+4" = "window-move-to-workspace 4";
+      "Mod+Shift+5" = "window-move-to-workspace 5";
+      "Mod+Shift+6" = "window-move-to-workspace 6";
+      "Mod+Shift+7" = "window-move-to-workspace 7";
+      "Mod+Shift+8" = "window-move-to-workspace 8";
+      "Mod+Shift+9" = "window-move-to-workspace 9";
 
       # Scratchpad
       "Mod+Space" = "scratchpad-toggle";
@@ -230,14 +238,15 @@
       "Mod+Tab" = "scratchpad-focus-next";
 
       # Screenshots
-      "Print" = "spawn:noctalia msg screenshot-annotate";
-      "Ctrl+Print" = "spawn:noctalia msg screenshot-window";
-      "Shift+Print" = "spawn:noctalia msg screenshot-screen";
+      "Print" = "spawn noctalia msg screenshot-annotate";
+      "Ctrl+Print" = "spawn noctalia msg screenshot-window";
+      "Shift+Print" = "spawn noctalia msg screenshot-screen";
     };
 
     window_rule = [
       {
         blur = true;
+        shadow = true;
       }
       {
         match.is_alone = true;
