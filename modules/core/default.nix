@@ -21,6 +21,6 @@
     ./theming.nix
     ./user-account.nix
     ./window-manager.nix
-    ./yomu.nix
+    # ./yomu.nix
   ];
 }

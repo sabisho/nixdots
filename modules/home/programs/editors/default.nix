@@ -3,6 +3,7 @@
     # ./helix
     ./mitos
     ./nixvim
+    # ./nvf
     ./zed
   ];
 }

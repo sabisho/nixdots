@@ -1,7 +1,7 @@
 {pkgs, ...}: {
   home.packages = with pkgs; [
     bat
-    codex
+    # codex
     caligula
     charm-freeze
     cmd-wrapped
@@ -12,11 +12,11 @@
     figlet
     glow
     impala
-    kanban # Terminal based project management software with TUI.
+    # kanban # Terminal based project management software with TUI.
     onefetch
     pastel
     ripgrep
-    rqbit
+    # rqbit
     tealdeer
     tukai
     wget

@@ -69,7 +69,7 @@
         accel_profile = "adaptive";
       };
       focus = {
-        follows_mouse = true;
+        follows_mouse = "sloppy";
       };
       cursor = {
         theme = "Adwaita";

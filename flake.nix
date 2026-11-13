@@ -13,6 +13,11 @@
       url = "github:nix-community/nixvim";
     };
 
+    nvf = {
+      url = "github:notashelf/nvf";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
     umbriel = {
       url = "github:noctalia-dev/umbriel/cachix";
     };

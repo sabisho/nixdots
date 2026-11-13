@@ -9,15 +9,15 @@
 
 stdenv.mkDerivation rec {
   pname = "mitos";
-  version = "0.1.2";
+  version = "0.2.1";
 
   src = fetchurl {
     url = "https://github.com/mitos-editor/mitos/releases/download/v${version}/mitos-v${version}-${stdenv.hostPlatform.system}.tar.xz";
     hash =
       if stdenv.hostPlatform.system == "x86_64-linux" then
-        "sha256-yjacE0ubf39mC4iEnIwKWthNg7T+iFUPQAuFZVfzIW4="
+        "sha256-CkzLsO2ixewMcCEJcNOh1flHFQEbCwP/+dkmlnWmc6g="
       else if stdenv.hostPlatform.system == "aarch64-linux" then
-        "sha256-Eyu8o5z4xrzXkblzN9O5h8jybFYRJelgcHr24zZt+AI="
+        "sha256-tcXqH7HyLEDHyNbq2mWWMMlVC6HZWLwBi6ykf3iHWjg="
       else
         throw "Unsupported system: ${stdenv.hostPlatform.system}";
   };

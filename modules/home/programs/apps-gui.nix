@@ -1,7 +1,7 @@
 {pkgs, ...}: {
   home.packages = with pkgs; [
     # antigravity-ide
-    brave-origin
+    # brave-origin
     drawy
     file-roller
     gimp3
